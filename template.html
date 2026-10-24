@@ -188,8 +188,12 @@
   .paper.type .paper-body{border-top:1px solid var(--line)}
 
   /* ================= 诊断与训练 ================= */
-  .diag{margin-top:24px}
-  .dintro{font-size:14px;line-height:1.78;margin:0 0 14px;color:var(--muted)}
+  .diag{margin:18px 0 4px;padding:15px 17px;background:var(--bg);border:1px solid var(--line);border-radius:12px}
+  .diag-h{display:flex;align-items:baseline;gap:10px;margin-bottom:4px;flex-wrap:wrap}
+  .diag-h h3{margin:0;font-size:15px;font-weight:700;letter-spacing:.01em}
+  .diag-h h3::before{content:"";display:inline-block;width:3px;height:14px;background:var(--p2);border-radius:2px;margin-right:8px;vertical-align:-1px}
+  .diag-h span{font-size:12px;color:var(--muted)}
+  .dintro{font-size:13.5px;line-height:1.75;margin:6px 0 12px;color:var(--muted)}
   .step{display:flex;gap:12px;padding:12px 0;border-top:1px dashed var(--line)}
   .step:first-of-type{border-top:1px solid var(--line)}
   .stag{flex:0 0 auto;height:22px;padding:0 8px;border-radius:6px;font-size:11px;font-weight:800;line-height:22px;color:#fff;background:var(--accent)}
@@ -347,7 +351,6 @@
     <section id="view-papers" class="view">
       <div class="card" id="today"></div>
       <div id="papers"></div>
-      <div id="diagnosis"></div>
     </section>
 
     <section id="view-words" class="view" hidden>
@@ -560,6 +563,7 @@ function renderPapers(){
         list.forEach(q => out.push(qRow(p, q)));
       });
     }
+    out.push(diagnosisHTML());
     out.push('</div></article>');
   });
 
@@ -728,22 +732,21 @@ function renderByType(){
     out.push('</div></article>');
   });
   if (out.length <= 3) out.push('<div class="empty">还没有错题</div>');
+  out.push('<div class="diag" style="margin-top:18px">' + diagnosisHTML().replace(/^<div class="diag">/, '').replace(/<\/div>$/, '') + '</div>');
   el.innerHTML = out.join('');
 }
 
-/* ================= 诊断与训练 ================= */
-function renderDiagnosis(){
-  const el = document.getElementById('diagnosis');
+/* ================= 诊断与训练（放在每套卷底部） ================= */
+function diagnosisHTML(){
   const d = DATA.diagnosis;
-  if (!d) { el.innerHTML = ''; return; }
+  if (!d) return '';
   const steps = (d.steps || []).map(s =>
     '<div class="step"><span class="stag ' + (s.tag || '') + '">' + esc(s.tag || '') + '</span>' +
     '<div class="stx"><b>' + esc(s.title) + '</b>' +
     (s.fix ? '<em>对应 ' + esc(s.fix) + '</em>' : '') +
     '<p>' + s.d + '</p></div></div>').join('');
-  el.innerHTML = '<div class="card diag">' +
-    '<h2>诊断与训练</h2>' +
-    '<div class="sub">做完这套卷之后该怎么练</div>' +
+  return '<div class="diag">' +
+    '<div class="diag-h"><h3>诊断与训练</h3><span>做完这套卷之后该怎么练</span></div>' +
     (d.intro ? '<p class="dintro">' + d.intro + '</p>' : '') +
     steps +
     '</div>';
@@ -757,7 +760,7 @@ function route(){
   document.querySelectorAll('.view').forEach(v => v.hidden = true);
   document.getElementById(VIEWS[h]).hidden = false;
   document.querySelectorAll('#tabs a').forEach(a => a.classList.toggle('on', a.dataset.tab === h));
-  if (h === 'papers') { renderToday(); renderPapers(); renderDiagnosis(); }
+  if (h === 'papers') { renderToday(); renderPapers(); }
   if (h === 'words') renderWords();
   if (h === 'sentences') renderSentences();
   if (h === 'review') renderReview();
