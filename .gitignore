@@ -1,0 +1,6 @@
+node_modules/
+tools/gh-token.txt
+收件箱/*.pdf
+收件箱/*.PDF
+*.tmp
+.DS_Store
