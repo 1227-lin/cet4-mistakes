@@ -1,8 +1,9 @@
 # 四级错题本
 
-按卷子归档的错题 + 生词本 + 抽卡复习。纯静态，GitHub Pages 直接托管，iPad 加主屏幕当 App 用。
+按卷子归档的错题 + 生词本 + 抽卡复习。纯静态，GitHub Pages 托管，iPad 加主屏幕当 App 用。
 
-**网址**：`https://<你的用户名>.github.io/cet4-mistakes/`
+**网址**：https://1227-lin.github.io/cet4-mistakes/
+**仓库**：https://github.com/1227-lin/cet4-mistakes
 
 ---
 
@@ -10,26 +11,33 @@
 
 | 文件 | 作用 |
 |---|---|
-| `index.html` | **构建产物**，自包含（数据已内嵌），Pages 直接托管这一个就够 |
+| `index.html` | **构建产物**，自包含（数据已内嵌），Pages 托管的就是它 |
 | `data.json` | **唯一数据源**：卷子、题目、生词、待处理队列 |
 | `template.html` | 页面骨架，`__DATA_JSON__` 是数据占位符 |
 | `build.mjs` | `data.json` + `template.html` → `index.html`，顺带校验数据 |
 | `tools/add-paper.mjs` | 把一份新卷子的识别结果并入 `data.json` 并重建 |
-| `tools/device-login.ps1` | GitHub 设备码登录，拿到发布用 token |
-| `tools/publish.ps1` | 建仓库 / 上传 / 开 Pages，全走 REST API |
-| `收件箱/` | 新试卷丢这里（PDF），等识别 |
-| `manifest.json` / `sw.js` / `icon-*.png` | 主屏幕图标与离线缓存 |
+| `tools/publish.mjs` | 建仓库 / 上传 / 开 Pages，全走 REST API |
+| `tools/ship.mjs` | 加卷子 + 重建 + 发布，一条命令搞定 |
+| `收件箱/` | 新试卷丢这里（PDF 不上传） |
 
 ---
 
-## 二、数据怎么长（加一套卷子）
+## 二、加一套卷子
 
-`data.json` 里 `papers` 加一项：
+**一条命令：**
+
+```bash
+node tools/ship.mjs 收件箱/2024-12-2.json
+```
+
+它做的事：校验 → 去重 → 按日期排序 → 重建 index.html → 上传 → 等 Pages 构建。
+
+**卷子 JSON 长这样：**
 
 ```json
 {
-  "id": "2024-12-1",
-  "title": "2024年12月 · 第一套",
+  "id": "2024-12-2",
+  "title": "2024年12月 · 第二套",
   "date": "2024-12-14",
   "scope": "Part III 阅读 26–55",
   "note": "听力未作答",
@@ -52,49 +60,33 @@
 
 - `sec`：`A` 选词填空 / `B` 段落匹配 / `C` 仔细阅读
 - `ok: true` 的题只要 `brief`；`ok: false` 才有解析和「已掌握」
-- `title` 就是网站上的**分类名**，按它分组
-- 手工加完记得 `node build.mjs`
-
-或者用脚本加（推荐）：
-
-```bash
-node tools/add-paper.mjs 收件箱/2024-12-2.json
-```
-
-它会校验、去重、按日期排序、重建 `index.html`。
+- `title` 就是网站上的**分类名**
 
 ---
 
-## 三、发布 / 更新
+## 三、发布
 
-首次：
-
-```powershell
-powershell -ExecutionPolicy Bypass -File tools\device-login.ps1   # 浏览器输 8 位码
-powershell -ExecutionPolicy Bypass -File tools\publish.ps1
+```bash
+node tools/publish.mjs        # 或双击 发布错题本.cmd
 ```
 
-以后改了数据，只要再跑一次 `publish.ps1`（它会先 `node build.mjs`）。
-桌面上的 `发布错题本.cmd` 双击等同于此。
-
-> token 存在 `tools\gh-token.txt`，已在 `.gitignore` 里，不会上传。
-> 想换账号：删掉这个文件重跑 `device-login.ps1`。
+- token 在 `tools/gh-token.txt`（已 .gitignore，不会上传）
+- 发布完成后 30–60 秒 Pages 生效
+- 想换账号：删掉 `gh-token.txt`，重新跑 `tools/device-login.ps1`（需要能访问 github.com 的网络）
 
 ---
 
 ## 四、iPad
 
-1. Safari 打开 Pages 网址
+1. Safari 打开 https://1227-lin.github.io/cet4-mistakes/
 2. 分享 → **添加到主屏幕**
-3. 从主屏图标打开一次（SW 缓存离线版）
+3. 从主屏图标打开一次（SW 缓存离线版，之后断网也能看）
 
-进度（已掌握、记忆盒、复习次数）存在 Safari 本地，换设备不同步。
-页脚有 **导出进度 / 导入备份**，每周导一次。
+进度（已掌握、记忆盒、复习次数）存在 Safari 本地，换设备不同步；页脚可导出 / 导入备份。
 
 ---
 
-## 五、说明
+## 五、备注
 
-- Pages 免费只对 **Public** 仓库生效。
-- 免费额度：Pages 每月 100GB 流量，一个错题站用不到 1%。
-- 构建时间：push 后一般 30–60 秒生效。
+- 2026-10 实测：本机网络下 `github.com` 不通，但 `api.github.com` 与 `*.github.io` 通，所以发布和访问都正常，只有 Web 界面打不开。
+- Pages 免费只对 Public 仓库生效；月流量 100GB，一个错题站用不到 1%。
