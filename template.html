@@ -174,6 +174,21 @@
   .whybox .tx b{display:block;font-size:13px;margin-bottom:1px}
   .whybox .tx p{margin:2px 0;font-size:14px}
 
+  /* ================= 诊断与训练 ================= */
+  .diag{margin-top:24px}
+  .dintro{font-size:14px;line-height:1.78;margin:0 0 14px;color:var(--muted)}
+  .step{display:flex;gap:12px;padding:12px 0;border-top:1px dashed var(--line)}
+  .step:first-of-type{border-top:1px solid var(--line)}
+  .stag{flex:0 0 auto;height:22px;padding:0 8px;border-radius:6px;font-size:11px;font-weight:800;line-height:22px;color:#fff;background:var(--accent)}
+  .stag.P1{background:var(--p2)}
+  .stag.P2{background:var(--p3)}
+  .stag.P3{background:var(--p4)}
+  .stx{flex:1;min-width:0}
+  .stx b{display:block;font-size:14px;margin-bottom:1px}
+  .stx em{display:inline-block;font-style:normal;font-size:11.5px;color:var(--muted);background:var(--bg);border-radius:5px;padding:0 7px;margin-bottom:3px}
+  .stx p{margin:2px 0 0;font-size:13.5px;color:var(--muted);line-height:1.72}
+  .stx p i{font-family:"Iowan Old Style",Georgia,serif;color:var(--ink);opacity:.85}
+
   /* ================= 长难句 ================= */
   .sent{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px;box-shadow:0 1px 2px rgba(0,0,0,.03),0 8px 24px -16px rgba(0,0,0,.18)}
   .sent-head{display:flex;align-items:baseline;gap:10px;margin-bottom:10px}
@@ -319,6 +334,7 @@
     <section id="view-papers" class="view">
       <div class="card" id="today"></div>
       <div id="papers"></div>
+      <div id="diagnosis"></div>
     </section>
 
     <section id="view-words" class="view" hidden>
@@ -436,7 +452,7 @@ function renderToday(){
 }
 
 /* ================= 错题：卷子列表（折叠） ================= */
-let pFilter = 'all', pSearch = '';
+let pFilter = 'all', pSearch = '', pMode = 'paper';
 
 function matchQ(p, q){
   if (pFilter === 'wrong' && q.ok) return false;
@@ -470,17 +486,26 @@ function summaryBlock(p){
 }
 
 function renderPapers(){
+  if (pMode === 'type') { renderByType(); return; }
   const el = document.getElementById('papers');
   const out = [];
   out.push('<div class="sec-h">' + PAPERS.length + ' 套卷子</div>');
   out.push('<div class="chips">' +
-    ['all|全部','wrong|只看错题','todo|未掌握'].map(x => {
+    ['paper|按卷子','type|按题型'].map(x => {
       const [v,t] = x.split('|');
-      return '<button class="chip' + (pFilter===v?' on':'') + '" data-act="pfilter" data-v="' + v + '">' + t + '</button>';
+      return '<button class="chip' + (pMode===v?' on':'') + '" data-act="pmode" data-v="' + v + '">' + t + '</button>';
     }).join('') +
-    '<button class="chip" data-act="expand-all">全部展开</button>' +
-    '<button class="chip" data-act="collapse-all">全部收起</button>' +
     '</div>');
+  if (pMode === 'paper') {
+    out.push('<div class="chips">' +
+      ['all|全部','wrong|只看错题','todo|未掌握'].map(x => {
+        const [v,t] = x.split('|');
+        return '<button class="chip' + (pFilter===v?' on':'') + '" data-act="pfilter" data-v="' + v + '">' + t + '</button>';
+      }).join('') +
+      '<button class="chip" data-act="expand-all">全部展开</button>' +
+      '<button class="chip" data-act="collapse-all">全部收起</button>' +
+      '</div>');
+  }
   out.push('<div class="search"><input id="qs" type="search" placeholder="搜题干 / 知识点" value="' + esc(pSearch) + '"></div>');
 
   if (!PAPERS.length) {
@@ -528,11 +553,12 @@ function renderPapers(){
   el.innerHTML = out.join('');
 }
 
-function qRow(p, q){
+function qRow(p, q, withPaper){
   const id = p.id + '#' + q.no;
   const h = ['<div class="q">'];
   h.push('<div class="qhead"><span class="no">' + esc(q.no) + '</span>');
   h.push(q.ok ? '<span class="tag ok">对</span>' : '<span class="tag no">错</span>');
+  if (withPaper) h.push('<span class="pmeta" style="font-size:11.5px">' + esc(p.title) + '</span>');
   if (q.tag) h.push('<span class="tag topic">' + esc(q.tag) + '</span>');
   h.push('<span class="mark">' + (q.ok
       ? '<span class="right">' + esc(q.ans) + '</span>'
@@ -659,6 +685,56 @@ function renderSentences(){
   }).join('');
 }
 
+/* ================= 按题型 ================= */
+const SEC_TITLE = { A: '选词填空', B: '段落匹配', C: '仔细阅读' };
+
+function renderByType(){
+  const el = document.getElementById('papers');
+  const out = [];
+  out.push('<div class="sec-h">按题型看错题</div>');
+  out.push('<div class="chips">' +
+    ['paper|按卷子','type|按题型'].map(x => {
+      const [v,t] = x.split('|');
+      return '<button class="chip' + (pMode===v?' on':'') + '" data-act="pmode" data-v="' + v + '">' + t + '</button>';
+    }).join('') +
+    '</div>');
+  out.push('<div class="dbody" style="font-size:12.5px;margin:-4px 0 10px">只列错题。同一题型的错题放一起，更容易看出命题人在同一类题上怎么设坑。</div>');
+
+  ['A','B','C'].forEach(sec => {
+    const items = [];
+    PAPERS.forEach(p => (p.questions||[]).forEach(q => { if (q.sec === sec && !q.ok) items.push({ p, q }); }));
+    if (!items.length) return;
+    out.push('<article class="paper open">');
+    out.push('<div class="paper-head" style="cursor:default">');
+    out.push('  <div class="ph-main"><div class="ptitle"><h3>' + SEC_TITLE[sec] + '</h3>' +
+      '<span class="pmeta">Section ' + sec + ' · 错 ' + items.length + ' 题</span></div></div>');
+    out.push('</div>');
+    out.push('<div class="paper-body" style="display:block">');
+    items.forEach(({ p, q }) => out.push(qRow(p, q, true)));
+    out.push('</div></article>');
+  });
+  if (out.length <= 3) out.push('<div class="empty">还没有错题</div>');
+  el.innerHTML = out.join('');
+}
+
+/* ================= 诊断与训练 ================= */
+function renderDiagnosis(){
+  const el = document.getElementById('diagnosis');
+  const d = DATA.diagnosis;
+  if (!d) { el.innerHTML = ''; return; }
+  const steps = (d.steps || []).map(s =>
+    '<div class="step"><span class="stag ' + (s.tag || '') + '">' + esc(s.tag || '') + '</span>' +
+    '<div class="stx"><b>' + esc(s.title) + '</b>' +
+    (s.fix ? '<em>对应 ' + esc(s.fix) + '</em>' : '') +
+    '<p>' + s.d + '</p></div></div>').join('');
+  el.innerHTML = '<div class="card diag">' +
+    '<h2>诊断与训练</h2>' +
+    '<div class="sub">做完这套卷之后该怎么练</div>' +
+    (d.intro ? '<p class="dintro">' + d.intro + '</p>' : '') +
+    steps +
+    '</div>';
+}
+
 /* ================= 路由 ================= */
 const VIEWS = { papers: 'view-papers', words: 'view-words', sentences: 'view-sentences', review: 'view-review' };
 function route(){
@@ -667,7 +743,7 @@ function route(){
   document.querySelectorAll('.view').forEach(v => v.hidden = true);
   document.getElementById(VIEWS[h]).hidden = false;
   document.querySelectorAll('#tabs a').forEach(a => a.classList.toggle('on', a.dataset.tab === h));
-  if (h === 'papers') { renderToday(); renderPapers(); }
+  if (h === 'papers') { renderToday(); renderPapers(); renderDiagnosis(); }
   if (h === 'words') renderWords();
   if (h === 'sentences') renderSentences();
   if (h === 'review') renderReview();
@@ -758,7 +834,8 @@ document.addEventListener('click', (e) => {
   const t = e.target.closest('[data-act]');
   if (!t) return;
   const act = t.dataset.act;
-  if (act === 'pfilter') { pFilter = t.dataset.v; renderPapers(); }
+  if (act === 'pmode') { pMode = t.dataset.v; renderPapers(); }
+  else if (act === 'pfilter') { pFilter = t.dataset.v; renderPapers(); }
   else if (act === 'toggle-paper') {
     const id = t.dataset.id;
     S.open[id] = !S.open[id];
