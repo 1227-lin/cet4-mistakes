@@ -174,6 +174,25 @@
   .whybox .tx b{display:block;font-size:13px;margin-bottom:1px}
   .whybox .tx p{margin:2px 0;font-size:14px}
 
+  /* ================= 长难句 ================= */
+  .sent{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px;box-shadow:0 1px 2px rgba(0,0,0,.03),0 8px 24px -16px rgba(0,0,0,.18)}
+  .sent-head{display:flex;align-items:baseline;gap:10px;margin-bottom:10px}
+  .sidx{font-size:12px;font-weight:800;color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:1px 7px}
+  .sent .src{font-size:12px;color:var(--muted)}
+  .sent .en{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:16.5px;line-height:1.7;margin:0 0 12px}
+  .sent .en b{color:var(--accent)}
+  .tree{list-style:none;padding:0;margin:0 0 12px}
+  .tree li{border-left:2px solid var(--line);padding:6px 0 6px 14px;margin-left:2px;font-size:13.5px;color:var(--muted)}
+  .tree li b{display:block;color:var(--ink);font-size:13px;margin-bottom:2px}
+  .tree li span{line-height:1.72}
+  .tree li b + span b{display:inline;color:var(--ink)}
+  .tree li span b{display:inline;color:var(--ink)}
+  .tree li span i{font-family:"Iowan Old Style",Georgia,serif;color:var(--ink);opacity:.85}
+  .tr{background:var(--accent-soft);border-radius:10px;padding:11px 14px;font-size:14px;line-height:1.75;color:var(--ink)}
+  .tr b{margin-right:8px;font-size:12px;letter-spacing:.08em;opacity:.7}
+  .key{margin:10px 0 0;font-size:12.5px;color:var(--muted);line-height:1.7}
+  .key b{color:var(--p2);margin-right:8px;font-size:12px;letter-spacing:.06em}
+
   /* ================= 生词 ================= */
   .wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:11px}
   .wcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;position:relative;cursor:pointer}
@@ -280,6 +299,10 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/></svg>
         <span>生词</span><em class="cnt" id="c-words">0</em>
       </a>
+      <a href="#/sentences" data-tab="sentences">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11M4 18h7"/><path d="M16 15l2 2 2.5-2.5"/></svg>
+        <span>长难句</span><em class="cnt" id="c-sents">0</em>
+      </a>
       <a href="#/review" data-tab="review">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/></svg>
         <span>复习</span><em class="cnt" id="c-todo">0</em>
@@ -307,6 +330,17 @@
         <div class="chips" id="wordStates"></div>
       </div>
       <div class="wgrid" id="wgrid"></div>
+    </section>
+
+    <section id="view-sentences" class="view" hidden>
+      <div class="card">
+        <h2>长难句</h2>
+        <div class="sub" id="sentSub">—</div>
+        <div class="dbody" style="font-size:13px;margin-top:6px">
+          <p>都是你做题时用中括号括出来的句子。先看主干，再看从句挂在哪儿，最后对译文。</p>
+        </div>
+      </div>
+      <div id="sents"></div>
     </section>
 
     <section id="view-review" class="view" hidden>
@@ -371,6 +405,7 @@ function renderTop(){
   const todo = ALLQ.filter(x => !x.q.ok && !S.mastered[x.id]).length + WORDS.filter(w => (S.box[w.w]||1) < 5).length;
   document.getElementById('c-papers').textContent = PAPERS.length;
   document.getElementById('c-words').textContent = WORDS.length;
+  document.getElementById('c-sents').textContent = (DATA.sentences || []).length;
   document.getElementById('c-todo').textContent = todo;
   document.getElementById('f-master').textContent = r + '%';
   document.getElementById('f-bar').style.width = r + '%';
@@ -593,8 +628,39 @@ function renderReview(){
     '<div class="pstats" style="margin-top:12px"><span>错题已掌握 <b>' + doneQ + '</b></span><span>累计复习 <b>' + (S.stat.answers||0) + '</b> 次</span></div>';
 }
 
+/* ================= 长难句 ================= */
+const SENTS = DATA.sentences || [];
+
+function renderSentences(){
+  const sub = document.getElementById('sentSub');
+  const el = document.getElementById('sents');
+  if (!SENTS.length) {
+    sub.textContent = '还没有句子';
+    el.innerHTML = '<div class="empty">这一套还没有标长难句</div>';
+    return;
+  }
+  const papers = {};
+  PAPERS.forEach(p => papers[p.id] = p.title);
+  sub.textContent = SENTS.length + ' 句 · 来自 ' + new Set(SENTS.map(s => s.paper)).size + ' 套卷';
+
+  el.innerHTML = SENTS.map((s, i) => {
+    const parts = (s.parts || []).map(p =>
+      '<li><b>' + esc(p.t) + '</b><span>' + p.d + '</span></li>').join('');
+    return '<article class="sent">' +
+      '<div class="sent-head">' +
+        '<span class="sidx num">' + pad2(i + 1) + '</span>' +
+        '<span class="src">' + esc(papers[s.paper] || '') + ' · ' + esc(s.src) + '</span>' +
+      '</div>' +
+      '<p class="en">' + s.en + '</p>' +
+      '<ul class="tree">' + parts + '</ul>' +
+      '<div class="tr"><b>译文</b>' + s.zh + '</div>' +
+      (s.key ? '<p class="key"><b>难在哪</b>' + s.key + '</p>' : '') +
+      '</article>';
+  }).join('');
+}
+
 /* ================= 路由 ================= */
-const VIEWS = { papers: 'view-papers', words: 'view-words', review: 'view-review' };
+const VIEWS = { papers: 'view-papers', words: 'view-words', sentences: 'view-sentences', review: 'view-review' };
 function route(){
   let h = (location.hash || '#/papers').replace(/^#\//, '');
   if (!VIEWS[h]) h = 'papers';
@@ -603,6 +669,7 @@ function route(){
   document.querySelectorAll('#tabs a').forEach(a => a.classList.toggle('on', a.dataset.tab === h));
   if (h === 'papers') { renderToday(); renderPapers(); }
   if (h === 'words') renderWords();
+  if (h === 'sentences') renderSentences();
   if (h === 'review') renderReview();
   window.scrollTo(0, 0);
 }
