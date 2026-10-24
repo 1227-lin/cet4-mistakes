@@ -90,3 +90,19 @@ node tools/publish.mjs        # 或双击 发布错题本.cmd
 
 - 2026-10 实测：本机网络下 `github.com` 不通，但 `api.github.com` 与 `*.github.io` 通，所以发布和访问都正常，只有 Web 界面打不开。
 - Pages 免费只对 Public 仓库生效；月流量 100GB，一个错题站用不到 1%。
+
+---
+
+## 六、自动化
+
+| 触发 | 谁来做 | 结果 |
+|---|---|---|
+| 推 `data.json` / `template.html` / `build.mjs` | GitHub Actions（`.github/workflows/rebuild.yml`） | 云端执行 `node build.mjs`，把新的 `index.html` 提交回来，Pages 自动更新 |
+| 每天 21:30 | DSH 定时任务「检查错题本收件箱」 | 扫 `收件箱/`，有新 PDF 就识别、并入、发布 |
+| 你说"加这套卷子" | 我 | 读图 → 写卷子 JSON → `node tools/ship.mjs` |
+| 手动 | 双击 `发布错题本.cmd` | 本地构建 + 推送 |
+
+`ship.mjs` = add-paper + build + publish，一条命令走完。
+
+> 识别手写作答和红笔批改必须由模型看图，脚本做不到。所以链路里唯一 "非自动" 的一步就是"看卷子"，
+> 其余（合并、去重、排序、构建、上传、部署）都已经交给脚本和 Actions。
