@@ -112,6 +112,7 @@ const FILES = [
   'index.html', 'data.json', 'template.html', 'build.mjs',
   'manifest.json', 'sw.js', 'icon-180.png', 'icon-192.png', 'icon-512.png',
   'README.md', '.gitignore', 'tools/add-paper.mjs', 'tools/publish.mjs',
+  '.github/workflows/rebuild.yml',
 ];
 let pushed = 0, skipped = 0;
 for (const rel of FILES) {
