@@ -655,5 +655,91 @@
       "tag": "仔细阅读"
     }
   ],
-  "pending": []
+  "pending": [],
+  "sentences": [
+    {
+      "paper": "2024-12-1",
+      "src": "Passage One · 第 3 段",
+      "en": "Simply being in the nearest wood <b>has</b> such health benefits <b>that</b> the Woodland Trust successfully lobbied for it to be prescribed by doctors.",
+      "parts": [
+        {
+          "t": "主干",
+          "d": "主语是动名词短语 <i>Simply being in the nearest wood</i>（\"仅仅待在最近的树林里\"这件事），谓语 <b>has</b>，宾语 <i>such health benefits</i>。主语不是 wood。"
+        },
+        {
+          "t": "结果状语从句",
+          "d": "<i>that the Woodland Trust successfully lobbied for it to be prescribed by doctors</i> —— <b>such…that…</b>＝\"如此…以至于…\"。"
+        },
+        {
+          "t": "两个小结构",
+          "d": "<b>lobby for sb/sth to do sth</b>＝游说让…做…；<i>it</i> 回指前面\"亲近自然\"这件事；<i>be prescribed</i> 被动＝被开成处方。"
+        }
+      ],
+      "zh": "仅仅是在最近的树林里待着，就有这么大的健康益处，以至于林地信托基金成功游说医生把\"亲近自然\"当成处方开给病人。",
+      "key": "such…that… 中间夹了一长串名词短语，主干被 has such health benefits 和从句切成两段，一上来容易找不到谓语。"
+    },
+    {
+      "paper": "2024-12-1",
+      "src": "Passage One · 第 4 段",
+      "en": "For every three nature-related words in hit songs of the 1950s, <b>researchers found</b>, there was only slightly more than one 50 years later.",
+      "parts": [
+        {
+          "t": "主干",
+          "d": "<i>there was only slightly more than one (nature-related word) 50 years later</i> —— one 后面省略了 nature-related word，避免重复。"
+        },
+        {
+          "t": "插入语",
+          "d": "<i>researchers found</i> 是插入语，翻译时可提到句首，不占句子成分。"
+        },
+        {
+          "t": "比例结构",
+          "d": "<i>For every three… there was… one</i>＝\"每三个…只剩下一个\"，比较的是 1950 年代与 50 年后。"
+        }
+      ],
+      "zh": "研究者发现，20 世纪 50 年代的热门歌曲里每出现三个与自然有关的词，50 年后就只剩略多于一个。",
+      "key": "插入语把 For every three… 和 there was… 隔开，读到 researchers found 容易断句。"
+    },
+    {
+      "paper": "2024-12-1",
+      "src": "Passage Two · 第 2 段",
+      "en": "But <b>that</b>’s not <b>what happened</b>.",
+      "parts": [
+        {
+          "t": "主干",
+          "d": "<i>that is not what happened</i> —— what happened 是表语从句，作 is 的表语。"
+        },
+        {
+          "t": "that 指代",
+          "d": "that 指上一句\"很多人希望女性继续以同样的速度进入这一领域\"。"
+        }
+      ],
+      "zh": "但事实并非如此（女性并没有继续以那样的速度进入工程领域）。",
+      "key": "短句不难，难在 that 的指代——要回上一句找它替的是哪件事。"
+    },
+    {
+      "paper": "2024-12-1",
+      "src": "Passage Two · 第 4 段",
+      "en": "The greatest challenge for me <b>was continuing to believe in myself</b>, <b>when</b> all the messages I was getting were <b>that</b> I would never be taken seriously or promoted or given raises at the same rate as men, <b>who</b> were clearly less qualified and not as smart as I was.",
+      "parts": [
+        {
+          "t": "主干",
+          "d": "<i>The greatest challenge for me was continuing to believe in myself</i> —— was 后面是动名词短语作表语，不是进行时，这是第一个坑。"
+        },
+        {
+          "t": "when 状语从句",
+          "d": "<i>when all the messages (that) I was getting were that…</i> —— <i>I was getting</i> 是省略关系词的定语从句，修饰 messages；第二个 that 引导表语从句，说明 messages 的内容。"
+        },
+        {
+          "t": "表语从句内部",
+          "d": "<i>I would never be taken seriously / (be) promoted / (be) given raises</i>，三个被动并列，共用 <i>would never be</i>；<i>at the same rate as men</i>＝以和男性相同的速度。"
+        },
+        {
+          "t": "who 非限制性定语从句",
+          "d": "<i>who were clearly less qualified and not as smart as I was</i> 修饰 men；<i>not as…as</i>＝不如…那样。"
+        }
+      ],
+      "zh": "对我来说，最大的挑战是：在我收到的所有信息都在告诉我\"你永远不会被认真对待，也不会像男人那样获得同样的晋升或加薪\"的时候，还要继续相信自己——而那些男人明显资历更浅，也不如我聪明。",
+      "key": "一句话里套了状语从句 + 定语从句 + 表语从句 + 非限制性定语从句，是全卷最难的一句；先砍掉 when 从句，主干只有 8 个词。"
+    }
+  ]
 }
