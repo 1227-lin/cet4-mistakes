@@ -16,7 +16,7 @@
     --bg:#F6F3EC; --card:#FFFDF8; --ink:#211E1A; --muted:#8B8377; --line:#E7E1D4;
     --accent:#2E6B5A; --accent-soft:#EAF2EC; --warn:#B4603A;
     --p1:#2E6B5A; --p1bg:#EAF2EC; --p2:#9A5B25; --p2bg:#FBEFE0;
-    --p3:#574C8E; --p3bg:#EDEAF6; --p4:#A63D30; --p4bg:#FBE7E4; --px:#3A3A3A; --pxbg:#ECECEC;
+    --p3:#574C8E; --p3bg:#EDEAF6; --p4:#A63D30; --p4bg:#FBE7E4;
     --hl:#FBE9B7;
     --radius:14px;
   }
@@ -25,10 +25,10 @@
       --bg:#171614; --card:#201E1B; --ink:#EDE8DE; --muted:#9A9388; --line:#332F29;
       --accent:#6FBF9F; --accent-soft:#1E332B;
       --p1:#6FBF9F; --p1bg:#1E332B; --p2:#D9A05B; --p2bg:#332618;
-      --p3:#A99BE0; --p3bg:#262238; --p4:#E08A7C; --p4bg:#38211D; --px:#CCC; --pxbg:#2A2A2A;
+      --p3:#A99BE0; --p3bg:#262238; --p4:#E08A7C; --p4bg:#38211D;
       --hl:#4A3E19;
     }
-    .btn-primary,.tag.on{color:#12211C}
+    .btn-primary,.chip.on,.tabs a.on{color:#12211C}
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0}
@@ -40,57 +40,51 @@
   }
   .num{font-variant-numeric:tabular-nums}
   a{color:var(--accent);text-decoration:none}
+  code{font-size:12.5px;background:var(--accent-soft);padding:1px 5px;border-radius:4px}
 
   /* ---------- 顶栏 ---------- */
   .top{
     position:sticky; top:0; z-index:20;
     background:var(--bg);
-    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    background:color-mix(in srgb, var(--bg) 90%, transparent);
     -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line);
     padding-top:env(safe-area-inset-top);
   }
-  .top-in{max-width:880px;margin:0 auto;padding:12px 20px}
+  .top-in{max-width:880px;margin:0 auto;padding:12px 20px 10px}
   .top-row{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
   .brand{font-weight:650;letter-spacing:.3px}
   .brand span{color:var(--muted);font-weight:400;margin-left:6px;font-size:13px}
   .stats{margin-left:auto;display:flex;gap:16px;font-size:13px;color:var(--muted);flex-wrap:wrap}
   .stats b{color:var(--ink);font-size:15px}
-  .bar{height:4px;background:var(--line);border-radius:99px;margin-top:10px;overflow:hidden}
+  .bar{height:4px;background:var(--line);border-radius:99px;margin-top:9px;overflow:hidden}
   .bar i{display:block;height:100%;background:var(--accent);border-radius:99px;transition:width .35s ease}
+  .tabs{display:flex;gap:3px;margin-top:10px;background:var(--card);border:1px solid var(--line);border-radius:11px;padding:3px}
+  .tabs a{flex:1;text-align:center;padding:7px 0;border-radius:8px;font-size:13.5px;color:var(--muted)}
+  .tabs a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
 
-  main{max-width:880px;margin:0 auto;padding:22px 20px 60px}
+  main{max-width:880px;margin:0 auto;padding:20px 20px 60px}
+  .view[hidden]{display:none}
 
-  /* ---------- 通用卡片 ---------- */
+  /* ---------- 通用 ---------- */
   .card{
     background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-    padding:18px 20px;margin-bottom:22px;
+    padding:18px 20px;margin-bottom:20px;
     box-shadow:0 1px 2px rgba(0,0,0,.03),0 8px 24px -16px rgba(0,0,0,.18);
   }
   .card h2{margin:0 0 2px;font-size:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-  .card .sub{color:var(--muted);font-size:13px;margin-bottom:14px}
-  .sec-h{font-size:12px;letter-spacing:.16em;color:var(--muted);font-weight:700;margin:26px 0 10px;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+  .card .sub{color:var(--muted);font-size:12.5px;margin-bottom:12px}
+  .sec-h{font-size:12px;letter-spacing:.16em;color:var(--muted);font-weight:700;margin:4px 0 10px;text-transform:uppercase;display:flex;align-items:center;gap:10px}
   .sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
 
-  /* ---------- 今日 ---------- */
-  .today{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:24px;box-shadow:0 1px 2px rgba(0,0,0,.03),0 8px 24px -16px rgba(0,0,0,.18)}
-  .today h2{margin:0 0 2px;font-size:16px}
-  .today .date{color:var(--muted);font-size:13px;margin-bottom:14px}
-  .today-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .tile{background:var(--p1bg);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px}
-  .tile.warn{background:var(--p2bg)}
-  .tile b{font-size:22px;line-height:1.2}
-  .tile span{font-size:12px;color:var(--muted)}
-  .today-acts{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-
-  /* ---------- 按钮 / 标签 ---------- */
   .btn{
-    border:1px solid var(--line);background:var(--card2,#F2EEE3);color:var(--ink);
+    border:1px solid var(--line);background:var(--card);color:var(--ink);
     border-radius:10px;padding:9px 14px;font-size:13.5px;font-weight:600;cursor:pointer;
   }
   .btn:active{transform:translateY(1px)}
   .btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
-  .chips{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}
+  .btn:disabled{opacity:.45}
+  .chips{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
   .chip{
     border:1px solid var(--line);background:transparent;color:var(--muted);
     border-radius:99px;padding:5px 12px;font-size:12.5px;cursor:pointer;white-space:nowrap;
@@ -105,25 +99,34 @@
   .tag.ok{color:var(--p1);background:var(--p1bg)}
   .tag.no{color:var(--p4);background:var(--p4bg)}
   .tag.topic{color:var(--p2);background:var(--p2bg);font-weight:500}
-  .tag.pend{color:var(--p3);background:var(--p3bg)}
 
-  /* ---------- 卷子 ---------- */
-  .paper{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:22px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.03),0 8px 24px -16px rgba(0,0,0,.18)}
-  .paper-head{padding:16px 20px 14px;border-bottom:1px solid var(--line)}
-  .ptitle{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-  .ptitle h3{margin:0;font-size:17px;letter-spacing:-.01em}
-  .pmeta{color:var(--muted);font-size:12.5px}
-  .metrics{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-  .metric{background:var(--bg);border-radius:10px;padding:7px 12px;min-width:70px}
-  .metric b{display:block;font-size:16px;line-height:1.25}
-  .metric span{font-size:11px;color:var(--muted)}
-  .metric.bad b{color:var(--p4)}
-  .metric.good b{color:var(--p1)}
-  .paper-body{padding:6px 20px 16px}
-  .secline{font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700;margin:16px 0 4px}
-  .secline::after{content:"";display:block;height:1px;background:var(--line);margin-top:6px}
+  /* ---------- 今日 ---------- */
+  .today-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
+  .tile{background:var(--p1bg);border-radius:12px;padding:11px 14px;display:flex;flex-direction:column;gap:1px}
+  .tile.warn{background:var(--p2bg)}
+  .tile b{font-size:21px;line-height:1.2}
+  .tile span{font-size:12px;color:var(--muted)}
+  .acts{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
 
-  /* ---------- 题目行 ---------- */
+  /* ---------- 卷子（折叠） ---------- */
+  .paper{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:12px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.03),0 8px 24px -16px rgba(0,0,0,.18)}
+  .paper-head{padding:14px 18px;cursor:pointer;display:flex;align-items:center;gap:12px;user-select:none}
+  .paper-head:active{background:var(--accent-soft)}
+  .ph-main{flex:1;min-width:0}
+  .ptitle{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+  .ptitle h3{margin:0;font-size:16px;letter-spacing:-.01em}
+  .pmeta{color:var(--muted);font-size:12px}
+  .pstats{display:flex;gap:12px;margin-top:5px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+  .pstats b{color:var(--ink);font-variant-numeric:tabular-nums}
+  .pstats .bad b{color:var(--p4)}
+  .chev{flex:0 0 auto;width:26px;height:26px;border-radius:8px;background:var(--bg);display:grid;place-items:center;color:var(--muted);font-size:11px;transition:transform .18s}
+  .paper.open .chev{transform:rotate(90deg)}
+  .paper-body{display:none;padding:2px 18px 14px;border-top:1px solid var(--line)}
+  .paper.open .paper-body{display:block}
+  .secline{font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700;margin:14px 0 2px}
+  .secline::after{content:"";display:block;height:1px;background:var(--line);margin-top:5px}
+
+  /* ---------- 题目 ---------- */
   .q{padding:12px 0;border-bottom:1px dashed var(--line)}
   .q:last-child{border-bottom:0}
   .qhead{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}
@@ -155,18 +158,24 @@
 
   /* ---------- 生词 ---------- */
   .wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));gap:10px}
-  .wcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;position:relative}
+  .wcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;position:relative;cursor:pointer}
   .wcard.done{opacity:.6}
   .wcard .w{font-size:16px;font-weight:700;padding-right:30px;word-break:break-word}
   .wcard .w small{font-weight:400;color:var(--muted);font-size:11.5px;margin-left:5px}
   .wcard .p{font-size:13.5px;margin:2px 0 5px}
   .wcard .e{font-family:"Iowan Old Style",Georgia,serif;font-size:12.5px;color:var(--muted);line-height:1.5}
   .wcard .e em{background:var(--hl);font-style:normal;padding:0 2px;border-radius:2px}
-  .wcard .tick{position:absolute;top:9px;right:9px;width:26px;height:26px;border-radius:8px;border:1px solid var(--line);background:var(--bg);display:grid;place-items:center;font-size:12px;color:var(--muted)}
+  .wcard .tick{position:absolute;top:9px;right:9px;width:26px;height:26px;border-radius:8px;border:1px solid var(--line);background:var(--bg);display:grid;place-items:center;font-size:11px;color:var(--muted)}
   .wcard.done .tick{background:var(--accent-soft);border-color:transparent;color:var(--accent)}
   .wtag{display:inline-block;margin-top:7px;font-size:10.5px;color:var(--muted);background:var(--bg);border-radius:5px;padding:0 6px}
 
-  /* ---------- 弹层复习 ---------- */
+  /* ---------- 复习页 ---------- */
+  .boxrow{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:10px}
+  .boxcell{background:var(--bg);border-radius:9px;padding:8px 6px;text-align:center}
+  .boxcell b{display:block;font-size:16px}
+  .boxcell span{font-size:10.5px;color:var(--muted)}
+
+  /* ---------- 弹层 ---------- */
   .modal{position:fixed;inset:0;z-index:50;background:rgba(20,18,14,.45);display:none;align-items:center;justify-content:center;padding:18px}
   .modal.on{display:flex}
   .sheet{background:var(--card);border-radius:18px;width:100%;max-width:520px;max-height:86vh;overflow:auto;padding:22px 22px 18px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
@@ -187,24 +196,23 @@
   .rbtn.again{background:var(--p4bg);border-color:transparent;color:var(--p4)}
   .rbtn.easy{background:var(--p1bg);border-color:transparent;color:var(--p1)}
 
-  /* ---------- 页脚 ---------- */
-  .foot{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .foot{margin-top:6px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
   .foot .sp{font-size:12px;color:var(--muted);margin-left:auto}
-  .ending{font-size:12.5px;color:var(--muted);text-align:center;margin-top:30px;line-height:1.9}
-
-  .empty{text-align:center;color:var(--muted);padding:26px 10px;font-size:13.5px}
+  .empty{text-align:center;color:var(--muted);padding:24px 10px;font-size:13.5px}
+  .ending{font-size:12px;color:var(--muted);text-align:center;margin-top:26px;line-height:1.9}
 
   @media (max-width:620px){
-    .top-in{padding:10px 14px}
-    main{padding:16px 14px 50px}
-    .today-grid{grid-template-columns:1fr 1fr}
+    .top-in{padding:10px 14px 8px}
+    main{padding:14px 14px 50px}
     .wgrid{grid-template-columns:1fr}
     .brand span{display:none}
     .stats{gap:10px;font-size:12px}
   }
 
   @media print{
-    .top,.foot,.modal,.today-acts,.chips,.search{display:none!important}
+    .top,.foot,.modal,.acts,.chips,.search,.chev{display:none!important}
+    .view[hidden]{display:block!important}
+    .paper-body{display:block!important}
     body{background:#fff}
     .card,.paper{box-shadow:none;border-color:#ddd;break-inside:avoid}
     .q{break-inside:avoid}
@@ -227,57 +235,75 @@
       </div>
     </div>
     <div class="bar"><i id="s-bar" style="width:0%"></i></div>
+    <nav class="tabs" id="tabs">
+      <a href="#/papers" data-tab="papers">错题</a>
+      <a href="#/words" data-tab="words">生词</a>
+      <a href="#/review" data-tab="review">复习</a>
+    </nav>
   </div>
 </div>
 
 <main>
-  <section id="pending"></section>
-  <section class="today" id="today"></section>
-  <section id="papers"></section>
-  <section id="words"></section>
-
-  <section class="card">
-    <h2>怎么用</h2>
-    <div class="sub">数据在 data.json，改完跑 <code>node build.mjs</code> 重新生成这个页面</div>
-    <div class="dbody" style="font-size:13.5px">
-      <p>· <b>错题集</b>按卷子分组，点「解析」看定位原文、错因和下次该做的动作；看完可以标「已掌握」。</p>
-      <p>· <b>生词本</b>是你卷面上划线不认识的词，点卡片记掌握，蓝色进度条就是掌握率。</p>
-      <p>· <b>复习</b>用抽卡：错题抽「题干 → 答案」，生词抽「词 → 释义」，各分五档记忆盒。</p>
-      <p>· 新卷子放进 <code>收件箱/</code>，跑一次识别就能自动进站，卷名自动作为分类。</p>
-    </div>
-    <div class="foot">
-      <button class="btn" id="btn-export">导出进度</button>
-      <button class="btn" id="btn-import">导入备份</button>
-      <button class="btn" id="btn-print">打印成纸</button>
-      <button class="btn" id="btn-reset">清空进度</button>
-      <input type="file" id="file-import" accept="application/json,.json" hidden>
-      <span class="sp">进度只存在这台设备上，不联网</span>
-    </div>
+  <!-- ========== 错题页 ========== -->
+  <section id="view-papers" class="view">
+    <div class="card" id="today"></div>
+    <div id="papers"></div>
   </section>
 
-  <div class="ending">
-    四级错题本 · <span id="upd">—</span><br>
-    数据源 data.json · 由 build.mjs 生成 · 不要直接改这个 HTML
-  </div>
+  <!-- ========== 生词页 ========== -->
+  <section id="view-words" class="view" hidden>
+    <div class="card">
+      <h2>生词本</h2>
+      <div class="sub" id="wordSub">—</div>
+      <div class="search"><input id="ws" type="search" placeholder="搜单词 / 释义 / 例句"></div>
+      <div class="chips" id="wordTags"></div>
+      <div class="chips" id="wordStates"></div>
+    </div>
+    <div class="wgrid" id="wgrid"></div>
+  </section>
+
+  <!-- ========== 复习页 ========== -->
+  <section id="view-review" class="view" hidden>
+    <div class="card" id="reviewCard"></div>
+    <div class="card" id="reviewStats"></div>
+    <div class="card">
+      <h2>怎么用</h2>
+      <div class="sub">数据在 data.json，改完跑 <code>node build.mjs</code></div>
+      <div class="dbody" style="font-size:13.5px">
+        <p>· <b>错题</b>按卷子折叠，点卷名展开；看完可以标「已掌握」。</p>
+        <p>· <b>生词</b>单独一页，点卡片记掌握，顶部进度条就是掌握率。</p>
+        <p>· <b>复习</b>抽卡：错题抽「题干 → 答案」，生词抽「词 → 释义」，五档记忆盒。</p>
+      </div>
+      <div class="foot">
+        <button class="btn" id="btn-export">导出进度</button>
+        <button class="btn" id="btn-import">导入备份</button>
+        <button class="btn" id="btn-print">打印成纸</button>
+        <button class="btn" id="btn-reset">清空进度</button>
+        <input type="file" id="file-import" accept="application/json,.json" hidden>
+        <span class="sp">进度只存在这台设备上</span>
+      </div>
+    </div>
+    <div class="ending">
+      四级错题本 · <span id="upd">—</span><br>
+      数据源 data.json · 由 build.mjs 生成 · 不要直接改这个 HTML
+    </div>
+  </section>
 </main>
 
-<div class="modal" id="modal">
-  <div class="sheet" id="sheet"></div>
-</div>
+<div class="modal" id="modal"><div class="sheet" id="sheet"></div></div>
 
 <script>
 const DATA = __DATA_JSON__;
 
 /* ================= 状态 ================= */
 const KEY = 'cet4b-v1';
-let storageOK = true;
-try { localStorage.setItem('__p','1'); localStorage.removeItem('__p'); } catch(e){ storageOK = false; }
 const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch(e){ return {}; } };
 const save = (s) => { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch(e){} };
 let S = load();
 S.mastered = S.mastered || {};
 S.box = S.box || {};
 S.seen = S.seen || {};
+S.open = S.open || {};
 S.stat = S.stat || { answers: 0, right: 0 };
 
 /* ================= 工具 ================= */
@@ -285,7 +311,6 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&am
 const pct = (a,b) => b ? Math.round(a/b*100) : 0;
 const PAPERS = DATA.papers || [];
 const WORDS = DATA.words || [];
-const PENDING = DATA.pending || [];
 const ALLQ = [];
 PAPERS.forEach(p => (p.questions||[]).forEach(q => ALLQ.push({p, q, id: p.id + '#' + q.no})));
 const pad2 = n => String(n).padStart(2,'0');
@@ -306,82 +331,91 @@ function renderTop(){
   document.getElementById('upd').textContent = '更新于 ' + (DATA.meta?.updated || todayISO());
 }
 
-/* ================= 待处理 ================= */
-function renderPending(){
-  const el = document.getElementById('pending');
-  if (!PENDING.length) { el.innerHTML = ''; return; }
-  el.innerHTML = '<div class="card" style="border-color:var(--p3);background:var(--p3bg)">' +
-    '<h2><span class="tag pend">待处理</span> 有 ' + PENDING.length + ' 份卷子已经收到，还没入库</h2>' +
-    '<div class="sub" style="margin:8px 0 0;color:var(--ink)">' +
-    PENDING.map(x => '· ' + esc(x.name || x.file) + '（' + esc(x.addedAt || '') + '）').join('<br>') +
-    '</div></div>';
-}
-
 /* ================= 今日 ================= */
 function renderToday(){
   const wrongTodo = ALLQ.filter(x => !x.q.ok && !S.mastered[x.id]);
   const wordTodo = WORDS.filter(w => (S.box[w.w]||1) < 5);
-  const el = document.getElementById('today');
-  el.innerHTML =
+  document.getElementById('today').innerHTML =
     '<h2>今天</h2>' +
-    '<div class="date">' + todayISO() + ' · 共 ' + PAPERS.length + ' 套卷、' + ALLQ.length + ' 道题' + '</div>' +
+    '<div class="sub">' + todayISO() + ' · ' + PAPERS.length + ' 套卷 · ' + ALLQ.length + ' 道题</div>' +
     '<div class="today-grid">' +
       '<div class="tile' + (wrongTodo.length ? ' warn' : '') + '"><b class="num">' + wrongTodo.length + '</b><span>错题待复习</span></div>' +
-      '<div class="tile' + (wordTodo.length ? '' : '') + '"><b class="num">' + wordTodo.length + '</b><span>生词待复习</span></div>' +
+      '<div class="tile"><b class="num">' + wordTodo.length + '</b><span>生词待复习</span></div>' +
     '</div>' +
-    '<div class="today-acts">' +
+    '<div class="acts">' +
       '<button class="btn btn-primary" data-act="review" data-kind="questions"' + (wrongTodo.length ? '' : ' disabled') + '>抽错题</button>' +
       '<button class="btn" data-act="review" data-kind="words"' + (wordTodo.length ? '' : ' disabled') + '>抽生词</button>' +
-      '<button class="btn" data-act="jump" data-to="papers">全部错题</button>' +
     '</div>';
 }
 
-/* ================= 错题集 ================= */
+/* ================= 错题：卷子列表（折叠） ================= */
 let pFilter = 'all', pSearch = '';
+
+function matchQ(p, q){
+  if (pFilter === 'wrong' && q.ok) return false;
+  if (pFilter === 'todo' && (q.ok || S.mastered[p.id + '#' + q.no])) return false;
+  if (pSearch) {
+    const hay = ((q.stem||'') + (q.zh||'') + (q.brief||'') + (q.tag||'') + q.no).toLowerCase();
+    if (hay.indexOf(pSearch.toLowerCase()) < 0) return false;
+  }
+  return true;
+}
+
 function renderPapers(){
   const el = document.getElementById('papers');
-  const out = ['<div class="sec-h">错题集 · 按卷子分类</div>'];
+  const out = [];
+  out.push('<div class="sec-h">' + PAPERS.length + ' 套卷子</div>');
   out.push('<div class="chips">' +
     ['all|全部','wrong|只看错题','todo|未掌握'].map(x => {
       const [v,t] = x.split('|');
       return '<button class="chip' + (pFilter===v?' on':'') + '" data-act="pfilter" data-v="' + v + '">' + t + '</button>';
-    }).join('') + '</div>');
+    }).join('') +
+    '<button class="chip" data-act="expand-all">全部展开</button>' +
+    '<button class="chip" data-act="collapse-all">全部收起</button>' +
+    '</div>');
   out.push('<div class="search"><input id="qs" type="search" placeholder="搜题干 / 知识点" value="' + esc(pSearch) + '"></div>');
 
-  if (!PAPERS.length) { out.push('<div class="empty">还没有卷子。</div>'); el.innerHTML = out.join(''); return; }
+  if (!PAPERS.length) {
+    out.push('<div class="empty">还没有卷子。</div>');
+    el.innerHTML = out.join('');
+    return;
+  }
 
   PAPERS.forEach(p => {
     const qs = p.questions || [];
     const wrong = qs.filter(q => !q.ok).length;
     const ok = qs.length - wrong;
     const todo = qs.filter(q => !q.ok && !S.mastered[p.id + '#' + q.no]).length;
-    out.push('<article class="paper">');
-    out.push('<div class="paper-head"><div class="ptitle"><h3>' + esc(p.title) + '</h3>' +
-      '<span class="pmeta">' + esc(p.scope || '') + (p.date ? ' · ' + esc(p.date) : '') + '</span></div>');
-    if (p.note) out.push('<div class="pmeta" style="margin-top:4px">' + esc(p.note) + '</div>');
-    out.push('<div class="metrics">' +
-      '<div class="metric"><b class="num">' + pct(ok, qs.length) + '%</b><span>正确率</span></div>' +
-      '<div class="metric bad"><b class="num">' + wrong + '</b><span>错题</span></div>' +
-      '<div class="metric"><b class="num">' + todo + '</b><span>待复习</span></div>' +
-      '</div></div><div class="paper-body">');
-    ['A','B','C'].forEach(sec => {
-      const list = qs.filter(q => q.sec === sec);
-      if (!list.length) return;
-      const shown = list.filter(q => {
-        if (pFilter === 'wrong' && q.ok) return false;
-        if (pFilter === 'todo' && (q.ok || S.mastered[p.id + '#' + q.no])) return false;
-        if (pSearch) {
-          const hay = ((q.stem||'') + (q.zh||'') + (q.brief||'') + (q.tag||'') + q.no).toLowerCase();
-          if (hay.indexOf(pSearch.toLowerCase()) < 0) return false;
-        }
-        return true;
+    const shown = qs.filter(q => matchQ(p, q));
+    const searching = pSearch || pFilter !== 'all';
+    const open = searching ? shown.length > 0 : !!S.open[p.id];
+
+    out.push('<article class="paper' + (open ? ' open' : '') + '" data-pid="' + p.id + '">');
+    out.push('<div class="paper-head" data-act="toggle-paper" data-id="' + p.id + '">');
+    out.push('  <div class="ph-main">');
+    out.push('    <div class="ptitle"><h3>' + esc(p.title) + '</h3>' +
+      (p.date ? '<span class="pmeta">' + esc(p.date) + '</span>' : '') + '</div>');
+    out.push('    <div class="pstats">' +
+      '<span>正确率 <b>' + pct(ok, qs.length) + '%</b></span>' +
+      '<span class="bad">错 <b>' + wrong + '</b></span>' +
+      '<span>待复习 <b>' + todo + '</b></span>' +
+      (p.note ? '<span>' + esc(p.note) + '</span>' : '') + '</div>');
+    out.push('  </div><span class="chev">▶</span></div>');
+
+    out.push('<div class="paper-body">');
+    if (!shown.length) {
+      out.push('<div class="empty">这一套没有符合筛选的题</div>');
+    } else {
+      ['A','B','C'].forEach(sec => {
+        const list = shown.filter(q => q.sec === sec);
+        if (!list.length) return;
+        out.push('<div class="secline">Section ' + sec + ' · ' + ({A:'选词填空',B:'段落匹配',C:'仔细阅读'}[sec]) + '（' + list.length + ' 题）</div>');
+        list.forEach(q => out.push(qRow(p, q)));
       });
-      out.push('<div class="secline">Section ' + sec + ' · ' + ({A:'选词填空',B:'段落匹配',C:'仔细阅读'}[sec]) + '（' + shown.length + '/' + list.length + '）</div>');
-      if (!shown.length) out.push('<div class="empty" style="padding:12px 0">没有符合筛选的题</div>');
-      shown.forEach(q => out.push(qRow(p, q)));
-    });
+    }
     out.push('</div></article>');
   });
+
   el.innerHTML = out.join('');
 }
 
@@ -413,18 +447,16 @@ function qRow(p, q){
   return h.join('');
 }
 
-/* ================= 生词本 ================= */
+/* ================= 生词页 ================= */
 let wTag = '全部', wState = '全部', wSearch = '';
+
 function renderWords(){
-  const el = document.getElementById('words');
   const tags = ['全部'];
   WORDS.forEach(w => { if (w.tag && !tags.includes(w.tag)) tags.push(w.tag); });
-  const out = ['<div class="sec-h">生词本 · ' + WORDS.length + ' 词</div>'];
-  out.push('<div class="search"><input id="ws" type="search" placeholder="搜单词或释义" value="' + esc(wSearch) + '"></div>');
-  out.push('<div class="chips">' + tags.map(t =>
-    '<button class="chip' + (wTag===t?' on':'') + '" data-act="wtag" data-v="' + esc(t) + '">' + esc(t) + '</button>').join('') +
-    ['全部|全部','未掌握|未掌握','已掌握|已掌握'].map(x=>{const [v,l]=x.split('|');
-      return '<button class="chip' + (wState===v?' on':'') + '" data-act="wstate" data-v="' + v + '">' + l + '</button>';}).join('') + '</div>');
+  document.getElementById('wordTags').innerHTML = tags.map(t =>
+    '<button class="chip' + (wTag===t?' on':'') + '" data-act="wtag" data-v="' + esc(t) + '">' + esc(t) + '</button>').join('');
+  document.getElementById('wordStates').innerHTML = ['全部','未掌握','已掌握'].map(s =>
+    '<button class="chip' + (wState===s?' on':'') + '" data-act="wstate" data-v="' + s + '">' + s + '</button>').join('');
 
   const list = WORDS.filter(w => {
     if (wTag !== '全部' && w.tag !== wTag) return false;
@@ -438,24 +470,70 @@ function renderWords(){
     return true;
   });
 
-  if (!list.length) { out.push('<div class="empty">没有匹配的单词</div>'); el.innerHTML = out.join(''); return; }
-  out.push('<div class="wgrid">');
-  list.forEach(w => {
+  const doneN = WORDS.filter(w => (S.box[w.w]||0) >= 5).length;
+  document.getElementById('wordSub').textContent = '共 ' + WORDS.length + ' 词 · 已掌握 ' + doneN + ' · 当前显示 ' + list.length;
+
+  const grid = document.getElementById('wgrid');
+  if (!list.length) { grid.innerHTML = '<div class="empty">没有匹配的单词</div>'; return; }
+  grid.innerHTML = list.map(w => {
     const done = (S.box[w.w]||0) >= 5;
     const box = S.box[w.w] || 1;
-    out.push('<div class="wcard' + (done?' done':'') + '" data-act="wmaster" data-w="' + esc(w.w) + '">' +
+    return '<div class="wcard' + (done?' done':'') + '" data-act="wmaster" data-w="' + esc(w.w) + '">' +
       '<div class="w">' + esc(w.w) + (w.pos ? '<small>' + esc(w.pos) + '</small>' : '') + '</div>' +
       '<div class="p">' + esc(w.zh) + '</div>' +
       '<div class="e">' + (w.eg||'') + '</div>' +
-      '<div class="tick">' + (done ? '✓' : (box > 1 ? '第' + box + '档' : '○')) + '</div>' +
-      (w.tag ? '<span class="wtag">' + esc(w.tag) + '</span>' : '') +
-      '</div>');
-  });
-  out.push('</div>');
-  el.innerHTML = out.join('');
+      '<div class="tick">' + (done ? '✓' : (box > 1 ? box : '○')) + '</div>' +
+      (w.tag ? '<span class="wtag">' + esc(w.tag) + '</span>' : '') + '</div>';
+  }).join('');
 }
 
-/* ================= 复习弹层 ================= */
+/* ================= 复习页 ================= */
+function renderReview(){
+  const wrongTodo = ALLQ.filter(x => !x.q.ok && !S.mastered[x.id]).length;
+  const wordTodo = WORDS.filter(w => (S.box[w.w]||1) < 5).length;
+  const doneW = WORDS.filter(w => (S.box[w.w]||0) >= 5).length;
+  const doneQ = ALLQ.filter(x => !x.q.ok && S.mastered[x.id]).length;
+
+  document.getElementById('reviewCard').innerHTML =
+    '<h2>抽卡复习</h2>' +
+    '<div class="sub">错题抽「题干 → 答案」，生词抽「词 → 释义」；各 20 张一轮</div>' +
+    '<div class="today-grid">' +
+      '<div class="tile' + (wrongTodo ? ' warn' : '') + '"><b class="num">' + wrongTodo + '</b><span>错题待复习</span></div>' +
+      '<div class="tile"><b class="num">' + wordTodo + '</b><span>生词待复习</span></div>' +
+    '</div>' +
+    '<div class="acts">' +
+      '<button class="btn btn-primary" data-act="review" data-kind="questions"' + (wrongTodo ? '' : ' disabled') + '>抽错题</button>' +
+      '<button class="btn" data-act="review" data-kind="words"' + (wordTodo ? '' : ' disabled') + '>抽生词</button>' +
+    '</div>';
+
+  const boxes = [1,2,3,4,5].map(b => WORDS.filter(w => (S.box[w.w]||1) === b && (S.box[w.w]||1) < 5).length);
+  document.getElementById('reviewStats').innerHTML =
+    '<h2>记忆盒</h2><div class="sub">连对到第 5 档算掌握</div>' +
+    '<div class="boxrow">' +
+      '<div class="boxcell"><b class="num">' + boxes[0] + '</b><span>第 1 档</span></div>' +
+      '<div class="boxcell"><b class="num">' + boxes[1] + '</b><span>第 2 档</span></div>' +
+      '<div class="boxcell"><b class="num">' + boxes[2] + '</b><span>第 3 档</span></div>' +
+      '<div class="boxcell"><b class="num">' + boxes[3] + '</b><span>第 4 档</span></div>' +
+      '<div class="boxcell"><b class="num">' + doneW + '</b><span>已掌握</span></div>' +
+    '</div>' +
+    '<div class="pstats" style="margin-top:12px"><span>错题已掌握 <b>' + doneQ + '</b></span><span>累计复习 <b>' + (S.stat.answers||0) + '</b> 次</span></div>';
+}
+
+/* ================= 路由 ================= */
+const VIEWS = { papers: 'view-papers', words: 'view-words', review: 'view-review' };
+function route(){
+  let h = (location.hash || '#/papers').replace(/^#\//, '');
+  if (!VIEWS[h]) h = 'papers';
+  document.querySelectorAll('.view').forEach(v => v.hidden = true);
+  document.getElementById(VIEWS[h]).hidden = false;
+  document.querySelectorAll('#tabs a').forEach(a => a.classList.toggle('on', a.dataset.tab === h));
+  if (h === 'papers') { renderToday(); renderPapers(); }
+  if (h === 'words') renderWords();
+  if (h === 'review') renderReview();
+  window.scrollTo(0, 0);
+}
+
+/* ================= 弹层抽卡 ================= */
 let rev = null;
 function openReview(kind){
   const pool = kind === 'words'
@@ -470,50 +548,51 @@ function openReview(kind){
   document.getElementById('modal').classList.add('on');
   drawReview();
 }
+
 function drawReview(){
   const sh = document.getElementById('sheet');
   if (!rev) return;
   const it = rev.queue[rev.i];
   if (!it) {
     sh.innerHTML = '<button class="x" data-act="close">×</button>' +
-      '<div style="text-align:center;padding:30px 0">' +
-      '<div style="font-size:34px;font-weight:800">' + (rev.kind==='words' ? '单词' : '错题') + '过完</div>' +
-      '<p style="color:var(--muted)">' + rev.queue.length + ' 张 · 答对 ' + rev.right + ' · ' + pct(rev.right, rev.queue.length) + '%</p>' +
-      '</div>' + (rev.kind === 'words' ? '' : '');
+      '<div style="text-align:center;padding:26px 0"><div style="font-size:30px;font-weight:800">这轮结束</div>' +
+      '<p style="color:var(--muted)">' + rev.queue.length + ' 张 · 记住 ' + rev.right + '</p></div>';
     return;
   }
   const isW = rev.kind === 'words';
   const w = it, q = it.q, p = it.p;
-  const body = [];
-  body.push('<button class="x" data-act="close">×</button>');
-  body.push('<div class="rprog"><span>第 ' + (rev.i+1) + ' / ' + rev.queue.length + ' 张</span><span>对 ' + rev.right + '</span></div>');
-  body.push('<div class="rbar"><i style="width:' + pct(rev.i, rev.queue.length) + '%"></i></div>');
+  const h = [];
+  h.push('<button class="x" data-act="close">×</button>');
+  h.push('<div class="rprog"><span>第 ' + (rev.i+1) + ' / ' + rev.queue.length + ' 张</span><span>对 ' + rev.right + '</span></div>');
+  h.push('<div class="rbar"><i style="width:' + pct(rev.i, rev.queue.length) + '%"></i></div>');
+
   if (isW) {
-    body.push('<div class="rq" data-act="flip">' +
-      '<div class="big">' + esc(w.w) + '</div>' +
-      (w.pos ? '<div class="pos">' + esc(w.pos) + '</div>' : ''));
-    body.push(rev.flipped
-      ? '</div><div class="rback"><div class="zh">' + esc(w.zh) + '</div><div class="e">' + (w.eg||'') + '</div></div>'
-      : '</div><div class="rhint">点一下看释义</div>');
+    h.push('<div class="rq" data-act="flip"><div class="big">' + esc(w.w) + '</div>' +
+      (w.pos ? '<div class="pos">' + esc(w.pos) + '</div>' : '') + '</div>');
+    h.push(rev.flipped
+      ? '<div class="rback"><div class="zh">' + esc(w.zh) + '</div><div class="e">' + (w.eg||'') + '</div></div>'
+      : '<div class="rhint">点一下看释义</div>');
   } else {
-    body.push('<div class="rq" data-act="flip">' +
-      '<div style="text-align:left"><span class="tag topic">' + esc(p.title) + '</span> <span class="no">' + esc(q.no) + '</span></div>' +
+    h.push('<div class="rq" data-act="flip"><div style="text-align:left"><span class="tag topic">' + esc(p.title) + '</span> ' +
+      '<span class="no">' + esc(q.no) + '</span></div>' +
       '<p class="stem" style="margin-top:8px">' + (q.stem || esc(q.brief||'')) + '</p></div>');
-    body.push(rev.flipped
-      ? '<div class="rback"><div class="zh">正确答案：' + esc(q.ans) + '（你选 ' + esc(q.yours) + '）</div>' +
+    h.push(rev.flipped
+      ? '<div class="rback"><div class="zh">答案：' + esc(q.ans) + '（你选 ' + esc(q.yours) + '）</div>' +
         (q.why ? '<p style="font-size:13.5px;color:var(--muted)">' + q.why + '</p>' : '') + '</div>'
-      : '<div class="rhint">想一下答案，再点开</div>');
+      : '<div class="rhint">想好答案再点开</div>');
   }
+
   if (rev.flipped) {
-    body.push('<div class="rbtns">' +
+    h.push('<div class="rbtns">' +
       '<button class="rbtn again" data-act="grade" data-g="0">忘了</button>' +
       '<button class="rbtn" data-act="grade" data-g="1">模糊</button>' +
       '<button class="rbtn easy" data-act="grade" data-g="2">记住了</button></div>');
   } else {
-    body.push('<div class="rbtns"><button class="rbtn" data-act="flip">翻面</button></div>');
+    h.push('<div class="rbtns"><button class="rbtn" data-act="flip">翻面</button></div>');
   }
-  sh.innerHTML = body.join('');
+  sh.innerHTML = h.join('');
 }
+
 function grade(g){
   const it = rev.queue[rev.i];
   if (rev.kind === 'words') {
@@ -523,15 +602,14 @@ function grade(g){
     else if (g === 1) box = Math.max(1, box);
     else { box = Math.min(5, box + 1); rev.right++; }
     S.box[key] = box; S.seen[key] = Date.now();
-    S.stat.answers++;
   } else {
     if (g === 2) { S.mastered[it.id] = 1; rev.right++; }
-    else if (g === 0) { delete S.mastered[it.id]; }
-    S.stat.answers++;
+    else if (g === 0) delete S.mastered[it.id];
   }
+  S.stat.answers = (S.stat.answers || 0) + 1;
   save(S);
   rev.i++; rev.flipped = false;
-  drawReview(); renderTop(); renderToday(); renderWords(); renderPapers();
+  drawReview(); renderTop(); route();
 }
 
 /* ================= 事件 ================= */
@@ -540,30 +618,47 @@ document.addEventListener('click', (e) => {
   if (!t) return;
   const act = t.dataset.act;
   if (act === 'pfilter') { pFilter = t.dataset.v; renderPapers(); }
+  else if (act === 'toggle-paper') {
+    const id = t.dataset.id;
+    S.open[id] = !S.open[id];
+    save(S);
+    renderPapers();
+  }
+  else if (act === 'expand-all') { PAPERS.forEach(p => S.open[p.id] = true); save(S); renderPapers(); }
+  else if (act === 'collapse-all') { S.open = {}; save(S); renderPapers(); }
   else if (act === 'wtag') { wTag = t.dataset.v; renderWords(); }
   else if (act === 'wstate') { wState = t.dataset.v; renderWords(); }
   else if (act === 'master') {
     const id = t.dataset.id;
     if (S.mastered[id]) delete S.mastered[id]; else S.mastered[id] = 1;
-    save(S); renderTop(); renderToday(); renderPapers();
+    save(S); renderTop(); renderPapers(); renderToday();
   }
   else if (act === 'wmaster') {
     const w = t.dataset.w, box = S.box[w] || 1;
-    S.box[w] = box >= 5 ? 1 : 5; save(S);
-    renderTop(); renderToday(); renderWords();
+    S.box[w] = box >= 5 ? 1 : 5;
+    save(S); renderTop(); renderWords();
   }
   else if (act === 'review') openReview(t.dataset.kind);
   else if (act === 'flip') { if (rev) { rev.flipped = true; drawReview(); } }
   else if (act === 'grade') grade(+t.dataset.g);
   else if (act === 'close') { document.getElementById('modal').classList.remove('on'); rev = null; }
-  else if (act === 'jump') {
-    const el = document.getElementById(t.dataset.to);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
 });
+
 document.addEventListener('input', (e) => {
-  if (e.target.id === 'qs') { pSearch = e.target.value; const pos = e.target.selectionStart; renderPapers(); const n = document.getElementById('qs'); if (n) { n.focus(); n.setSelectionRange(pos,pos); } }
-  if (e.target.id === 'ws') { wSearch = e.target.value; const pos = e.target.selectionStart; renderWords(); const n = document.getElementById('ws'); if (n) { n.focus(); n.setSelectionRange(pos,pos); } }
+  if (e.target.id === 'qs') {
+    pSearch = e.target.value;
+    const pos = e.target.selectionStart;
+    renderPapers();
+    const n = document.getElementById('qs');
+    if (n) { n.focus(); n.setSelectionRange(pos, pos); }
+  }
+  if (e.target.id === 'ws') {
+    wSearch = e.target.value;
+    const pos = e.target.selectionStart;
+    renderWords();
+    const n = document.getElementById('ws');
+    if (n) { n.focus(); n.setSelectionRange(pos, pos); }
+  }
 });
 
 /* ================= 备份 ================= */
@@ -581,7 +676,11 @@ document.getElementById('file-import').onchange = (e) => {
   r.onload = () => {
     try {
       const o = JSON.parse(r.result);
-      if (o && o.state) { S = o.state; S.mastered=S.mastered||{}; S.box=S.box||{}; S.seen=S.seen||{}; S.stat=S.stat||{answers:0,right:0}; save(S); renderAll(); }
+      if (o && o.state) {
+        S = o.state;
+        S.mastered=S.mastered||{}; S.box=S.box||{}; S.seen=S.seen||{}; S.open=S.open||{}; S.stat=S.stat||{answers:0};
+        save(S); renderTop(); route();
+      }
     } catch(err) {}
   };
   r.readAsText(f);
@@ -589,10 +688,10 @@ document.getElementById('file-import').onchange = (e) => {
 document.getElementById('btn-print').onclick = () => window.print();
 document.getElementById('btn-reset').onclick = () => {
   if (!confirm('清空所有掌握标记和记忆盒？')) return;
-  S = { mastered:{}, box:{}, seen:{}, stat:{answers:0,right:0} }; save(S); renderAll();
+  S = { mastered:{}, box:{}, seen:{}, open:{}, stat:{answers:0} };
+  save(S); renderTop(); route();
 };
 
-/* ================= 打印辅助：展开全部解析 ================= */
 let printOpened = [];
 window.addEventListener('beforeprint', () => {
   printOpened = [];
@@ -601,8 +700,9 @@ window.addEventListener('beforeprint', () => {
 window.addEventListener('afterprint', () => { printOpened.forEach(d => d.open = false); printOpened = []; });
 
 /* ================= 启动 ================= */
-function renderAll(){ renderTop(); renderPending(); renderToday(); renderPapers(); renderWords(); }
-renderAll();
+window.addEventListener('hashchange', route);
+renderTop();
+route();
 </script>
 </body>
 </html>
