@@ -90,6 +90,8 @@
   .chips{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
   .chip{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:99px;padding:5px 12px;font-size:12.5px;cursor:pointer;white-space:nowrap}
   .chip.on{background:var(--accent-soft);border-color:transparent;color:var(--accent);font-weight:600}
+  .chip.big{font-size:13.5px;padding:7px 16px;font-weight:700}
+  .chip.big.on{background:var(--accent);color:#fff}
   .search{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:0 12px;height:38px;margin-bottom:12px}
   .search input{border:0;background:transparent;outline:none;flex:1;min-width:0;font-size:14px;color:var(--ink)}
   .tag{display:inline-block;font-size:11px;line-height:1.7;padding:1px 8px;border-radius:99px;font-weight:600;letter-spacing:.2px}
@@ -120,8 +122,9 @@
   .paper.open .chev{transform:rotate(90deg)}
   .paper-body{display:none;padding:4px 20px 16px;border-top:1px solid var(--line)}
   .paper.open .paper-body{display:block}
-  .secline{font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700;margin:16px 0 2px}
-  .secline::after{content:"";display:block;height:1px;background:var(--line);margin-top:5px}
+  .secline{font-size:13.5px;letter-spacing:.02em;color:var(--ink);font-weight:800;margin:20px 0 4px;
+    padding-left:10px;border-left:3px solid var(--accent);line-height:1.4}
+  .secline::after{content:"";display:block;height:1px;background:var(--line);margin-top:6px}
 
   /* ================= 卷子小结 ================= */
   .summary{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:14px 0 4px}
@@ -173,6 +176,16 @@
   .whybox .tx{flex:1;min-width:0}
   .whybox .tx b{display:block;font-size:13px;margin-bottom:1px}
   .whybox .tx p{margin:2px 0;font-size:14px}
+
+  /* ================= 按题型：块头加重 ================= */
+  .paper.type{border-color:var(--line);position:relative;overflow:hidden}
+  .paper.type::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent)}
+  .paper.type .paper-head{padding:16px 20px 15px 22px;background:var(--accent-soft)}
+  .paper.type .ptitle{align-items:center;gap:12px}
+  .paper.type .ptitle h3{font-size:21px;font-weight:800;letter-spacing:0;color:var(--ink)}
+  .paper.type .pstats{font-size:12px;margin-top:3px;color:var(--muted)}
+  .tcount{display:inline-block;font-size:13px;font-weight:800;color:#fff;background:var(--p4);border-radius:999px;padding:2px 12px;line-height:1.5}
+  .paper.type .paper-body{border-top:1px solid var(--line)}
 
   /* ================= 诊断与训练 ================= */
   .diag{margin-top:24px}
@@ -695,7 +708,7 @@ function renderByType(){
   out.push('<div class="chips">' +
     ['paper|按卷子','type|按题型'].map(x => {
       const [v,t] = x.split('|');
-      return '<button class="chip' + (pMode===v?' on':'') + '" data-act="pmode" data-v="' + v + '">' + t + '</button>';
+      return '<button class="chip big' + (pMode===v?' on':'') + '" data-act="pmode" data-v="' + v + '">' + t + '</button>';
     }).join('') +
     '</div>');
   out.push('<div class="dbody" style="font-size:12.5px;margin:-4px 0 10px">只列错题。同一题型的错题放一起，更容易看出命题人在同一类题上怎么设坑。</div>');
@@ -704,10 +717,11 @@ function renderByType(){
     const items = [];
     PAPERS.forEach(p => (p.questions||[]).forEach(q => { if (q.sec === sec && !q.ok) items.push({ p, q }); }));
     if (!items.length) return;
-    out.push('<article class="paper open">');
+    out.push('<article class="paper open type">');
     out.push('<div class="paper-head" style="cursor:default">');
     out.push('  <div class="ph-main"><div class="ptitle"><h3>' + SEC_TITLE[sec] + '</h3>' +
-      '<span class="pmeta">Section ' + sec + ' · 错 ' + items.length + ' 题</span></div></div>');
+      '<span class="tcount">错 ' + items.length + ' 题</span></div>' +
+      '<div class="pstats"><span>Section ' + sec + '</span><span>按题型聚合</span></div></div>');
     out.push('</div>');
     out.push('<div class="paper-body" style="display:block">');
     items.forEach(({ p, q }) => out.push(qRow(p, q, true)));
