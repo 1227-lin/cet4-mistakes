@@ -14,11 +14,12 @@
 <style>
   :root{
     --bg:#F6F3EC; --card:#FFFDF8; --ink:#211E1A; --muted:#8B8377; --line:#E7E1D4;
-    --accent:#2E6B5A; --accent-soft:#EAF2EC; --warn:#B4603A;
+    --accent:#2E6B5A; --accent-soft:#EAF2EC;
     --p1:#2E6B5A; --p1bg:#EAF2EC; --p2:#9A5B25; --p2bg:#FBEFE0;
     --p3:#574C8E; --p3bg:#EDEAF6; --p4:#A63D30; --p4bg:#FBE7E4;
     --hl:#FBE9B7;
     --radius:14px;
+    --side:184px;
   }
   @media (prefers-color-scheme: dark){
     :root{
@@ -28,157 +29,174 @@
       --p3:#A99BE0; --p3bg:#262238; --p4:#E08A7C; --p4bg:#38211D;
       --hl:#4A3E19;
     }
-    .btn-primary,.chip.on,.tabs a.on{color:#12211C}
+    .btn-primary,.chip.on,.side nav a.on{color:#12211C}
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0}
   body{
     background:var(--bg); color:var(--ink);
-    font:15px/1.65 -apple-system,"SF Pro SC","PingFang SC","Segoe UI","Microsoft YaHei",system-ui,sans-serif;
+    font:15px/1.68 -apple-system,"SF Pro SC","PingFang SC","Segoe UI","Microsoft YaHei",system-ui,sans-serif;
     -webkit-font-smoothing:antialiased;
-    padding-bottom:calc(40px + env(safe-area-inset-bottom));
   }
   .num{font-variant-numeric:tabular-nums}
   a{color:var(--accent);text-decoration:none}
   code{font-size:12.5px;background:var(--accent-soft);padding:1px 5px;border-radius:4px}
 
-  /* ---------- 顶栏 ---------- */
-  .top{
-    position:sticky; top:0; z-index:20;
-    background:var(--bg);
-    background:color-mix(in srgb, var(--bg) 90%, transparent);
-    -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
-    padding-top:env(safe-area-inset-top);
+  /* ================= 骨架：侧边栏 + 主区 ================= */
+  .shell{display:flex;min-height:100vh}
+  .side{
+    width:var(--side);flex:0 0 auto;
+    position:sticky;top:0;height:100vh;
+    background:var(--card);border-right:1px solid var(--line);
+    padding:calc(16px + env(safe-area-inset-top)) 12px 16px;
+    display:flex;flex-direction:column;gap:18px;
   }
-  .top-in{max-width:880px;margin:0 auto;padding:12px 20px 10px}
-  .top-row{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
-  .brand{font-weight:650;letter-spacing:.3px}
-  .brand span{color:var(--muted);font-weight:400;margin-left:6px;font-size:13px}
-  .stats{margin-left:auto;display:flex;gap:16px;font-size:13px;color:var(--muted);flex-wrap:wrap}
-  .stats b{color:var(--ink);font-size:15px}
-  .bar{height:4px;background:var(--line);border-radius:99px;margin-top:9px;overflow:hidden}
-  .bar i{display:block;height:100%;background:var(--accent);border-radius:99px;transition:width .35s ease}
-  .tabs{display:flex;gap:3px;margin-top:10px;background:var(--card);border:1px solid var(--line);border-radius:11px;padding:3px}
-  .tabs a{flex:1;text-align:center;padding:7px 0;border-radius:8px;font-size:13.5px;color:var(--muted)}
-  .tabs a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .side .logo{display:flex;align-items:center;gap:9px;padding:0 8px}
+  .side .logo i{width:28px;height:28px;border-radius:9px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800;font-size:14px;font-style:normal}
+  .side .logo div{min-width:0}
+  .side .logo b{display:block;font-size:14.5px;line-height:1.3}
+  .side .logo small{display:block;font-size:11px;color:var(--muted);line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .side nav{display:flex;flex-direction:column;gap:3px}
+  .side nav a{
+    display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:10px;
+    color:var(--muted);font-size:14px;
+  }
+  .side nav a svg{flex:0 0 auto;opacity:.9}
+  .side nav a .cnt{margin-left:auto;font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .side nav a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .side nav a.on .cnt{color:var(--accent)}
+  .side-foot{margin-top:auto;padding:10px;border-radius:10px;background:var(--bg);font-size:11.5px;color:var(--muted)}
+  .side-foot b{display:block;font-size:17px;color:var(--ink);font-variant-numeric:tabular-nums;margin-bottom:2px}
+  .side-foot .bar{height:4px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:8px}
+  .side-foot .bar i{display:block;height:100%;background:var(--accent);border-radius:99px}
 
-  main{max-width:880px;margin:0 auto;padding:20px 20px 60px}
+  main{flex:1;min-width:0;padding:26px 30px 70px}
   .view[hidden]{display:none}
+  .view{max-width:1120px;margin:0 auto}
 
-  /* ---------- 通用 ---------- */
+  /* ================= 通用 ================= */
   .card{
     background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
     padding:18px 20px;margin-bottom:20px;
     box-shadow:0 1px 2px rgba(0,0,0,.03),0 8px 24px -16px rgba(0,0,0,.18);
   }
-  .card h2{margin:0 0 2px;font-size:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .card h2{margin:0 0 2px;font-size:16px}
   .card .sub{color:var(--muted);font-size:12.5px;margin-bottom:12px}
-  .sec-h{font-size:12px;letter-spacing:.16em;color:var(--muted);font-weight:700;margin:4px 0 10px;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+  .sec-h{font-size:12px;letter-spacing:.16em;color:var(--muted);font-weight:700;margin:6px 0 10px;text-transform:uppercase;display:flex;align-items:center;gap:10px}
   .sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
-
-  .btn{
-    border:1px solid var(--line);background:var(--card);color:var(--ink);
-    border-radius:10px;padding:9px 14px;font-size:13.5px;font-weight:600;cursor:pointer;
-  }
-  .btn:active{transform:translateY(1px)}
+  .btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:9px 14px;font-size:13.5px;font-weight:600;cursor:pointer}
   .btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
   .btn:disabled{opacity:.45}
   .chips{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
-  .chip{
-    border:1px solid var(--line);background:transparent;color:var(--muted);
-    border-radius:99px;padding:5px 12px;font-size:12.5px;cursor:pointer;white-space:nowrap;
-  }
+  .chip{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:99px;padding:5px 12px;font-size:12.5px;cursor:pointer;white-space:nowrap}
   .chip.on{background:var(--accent-soft);border-color:transparent;color:var(--accent);font-weight:600}
-  .search{
-    display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);
-    border-radius:10px;padding:0 12px;height:38px;margin-bottom:12px;
-  }
+  .search{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:0 12px;height:38px;margin-bottom:12px}
   .search input{border:0;background:transparent;outline:none;flex:1;min-width:0;font-size:14px;color:var(--ink)}
   .tag{display:inline-block;font-size:11px;line-height:1.7;padding:1px 8px;border-radius:99px;font-weight:600;letter-spacing:.2px}
   .tag.ok{color:var(--p1);background:var(--p1bg)}
   .tag.no{color:var(--p4);background:var(--p4bg)}
   .tag.topic{color:var(--p2);background:var(--p2bg);font-weight:500}
 
-  /* ---------- 今日 ---------- */
-  .today-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
-  .tile{background:var(--p1bg);border-radius:12px;padding:11px 14px;display:flex;flex-direction:column;gap:1px}
+  /* ================= 今日 / 总览 ================= */
+  .today-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:4px}
+  .tile{background:var(--p1bg);border-radius:12px;padding:11px 13px;display:flex;flex-direction:column;gap:1px}
   .tile.warn{background:var(--p2bg)}
-  .tile b{font-size:21px;line-height:1.2}
-  .tile span{font-size:12px;color:var(--muted)}
+  .tile b{font-size:20px;line-height:1.2}
+  .tile span{font-size:11.5px;color:var(--muted)}
   .acts{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
 
-  /* ---------- 卷子（折叠） ---------- */
-  .paper{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:12px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.03),0 8px 24px -16px rgba(0,0,0,.18)}
-  .paper-head{padding:14px 18px;cursor:pointer;display:flex;align-items:center;gap:12px;user-select:none}
+  /* ================= 卷子（折叠） ================= */
+  .paper{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:14px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.03),0 8px 24px -16px rgba(0,0,0,.18)}
+  .paper-head{padding:15px 20px;cursor:pointer;display:flex;align-items:center;gap:14px;user-select:none}
   .paper-head:active{background:var(--accent-soft)}
   .ph-main{flex:1;min-width:0}
-  .ptitle{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
-  .ptitle h3{margin:0;font-size:16px;letter-spacing:-.01em}
+  .ptitle{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .ptitle h3{margin:0;font-size:17px;letter-spacing:-.01em}
   .pmeta{color:var(--muted);font-size:12px}
-  .pstats{display:flex;gap:12px;margin-top:5px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+  .pstats{display:flex;gap:14px;margin-top:5px;font-size:12px;color:var(--muted);flex-wrap:wrap}
   .pstats b{color:var(--ink);font-variant-numeric:tabular-nums}
   .pstats .bad b{color:var(--p4)}
-  .chev{flex:0 0 auto;width:26px;height:26px;border-radius:8px;background:var(--bg);display:grid;place-items:center;color:var(--muted);font-size:11px;transition:transform .18s}
+  .chev{flex:0 0 auto;width:26px;height:26px;border-radius:8px;background:var(--bg);display:grid;place-items:center;color:var(--muted);font-size:10px;transition:transform .18s}
   .paper.open .chev{transform:rotate(90deg)}
-  .paper-body{display:none;padding:2px 18px 14px;border-top:1px solid var(--line)}
+  .paper-body{display:none;padding:4px 20px 16px;border-top:1px solid var(--line)}
   .paper.open .paper-body{display:block}
-  .secline{font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700;margin:14px 0 2px}
+  .secline{font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700;margin:16px 0 2px}
   .secline::after{content:"";display:block;height:1px;background:var(--line);margin-top:5px}
 
-  /* ---------- 题目 ---------- */
-  .q{padding:12px 0;border-bottom:1px dashed var(--line)}
+  /* ================= 卷子小结 ================= */
+  .summary{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:14px 0 4px}
+  .summary .verdict{font-size:14.5px;line-height:1.78;margin:0 0 4px}
+  .errwrap{overflow-x:auto;margin-top:6px}
+  table.err{width:100%;border-collapse:collapse;font-size:13px;min-width:520px}
+  table.err th{font-size:11.5px;color:var(--muted);text-align:left;font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+  table.err td{padding:7px 8px;border-bottom:1px dashed var(--line);vertical-align:top}
+  table.err tr:last-child td{border-bottom:0}
+  table.err .c{text-align:center;font-variant-numeric:tabular-nums}
+  .bad-c{color:var(--p4);font-weight:700}
+  .ok-c{color:var(--p1);font-weight:700}
+  .roots{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin-top:14px}
+  .root{border-radius:11px;padding:11px 13px;border-left:3px solid var(--p1);background:var(--card)}
+  .root.p2{border-left-color:var(--p2)}
+  .root.p3{border-left-color:var(--p3)}
+  .root.p4{border-left-color:var(--p4)}
+  .root b{display:block;font-size:13.5px;margin-bottom:3px}
+  .root p{margin:0 0 4px;font-size:12.5px;color:var(--muted);line-height:1.65}
+  .root .rf{color:var(--p1)}
+
+  /* ================= 题目 ================= */
+  .q{padding:14px 0;border-bottom:1px dashed var(--line)}
   .q:last-child{border-bottom:0}
   .qhead{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}
   .no{font-weight:700;font-size:14px;min-width:24px}
   .mark{margin-left:auto;font-size:12.5px;color:var(--muted);display:flex;align-items:center;gap:6px}
   .mark .yours{color:var(--p4);text-decoration:line-through;text-decoration-thickness:1.5px}
   .mark .right{color:var(--p1);font-weight:700;font-size:14px}
-  .stem{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:15.5px;line-height:1.6;margin:0}
-  .stem u{text-decoration:none;border-bottom:2px solid var(--accent);padding:0 10px;background:var(--accent-soft);border-radius:3px;font-weight:600}
+  .stem{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:16px;line-height:1.62;margin:0}
+  .stem u{text-decoration:none;border-bottom:2px solid var(--accent);padding:0 11px;background:var(--accent-soft);border-radius:3px;font-weight:600}
   .zh{font-size:12.5px;color:var(--muted);margin:3px 0 0}
   .brief{font-size:13px;color:var(--muted);margin:4px 0 0}
   details{display:inline-block;width:100%}
-  summary{cursor:pointer;list-style:none;font-size:12.5px;color:var(--accent);padding:6px 0 0;display:inline-flex;align-items:center;gap:5px}
+  summary{cursor:pointer;list-style:none;font-size:12.5px;color:var(--accent);padding:7px 0 0;display:inline-flex;align-items:center;gap:5px}
   summary::-webkit-details-marker{display:none}
   summary::before{content:"▸";font-size:10px;transition:.15s}
   details[open] summary::before{transform:rotate(90deg)}
-  .dbody{font-size:14px;color:var(--muted);padding:4px 0 2px}
-  .dbody p{margin:6px 0;line-height:1.7}
+  .dbody{font-size:14.5px;color:var(--muted);padding:4px 0 2px}
+  .dbody p{margin:7px 0;line-height:1.78}
   .dbody b{color:var(--ink)}
   .dbody i{font-family:"Iowan Old Style",Georgia,serif;color:var(--ink);opacity:.85}
-  .quote{background:var(--bg);border-left:3px solid var(--line);padding:8px 12px;border-radius:0 8px 8px 0;margin:8px 0;font-family:"Iowan Old Style",Georgia,serif;font-size:13.5px;line-height:1.6}
+  .quote{background:var(--bg);border-left:3px solid var(--line);padding:9px 13px;border-radius:0 8px 8px 0;margin:9px 0;font-family:"Iowan Old Style",Georgia,serif;font-size:14px;line-height:1.62}
   .quote em{background:var(--hl);font-style:normal;padding:0 2px;border-radius:2px}
-  .whybox{display:flex;gap:8px;margin:8px 0 0}
-  .whybox .ic{flex:0 0 auto;width:18px;height:18px;border-radius:5px;display:grid;place-items:center;font-size:10px;font-weight:800;margin-top:3px}
+  .whybox{display:flex;gap:9px;margin:10px 0 0}
+  .whybox .ic{flex:0 0 auto;width:19px;height:19px;border-radius:6px;display:grid;place-items:center;font-size:11px;font-weight:800;margin-top:3px}
   .whybox.bad .ic{background:var(--p4bg);color:var(--p4)}
   .whybox.good .ic{background:var(--p1bg);color:var(--p1)}
-  .whybox .tx{flex:1}
-  .whybox .tx b{display:block;font-size:12.5px;margin-bottom:1px}
+  .whybox .tx{flex:1;min-width:0}
+  .whybox .tx b{display:block;font-size:13px;margin-bottom:1px}
+  .whybox .tx p{margin:2px 0;font-size:14px}
 
-  /* ---------- 生词 ---------- */
-  .wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));gap:10px}
-  .wcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;position:relative;cursor:pointer}
-  .wcard.done{opacity:.6}
-  .wcard .w{font-size:16px;font-weight:700;padding-right:30px;word-break:break-word}
+  /* ================= 生词 ================= */
+  .wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:11px}
+  .wcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;position:relative;cursor:pointer}
+  .wcard.done{opacity:.62}
+  .wcard .w{font-size:16.5px;font-weight:700;padding-right:30px;word-break:break-word}
   .wcard .w small{font-weight:400;color:var(--muted);font-size:11.5px;margin-left:5px}
-  .wcard .p{font-size:13.5px;margin:2px 0 5px}
-  .wcard .e{font-family:"Iowan Old Style",Georgia,serif;font-size:12.5px;color:var(--muted);line-height:1.5}
+  .wcard .p{font-size:14px;margin:2px 0 5px}
+  .wcard .e{font-family:"Iowan Old Style",Georgia,serif;font-size:13px;color:var(--muted);line-height:1.55}
   .wcard .e em{background:var(--hl);font-style:normal;padding:0 2px;border-radius:2px}
-  .wcard .tick{position:absolute;top:9px;right:9px;width:26px;height:26px;border-radius:8px;border:1px solid var(--line);background:var(--bg);display:grid;place-items:center;font-size:11px;color:var(--muted)}
+  .wcard .tick{position:absolute;top:10px;right:10px;width:27px;height:27px;border-radius:8px;border:1px solid var(--line);background:var(--bg);display:grid;place-items:center;font-size:11px;color:var(--muted)}
   .wcard.done .tick{background:var(--accent-soft);border-color:transparent;color:var(--accent)}
   .wtag{display:inline-block;margin-top:7px;font-size:10.5px;color:var(--muted);background:var(--bg);border-radius:5px;padding:0 6px}
 
-  /* ---------- 复习页 ---------- */
-  .boxrow{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:10px}
-  .boxcell{background:var(--bg);border-radius:9px;padding:8px 6px;text-align:center}
-  .boxcell b{display:block;font-size:16px}
+  /* ================= 复习 ================= */
+  .boxrow{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:10px}
+  .boxcell{background:var(--bg);border-radius:9px;padding:9px 6px;text-align:center}
+  .boxcell b{display:block;font-size:17px}
   .boxcell span{font-size:10.5px;color:var(--muted)}
 
-  /* ---------- 弹层 ---------- */
+  /* ================= 弹层 ================= */
   .modal{position:fixed;inset:0;z-index:50;background:rgba(20,18,14,.45);display:none;align-items:center;justify-content:center;padding:18px}
   .modal.on{display:flex}
-  .sheet{background:var(--card);border-radius:18px;width:100%;max-width:520px;max-height:86vh;overflow:auto;padding:22px 22px 18px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+  .sheet{background:var(--card);border-radius:18px;width:100%;max-width:540px;max-height:86vh;overflow:auto;padding:22px 22px 18px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
   .sheet .x{float:right;border:0;background:transparent;font-size:20px;color:var(--muted);cursor:pointer;line-height:1}
   .rprog{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:10px}
   .rbar{height:4px;background:var(--line);border-radius:99px;overflow:hidden;margin-bottom:18px}
@@ -201,21 +219,42 @@
   .empty{text-align:center;color:var(--muted);padding:24px 10px;font-size:13.5px}
   .ending{font-size:12px;color:var(--muted);text-align:center;margin-top:26px;line-height:1.9}
 
+  /* ================= 窄屏：图标栏 / 底部栏 ================= */
+  @media (max-width:900px){
+    :root{--side:66px}
+    .side{padding:calc(14px + env(safe-area-inset-top)) 8px 14px}
+    .side .logo div,.side nav a span,.side-foot{display:none}
+    .side nav a{justify-content:center;padding:11px 0}
+    main{padding:20px 18px 60px}
+  }
   @media (max-width:620px){
-    .top-in{padding:10px 14px 8px}
-    main{padding:14px 14px 50px}
+    .shell{display:block}
+    .side{
+      position:fixed;left:0;right:0;bottom:0;top:auto;width:auto;height:auto;
+      flex-direction:row;border-right:0;border-top:1px solid var(--line);
+      padding:6px 8px calc(6px + env(safe-area-inset-bottom));z-index:40;gap:0;
+    }
+    .side .logo{display:none}
+    .side nav{flex-direction:row;flex:1;gap:4px}
+    .side nav a{flex:1;font-size:12px;padding:7px 0}
+    .side nav a span{display:inline;font-size:12px}
+    .side nav a svg{width:16px;height:16px}
+    main{padding:16px 14px 90px}
+    .today-grid{grid-template-columns:1fr 1fr}
     .wgrid{grid-template-columns:1fr}
-    .brand span{display:none}
-    .stats{gap:10px;font-size:12px}
+    .paper-head{padding:13px 14px}
+    .paper-body{padding:4px 14px 14px}
   }
 
   @media print{
-    .top,.foot,.modal,.acts,.chips,.search,.chev{display:none!important}
+    .side,.foot,.modal,.acts,.chips,.search,.chev{display:none!important}
+    .shell{display:block}
+    main{padding:0;max-width:none}
     .view[hidden]{display:block!important}
     .paper-body{display:block!important}
     body{background:#fff}
     .card,.paper{box-shadow:none;border-color:#ddd;break-inside:avoid}
-    .q{break-inside:avoid}
+    .q,.root{break-inside:avoid}
     details{display:block}
     details:not([open]) .dbody{display:block}
   }
@@ -223,72 +262,80 @@
 </head>
 <body>
 
-<div class="top">
-  <div class="top-in">
-    <div class="top-row">
-      <div class="brand">四级错题本<span id="sub">—</span></div>
-      <div class="stats">
-        <div>卷 <b class="num" id="s-papers">0</b></div>
-        <div>错题 <b class="num" id="s-wrong">0</b></div>
-        <div>生词 <b class="num" id="s-words">0</b></div>
-        <div>掌握 <b class="num" id="s-master">0%</b></div>
+<div class="shell">
+  <aside class="side">
+    <div class="logo">
+      <i>A</i>
+      <div>
+        <b>四级错题本</b>
+        <small id="sub">—</small>
       </div>
     </div>
-    <div class="bar"><i id="s-bar" style="width:0%"></i></div>
-    <nav class="tabs" id="tabs">
-      <a href="#/papers" data-tab="papers">错题</a>
-      <a href="#/words" data-tab="words">生词</a>
-      <a href="#/review" data-tab="review">复习</a>
+    <nav id="tabs">
+      <a href="#/papers" data-tab="papers">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h6M9 16h4"/></svg>
+        <span>错题</span><em class="cnt" id="c-papers">0</em>
+      </a>
+      <a href="#/words" data-tab="words">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/></svg>
+        <span>生词</span><em class="cnt" id="c-words">0</em>
+      </a>
+      <a href="#/review" data-tab="review">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/></svg>
+        <span>复习</span><em class="cnt" id="c-todo">0</em>
+      </a>
     </nav>
-  </div>
+    <div class="side-foot">
+      <b id="f-master">0%</b>
+      生词掌握
+      <div class="bar"><i id="f-bar" style="width:0%"></i></div>
+    </div>
+  </aside>
+
+  <main>
+    <section id="view-papers" class="view">
+      <div class="card" id="today"></div>
+      <div id="papers"></div>
+    </section>
+
+    <section id="view-words" class="view" hidden>
+      <div class="card">
+        <h2>生词本</h2>
+        <div class="sub" id="wordSub">—</div>
+        <div class="search"><input id="ws" type="search" placeholder="搜单词 / 释义 / 例句"></div>
+        <div class="chips" id="wordTags"></div>
+        <div class="chips" id="wordStates"></div>
+      </div>
+      <div class="wgrid" id="wgrid"></div>
+    </section>
+
+    <section id="view-review" class="view" hidden>
+      <div class="card" id="reviewCard"></div>
+      <div class="card" id="reviewStats"></div>
+      <div class="card">
+        <h2>怎么用</h2>
+        <div class="sub">数据在 data.json，改完跑 <code>node build.mjs</code></div>
+        <div class="dbody" style="font-size:13.5px">
+          <p>· <b>错题</b>按卷子折叠，点卷名展开；展开后先是这份卷的小结，再是逐题解析。</p>
+          <p>· <b>生词</b>单独一页，点卡片记掌握，侧栏底部就是掌握率。</p>
+          <p>· <b>复习</b>抽卡：错题抽「题干 → 答案」，生词抽「词 → 释义」，五档记忆盒。</p>
+        </div>
+        <div class="foot">
+          <button class="btn" id="btn-export">导出进度</button>
+          <button class="btn" id="btn-import">导入备份</button>
+          <button class="btn" id="btn-print">打印成纸</button>
+          <button class="btn" id="btn-reset">清空进度</button>
+          <input type="file" id="file-import" accept="application/json,.json" hidden>
+          <span class="sp">进度只存在这台设备上</span>
+        </div>
+      </div>
+      <div class="ending">
+        四级错题本 · <span id="upd">—</span><br>
+        数据源 data.json · 由 build.mjs 生成 · 不要直接改这个 HTML
+      </div>
+    </section>
+  </main>
 </div>
-
-<main>
-  <!-- ========== 错题页 ========== -->
-  <section id="view-papers" class="view">
-    <div class="card" id="today"></div>
-    <div id="papers"></div>
-  </section>
-
-  <!-- ========== 生词页 ========== -->
-  <section id="view-words" class="view" hidden>
-    <div class="card">
-      <h2>生词本</h2>
-      <div class="sub" id="wordSub">—</div>
-      <div class="search"><input id="ws" type="search" placeholder="搜单词 / 释义 / 例句"></div>
-      <div class="chips" id="wordTags"></div>
-      <div class="chips" id="wordStates"></div>
-    </div>
-    <div class="wgrid" id="wgrid"></div>
-  </section>
-
-  <!-- ========== 复习页 ========== -->
-  <section id="view-review" class="view" hidden>
-    <div class="card" id="reviewCard"></div>
-    <div class="card" id="reviewStats"></div>
-    <div class="card">
-      <h2>怎么用</h2>
-      <div class="sub">数据在 data.json，改完跑 <code>node build.mjs</code></div>
-      <div class="dbody" style="font-size:13.5px">
-        <p>· <b>错题</b>按卷子折叠，点卷名展开；看完可以标「已掌握」。</p>
-        <p>· <b>生词</b>单独一页，点卡片记掌握，顶部进度条就是掌握率。</p>
-        <p>· <b>复习</b>抽卡：错题抽「题干 → 答案」，生词抽「词 → 释义」，五档记忆盒。</p>
-      </div>
-      <div class="foot">
-        <button class="btn" id="btn-export">导出进度</button>
-        <button class="btn" id="btn-import">导入备份</button>
-        <button class="btn" id="btn-print">打印成纸</button>
-        <button class="btn" id="btn-reset">清空进度</button>
-        <input type="file" id="file-import" accept="application/json,.json" hidden>
-        <span class="sp">进度只存在这台设备上</span>
-      </div>
-    </div>
-    <div class="ending">
-      四级错题本 · <span id="upd">—</span><br>
-      数据源 data.json · 由 build.mjs 生成 · 不要直接改这个 HTML
-    </div>
-  </section>
-</main>
 
 <div class="modal" id="modal"><div class="sheet" id="sheet"></div></div>
 
@@ -304,7 +351,7 @@ S.mastered = S.mastered || {};
 S.box = S.box || {};
 S.seen = S.seen || {};
 S.open = S.open || {};
-S.stat = S.stat || { answers: 0, right: 0 };
+S.stat = S.stat || { answers: 0 };
 
 /* ================= 工具 ================= */
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -316,18 +363,19 @@ PAPERS.forEach(p => (p.questions||[]).forEach(q => ALLQ.push({p, q, id: p.id + '
 const pad2 = n => String(n).padStart(2,'0');
 const todayISO = () => { const d = new Date(); return d.getFullYear()+'-'+pad2(d.getMonth()+1)+'-'+pad2(d.getDate()); };
 
-/* ================= 顶栏 ================= */
+/* ================= 顶栏 / 侧栏 ================= */
 function renderTop(){
   const wrong = ALLQ.filter(x => !x.q.ok).length;
   const doneW = WORDS.filter(w => (S.box[w.w]||0) >= 5).length;
   const r = pct(doneW, WORDS.length);
-  document.getElementById('s-papers').textContent = PAPERS.length;
-  document.getElementById('s-wrong').textContent = wrong;
-  document.getElementById('s-words').textContent = WORDS.length;
-  document.getElementById('s-master').textContent = r + '%';
-  document.getElementById('s-bar').style.width = r + '%';
+  const todo = ALLQ.filter(x => !x.q.ok && !S.mastered[x.id]).length + WORDS.filter(w => (S.box[w.w]||1) < 5).length;
+  document.getElementById('c-papers').textContent = PAPERS.length;
+  document.getElementById('c-words').textContent = WORDS.length;
+  document.getElementById('c-todo').textContent = todo;
+  document.getElementById('f-master').textContent = r + '%';
+  document.getElementById('f-bar').style.width = r + '%';
   const last = PAPERS[0];
-  document.getElementById('sub').textContent = last ? ('最近：' + last.title) : '还没有卷子';
+  document.getElementById('sub').textContent = last ? last.title : '还没有卷子';
   document.getElementById('upd').textContent = '更新于 ' + (DATA.meta?.updated || todayISO());
 }
 
@@ -335,12 +383,16 @@ function renderTop(){
 function renderToday(){
   const wrongTodo = ALLQ.filter(x => !x.q.ok && !S.mastered[x.id]);
   const wordTodo = WORDS.filter(w => (S.box[w.w]||1) < 5);
+  const doneQ = ALLQ.filter(x => !x.q.ok && S.mastered[x.id]).length;
+  const okRate = pct(ALLQ.filter(x => x.q.ok).length, ALLQ.length);
   document.getElementById('today').innerHTML =
-    '<h2>今天</h2>' +
-    '<div class="sub">' + todayISO() + ' · ' + PAPERS.length + ' 套卷 · ' + ALLQ.length + ' 道题</div>' +
+    '<h2>总览</h2>' +
+    '<div class="sub">' + todayISO() + ' · ' + PAPERS.length + ' 套卷 · ' + ALLQ.length + ' 道题 · 正确率 ' + okRate + '%</div>' +
     '<div class="today-grid">' +
       '<div class="tile' + (wrongTodo.length ? ' warn' : '') + '"><b class="num">' + wrongTodo.length + '</b><span>错题待复习</span></div>' +
       '<div class="tile"><b class="num">' + wordTodo.length + '</b><span>生词待复习</span></div>' +
+      '<div class="tile"><b class="num">' + doneQ + '</b><span>错题已掌握</span></div>' +
+      '<div class="tile"><b class="num">' + (S.stat.answers||0) + '</b><span>累计复习</span></div>' +
     '</div>' +
     '<div class="acts">' +
       '<button class="btn btn-primary" data-act="review" data-kind="questions"' + (wrongTodo.length ? '' : ' disabled') + '>抽错题</button>' +
@@ -355,10 +407,31 @@ function matchQ(p, q){
   if (pFilter === 'wrong' && q.ok) return false;
   if (pFilter === 'todo' && (q.ok || S.mastered[p.id + '#' + q.no])) return false;
   if (pSearch) {
-    const hay = ((q.stem||'') + (q.zh||'') + (q.brief||'') + (q.tag||'') + q.no).toLowerCase();
+    const hay = ((q.stem||'') + (q.zh||'') + (q.brief||'') + (q.line||'') + (q.tag||'') + q.no).toLowerCase();
     if (hay.indexOf(pSearch.toLowerCase()) < 0) return false;
   }
   return true;
+}
+
+function summaryBlock(p){
+  const s = p.summary;
+  if (!s) return '';
+  const rows = (p.questions||[]).filter(q => !q.ok).map(q =>
+    '<tr><td class="c">' + esc(q.no) + '</td>' +
+    '<td class="c bad-c">' + esc(q.yours) + '</td>' +
+    '<td class="c ok-c">' + esc(q.ans) + '</td>' +
+    '<td>' + esc(q.line || q.tag || '') + '</td></tr>').join('');
+  const roots = (s.roots||[]).map((r,i) =>
+    '<div class="root ' + (r.c||'') + '"><b>' + (i+1) + ' · ' + esc(r.t) + '</b>' +
+    '<p>' + r.d + '</p>' +
+    (r.f ? '<p class="rf">✓ ' + r.f + '</p>' : '') + '</div>').join('');
+  return '<div class="summary">' +
+    '<p class="verdict">' + s.verdict + '</p>' +
+    '<div class="sec-h" style="margin-top:12px">错题清单</div>' +
+    '<div class="errwrap"><table class="err"><thead><tr><th class="c">题</th><th class="c">你</th><th class="c">正确</th><th>一句话原因</th></tr></thead><tbody>' +
+    rows + '</tbody></table></div>' +
+    (roots ? '<div class="roots">' + roots + '</div>' : '') +
+    '</div>';
 }
 
 function renderPapers(){
@@ -403,6 +476,7 @@ function renderPapers(){
     out.push('  </div><span class="chev">▶</span></div>');
 
     out.push('<div class="paper-body">');
+    out.push(summaryBlock(p));
     if (!shown.length) {
       out.push('<div class="empty">这一套没有符合筛选的题</div>');
     } else {
@@ -497,7 +571,7 @@ function renderReview(){
   document.getElementById('reviewCard').innerHTML =
     '<h2>抽卡复习</h2>' +
     '<div class="sub">错题抽「题干 → 答案」，生词抽「词 → 释义」；各 20 张一轮</div>' +
-    '<div class="today-grid">' +
+    '<div class="today-grid" style="grid-template-columns:1fr 1fr">' +
       '<div class="tile' + (wrongTodo ? ' warn' : '') + '"><b class="num">' + wrongTodo + '</b><span>错题待复习</span></div>' +
       '<div class="tile"><b class="num">' + wordTodo + '</b><span>生词待复习</span></div>' +
     '</div>' +
@@ -609,7 +683,7 @@ function grade(g){
   S.stat.answers = (S.stat.answers || 0) + 1;
   save(S);
   rev.i++; rev.flipped = false;
-  drawReview(); renderTop(); route();
+  drawReview(); renderTop(); renderToday(); renderPapers();
 }
 
 /* ================= 事件 ================= */
