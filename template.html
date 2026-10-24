@@ -176,6 +176,14 @@
   .whybox .tx{flex:1;min-width:0}
   .whybox .tx b{display:block;font-size:13px;margin-bottom:1px}
   .whybox .tx p{margin:2px 0;font-size:14px}
+  .phr{margin-top:14px;background:var(--bg);border:1px solid var(--line);border-radius:11px;padding:11px 14px}
+  .phr > b{display:block;font-size:12px;letter-spacing:.1em;color:var(--muted);margin-bottom:2px}
+  .phr ul{list-style:none;padding:0;margin:4px 0 0}
+  .phr li{padding:6px 0;border-bottom:1px dashed var(--line);font-size:13.5px;line-height:1.6}
+  .phr li:last-child{border-bottom:0}
+  .phr em{font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;font-style:italic;font-weight:600;color:var(--ink);margin-right:8px}
+  .phr li span{color:var(--muted)}
+  .phr .pn{display:block;margin-top:2px;font-size:12px;color:var(--p2);font-style:normal}
 
   /* ================= 按题型：块头加重 ================= */
   .paper.type{border-color:var(--line);position:relative;overflow:hidden}
@@ -591,6 +599,13 @@ function qRow(p, q, withPaper){
     if (q.why) h.push('<p>' + q.why + '</p>');
     if (q.you) h.push('<div class="whybox bad"><span class="ic">✗</span><div class="tx"><b>你为什么会选它</b><p>' + q.you + '</p></div></div>');
     if (q.fix) h.push('<div class="whybox good"><span class="ic">✓</span><div class="tx"><b>下次这么做</b><p>' + q.fix + '</p></div></div>');
+    if (q.phrases && q.phrases.length) {
+      h.push('<div class="phr"><b>短语与搭配</b><ul>' +
+        q.phrases.map(x =>
+          '<li><em>' + esc(x.p) + '</em><span>' + esc(x.z || '') + '</span>' +
+          (x.n ? '<i class="pn">' + esc(x.n) + '</i>' : '') + '</li>').join('') +
+        '</ul></div>');
+    }
     h.push('<p style="margin-top:12px"><button class="chip' + (S.mastered[id] ? ' on' : '') + '" data-act="master" data-id="' + id + '">' +
       (S.mastered[id] ? '已掌握 ✓' : '标记已掌握') + '</button></p>');
     h.push('</div></details>');
