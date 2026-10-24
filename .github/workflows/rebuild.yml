@@ -1,0 +1,42 @@
+name: rebuild
+
+# data.json / template.html 一改，云端就重新生成 index.html 并提交
+# 这样"加一套卷子"只需要推数据，页面由 Actions 负责重建
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data.json'
+      - 'template.html'
+      - 'build.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 构建
+        run: node build.mjs
+
+      - name: 提交产物
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html data.json
+          if git diff --cached --quiet; then
+            echo "没有变化，跳过提交"
+          else
+            git commit -m "chore: rebuild index.html"
+            git push
+          fi
