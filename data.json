@@ -33,7 +33,27 @@
           "you": "undermined 三处不合：① 词性勉强（分词作定语）② 语义与\"成就\"互斥 ③ 全文没有\"削弱/破坏\"的语境。这类 -ed 分词是词库里的<b>伪装形容词</b>——判断时先问一句\"它修饰名词时是主动还是被动、通不通\"。",
           "fix": "凡 <i>Such / the / a + ____ + 名词</i>，空格九成是形容词。先把词库里所有形容词圈出来，再逐一代入，速度比\"读一个试一个\"快一倍。",
           "line": "把过去分词当形容词，与 accomplishments 语义冲突",
-          "quote": "And Morrison was not unique in this regard. Numerous writers produce masterpieces well into their 70s and beyond. <em>Such ___27___ accomplishments highlight an important point.</em>"
+          "quote": "And Morrison was not unique in this regard. Numerous writers produce masterpieces well into their 70s and beyond. <em>Such ___27___ accomplishments highlight an important point.</em>",
+          "phrases": [
+            {
+              "p": "not unique in this regard",
+              "z": "在这方面并不独特／并不是个例",
+              "n": "in this regard＝在这方面，用来回指上文刚说的事"
+            },
+            {
+              "p": "well into one's 70s and beyond",
+              "z": "七十多岁甚至更往后",
+              "n": "well into＝远远进入（某个年龄/阶段）"
+            },
+            {
+              "p": "highlight an important point",
+              "z": "凸显一个重要的观点"
+            },
+            {
+              "p": "produce masterpieces",
+              "z": "创作出杰作"
+            }
+          ]
         },
         {
           "no": "28",
@@ -48,7 +68,27 @@
           "you": "unique 是形容词，不能作谓语、不能跟 with age。这说明做这道题时你用的是\"读起来像不像\"，而不是\"这个位置允许什么词性\"——这一步必须在读句意之前完成，否则语义再顺也是假的。",
           "fix": "先给十个空标注词性槽位（<i>to+原形 / 介词+n. / 限定词+adj. / 主+谓</i>），标完再动笔。单这一条通常能把选词填空从 5 分提到 7 分以上。",
           "line": "to 后必须动词原形，形容词 unique 直接出局",
-          "quote": "Our capacity to speak, write and learn new vocabulary <em>does not seem to ___28___ with age</em>."
+          "quote": "Our capacity to speak, write and learn new vocabulary <em>does not seem to ___28___ with age</em>.",
+          "phrases": [
+            {
+              "p": "seem to do sth",
+              "z": "似乎…（后面必须跟动词原形）",
+              "n": "本空就卡在这里：to 后不能放形容词"
+            },
+            {
+              "p": "with age",
+              "z": "随着年龄（增长）",
+              "n": "常与 deteriorate / decline / improve 连用"
+            },
+            {
+              "p": "the capacity to do sth",
+              "z": "做…的能力"
+            },
+            {
+              "p": "learn new vocabulary",
+              "z": "学习新词汇"
+            }
+          ]
         },
         {
           "no": "29",
@@ -63,7 +103,26 @@
           "you": "deteriorate 语法上完全合格（to + 原形），所以这是<b>纯语义错</b>：你抓住了上一句\"能力不随年龄退化\"里的\"退化\"，把它当成本句需要的词，却没注意本句已经翻到\"保存良好\"的正面立场。",
           "fix": "填完把整句读一遍，只问一句\"这句和我上一句是同一方向还是相反\"。选词填空里约三成错题属于\"词性对、方向反\"。",
           "line": "与 produce 并列，但语义和后文 well preserved 冲突",
-          "quote": "But, by comparison, <em>our ability to produce and to ___29___ language</em> is well preserved into older adulthood."
+          "quote": "But, by comparison, <em>our ability to produce and to ___29___ language</em> is well preserved into older adulthood.",
+          "phrases": [
+            {
+              "p": "by comparison",
+              "z": "相比之下（用于两组对比）"
+            },
+            {
+              "p": "be well preserved",
+              "z": "保存／保持得很好",
+              "n": "preserve 常用被动，指状态被完好保留"
+            },
+            {
+              "p": "into older adulthood",
+              "z": "一直到成年后期"
+            },
+            {
+              "p": "produce and comprehend language",
+              "z": "产出与理解语言（一输出一输入，并列互补）"
+            }
+          ]
         },
         {
           "no": "30",
@@ -118,7 +177,23 @@
           "you": "和 28 题同一个病：没先看情态动词后面的词性槽位。equivalent 与\"相同、等同\"沾边，读起来像在说\"和很多人想的一样\"，很容易被语义直觉骗过去。",
           "fix": "把这个句型背下来：<i>contrary to what many (might) assume / believe / expect</i>——\"与人们想当然的相反\"，四级阅读里出现频率极高。",
           "line": "might 后要动词原形，equivalent 是形容词",
-          "quote": "language seems to be a skill that, <em>contrary to what many might ___35___</em>, does not weaken with age."
+          "quote": "language seems to be a skill that, <em>contrary to what many might ___35___</em>, does not weaken with age.",
+          "phrases": [
+            {
+              "p": "contrary to",
+              "z": "与…相反",
+              "n": "contrary to what many assume＝与很多人想当然的相反，四级高频套语"
+            },
+            {
+              "p": "what many might assume",
+              "z": "很多人可能会以为的事",
+              "n": "might 后接动词原形"
+            },
+            {
+              "p": "weaken with age",
+              "z": "随年龄减弱"
+            }
+          ]
         },
         {
           "no": "36",
@@ -165,7 +240,27 @@
           "why": "三个点同时落在 G 段同一句：<i>Knowing one's emotional state</i> ≈ <b>Awareness of your emotional state</b>；<i>deciding what changes to make</i> ≈ <b>determine the changes you want to make</b>；<i>utmost importance</i> ≈ <b>essential</b>。三个证据对齐，这是送分型定位。",
           "you": "J 段讲的是\"管理方被要求明确支持员工\"，和\"情绪状态\"没有任何交集。你多半是被 J 段开头的 <i>to ensure better work-life balance</i> 吸引过去的——<b>只匹配了一个主题词，没匹配命题内容</b>，这是匹配题最典型的失分动作。",
           "fix": "题干先划抽象名词（emotional state / changes），再去原文找它们的同义替换。balance 这种全文出现五次的词，不能当定位词。",
-          "line": "emotional state 只在 G 段，J 段讲管理改革"
+          "line": "emotional state 只在 G 段，J 段讲管理改革",
+          "phrases": [
+            {
+              "p": "be of utmost importance",
+              "z": "至关重要",
+              "n": "be of + 抽象名词 = 形容词用法：of importance = important"
+            },
+            {
+              "p": "in deciding what changes to make",
+              "z": "在决定要做出哪些改变时"
+            },
+            {
+              "p": "be essential in order to do sth",
+              "z": "对于做…是必不可少的",
+              "n": "原文 essential 对应题干 utmost importance，是同义替换"
+            },
+            {
+              "p": "check in with yourself",
+              "z": "（经常）反省、审视自己"
+            }
+          ]
         },
         {
           "no": "41",
@@ -205,7 +300,27 @@
           "why": "<i>remain occupied with what happened at work</i> ≈ <b>mentally processing things that happened at work</b>；<i>may not actually experience emotional wellbeing at home</i> ≈ <b>the time at home may not be enjoyable</b>。连 \"physically we are there, mentally…\" 都在替题干做解释。",
           "you": "G 段的核心是\"五步法任何人都能学\"，讲的是<b>方法</b>；题干讲的是<b>状态</b>（人在家、心没回家）。40、44 两题都押在 G 段上，说明当时把 G 当成了\"万金油段\"——G 是全文结论段，最容易被误填。",
           "fix": "选完一段后自检：如果这段是对的，题干里那个\"最不常见的词\"（这里是 occupied with、actually experience）应该能在段里找到影子。找不到就换段。",
-          "line": "人在家、心在工，只在 H 段"
+          "line": "人在家、心在工，只在 H 段",
+          "phrases": [
+            {
+              "p": "remain occupied with sth",
+              "z": "一直惦记着／忙于某事",
+              "n": "对应原文 mentally processing things"
+            },
+            {
+              "p": "experience emotional wellbeing",
+              "z": "获得／体验到情绪上的安康"
+            },
+            {
+              "p": "the time you spend at home",
+              "z": "你待在家里的时间"
+            },
+            {
+              "p": "be present",
+              "z": "（身心）在场、活在当下",
+              "n": "原文 “We're not present” 指人在家、心不在"
+            }
+          ]
         },
         {
           "no": "45",
@@ -220,7 +335,31 @@
           "why": "<i>not a goal to achieve</i> ≈ <b>stop thinking about it as an achievement</b>；<i>a process… adjusted promptly</i> ≈ <b>lifelong process… timely adjustments</b>。两个短语级替换同时命中，C 段是唯一解。",
           "you": "E 段有 <b>adjust</b> 这个词，你就被它勾住了。但 E 段是\"拒绝长时间工作的人用了什么策略\"（具体做法），题干是\"对平衡这个概念本身的重新定义\"，层级完全不同。这是匹配题第二大陷阱：<b>抓住一个动词就落笔</b>。",
           "fix": "题干出现 <i>is not A, but B</i> 这种\"定义型判断\"时，答案段一定也有\"否定 + 改称\"的结构（stop thinking… Instead… more of a…）。只出现单个动词的段落，一律排除。",
-          "line": "not a goal but a process 只在 C 段"
+          "line": "not a goal but a process 只在 C 段",
+          "phrases": [
+            {
+              "p": "not A but B",
+              "z": "不是 A 而是 B",
+              "n": "题干正是这个结构：not a goal… but a process…"
+            },
+            {
+              "p": "a goal to achieve",
+              "z": "一个有待达成的目标"
+            },
+            {
+              "p": "a lifelong process",
+              "z": "一个终身的过程"
+            },
+            {
+              "p": "make timely adjustments",
+              "z": "做出及时的调整",
+              "n": "对应题干的 adjusted promptly"
+            },
+            {
+              "p": "in the name of self-awareness",
+              "z": "以自我觉察为名／出于自我觉察"
+            }
+          ]
         },
         {
           "no": "46",
@@ -267,7 +406,31 @@
           "why": "题干 <i>apart from their practical functions</i> 对应的正是这句的\"非实用\"部分：美化环境 + <b>a sense of community</b>。<b>D) Enhance people's community spirit</b> 是对 <i>promote a sense of community</i> 的直译式改写，一字不差。",
           "you": "A) Raise people's environmental awareness（提高环保意识）在文章里<b>没有出现</b>。它之所以诱人，是因为全文主题是\"人与自然\"，\"环保意识\"是最顺手的常识联想——你在用<b>背景知识</b>补原文没有的信息，这是仔细阅读里最贵的错法。",
           "fix": "选完回到原文，用笔圈出选项里每个实词在原文的对应位置；圈不到立刻排除。\"常识正确但原文没写\"是最会骗人的一类选项。",
-          "line": "定位句只给 beauty 和 community，A 是常识脑补"
+          "line": "定位句只给 beauty 和 community，A 是常识脑补",
+          "phrases": [
+            {
+              "p": "apart from",
+              "z": "除了…之外（还）"
+            },
+            {
+              "p": "practical functions",
+              "z": "实用功能"
+            },
+            {
+              "p": "a sense of community",
+              "z": "社区归属感",
+              "n": "题干选项 community spirit 就是它的改写"
+            },
+            {
+              "p": "marry use and beauty",
+              "z": "把实用与美感结合起来",
+              "n": "marry 这里是\"使结合\"，不是\"结婚\""
+            },
+            {
+              "p": "make unlovely spaces lovely",
+              "z": "把不美的空间变美"
+            }
+          ]
         },
         {
           "no": "51",
@@ -282,7 +445,27 @@
           "why": "<b>B) It witnessed a significant increase in women engineers in the 1970s.</b> 1% → 9%，九倍增长，且明确限定在 1970s，与选项逐字对应。",
           "you": "A) <i>It has seen a change in attitude towards women engineers since 1979.</i> 问题在 <b>attitude（态度）</b>：原文给的是<b>人数比例</b>，不是态度；而且 1979 年之后原文说的是\"比例 2000 年以来基本没变\"，恰恰是没怎么变。B 是数字事实，A 是心理推断。",
           "fix": "看到选项里出现 attitude / awareness / spirit / tendency 这类抽象心理词，先回原文找同一个抽象词；找不到就说明命题人在诱导你用常识替原文做心理推断。",
-          "line": "1%→9% 是人数增加，不是态度变化"
+          "line": "1%→9% 是人数增加，不是态度变化",
+          "phrases": [
+            {
+              "p": "witness a significant increase",
+              "z": "见证显著增长",
+              "n": "witness 的主语常是时期/地点，如 the 1970s witnessed…"
+            },
+            {
+              "p": "a change in attitude towards sb",
+              "z": "对某人态度的变化",
+              "n": "attitude 是原文没有的抽象词，属心理推断"
+            },
+            {
+              "p": "at the same rate",
+              "z": "以同样的速度"
+            },
+            {
+              "p": "largely unchanged",
+              "z": "基本未变"
+            }
+          ]
         },
         {
           "no": "52",
@@ -321,7 +504,32 @@
           "why": "<b>A) They take great pride in their chosen career.</b> 依据是 <i>hailed the benefits of their chosen career</i> ＋ <i>satisfying to see the effects of what you have done</i>——以自己选择的职业为荣、从中获得满足。",
           "you": "D) <i>They have proved capable of doing almost anything.</i> 你把原文的 <b>\"the flexibility to do almost anything\"（这份职业给你的自由度高）</b>读成了 <b>\"她们已被证明什么都能做\"</b>。两个错误叠加：① flexibility（自由度）≠ capable（能力）；② 原文是主观感受/行业特点，选项变成对能力的客观评价，<b>主体和性质都被偷换</b>。",
           "fix": "选项和原文\"长得像\"的时候，逐词对一遍：<b>哪个词被换掉了？换掉之后主语、性质、程度有没有变？</b>变了就是错项。这道题 D 只把 flexibility 换成 capable，就足以判死刑。",
-          "line": "flexibility 被读成 proved capable，程度被拔高"
+          "line": "flexibility 被读成 proved capable，程度被拔高",
+          "phrases": [
+            {
+              "p": "take pride in",
+              "z": "以…为荣",
+              "n": "正确项的核心；原文 hailed the benefits 与之同向"
+            },
+            {
+              "p": "prove capable of doing sth",
+              "z": "证明有能力做某事",
+              "n": "错误项把 flexibility 偷换成 capable"
+            },
+            {
+              "p": "the flexibility to do almost anything",
+              "z": "几乎什么都能做的自由度",
+              "n": "flexibility＝自由度，不是能力"
+            },
+            {
+              "p": "see the effects of what you have done",
+              "z": "看到自己所作所为带来的成效"
+            },
+            {
+              "p": "hail the benefits of",
+              "z": "盛赞…的好处"
+            }
+          ]
         }
       ],
       "summary": {
