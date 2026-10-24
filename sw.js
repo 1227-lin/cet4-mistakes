@@ -1,6 +1,6 @@
 /* 四级错题本 · 离线缓存（仅在 HTTPS / GitHub Pages 下生效）
    改版时把 CACHE 版本号 +1，老缓存会自动清掉 */
-const CACHE = 'cet4m-v2';
+const CACHE = 'cet4m-v3';
 const ASSETS = ['./', './index.html', './manifest.json', './icon-180.png', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', e => {
