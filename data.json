@@ -5,11 +5,11 @@
   },
   "papers": [
     {
-      "id": "secC-46-50",
-      "title": "阅读 Section C · 46–50（两页截图）",
-      "date": "2026-10-26",
+      "id": "2025-06-3",
+      "title": "2025年6月 · 第三套",
+      "date": "2025-06-14",
       "scope": "Section C 46–50",
-      "note": "只拍到第 4–5 页；51–55 的题面缺，听力与其他部分未包含",
+      "note": "本卷只做了阅读 Section C（46–50）；51–55 题面缺，听力与其他部分未做",
       "questions": [
         {
           "no": "46",
@@ -759,14 +759,16 @@
       "pos": "adj.",
       "zh": "真实的；真正的",
       "eg": "the courage to be <em>authentic</em> that connects us",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "be based on",
       "pos": "phr.",
       "zh": "以…为基础；基于",
       "eg": "may be based, in part, on physical chemistry",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "better-off",
@@ -781,7 +783,8 @@
       "pos": "n.",
       "zh": "福气；幸事",
       "eg": "as much of a curse as a <em>blessing</em>",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "burnout",
@@ -812,7 +815,8 @@
       "pos": "n.",
       "zh": "胆固醇",
       "eg": "they are <em>cholesterol</em>-free",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "comprehend",
@@ -827,14 +831,16 @@
       "pos": "v.",
       "zh": "培养；培育",
       "eg": "<em>cultivate</em> the inner qualities necessary to sustain intimacy",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "curse",
       "pos": "n.",
       "zh": "诅咒；祸事",
       "eg": "Outer beauty can be as much of a <em>curse</em> as a blessing",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "defy",
@@ -857,14 +863,16 @@
       "pos": "v.",
       "zh": "认为…不值一提；不予考虑",
       "eg": "dismissed it as rubbery and flavorless",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "ditch",
       "pos": "v.",
       "zh": "抛弃；甩掉（口语）",
       "eg": "people who <em>ditch</em> meat have lower blood pressure",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "emerge",
@@ -887,7 +895,8 @@
       "pos": "adj.",
       "zh": "过度的；过分的",
       "eg": "<em>excessive</em> focus on physical appearance",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "explicitly",
@@ -902,7 +911,8 @@
       "pos": "adj.",
       "zh": "没味道的；寡淡的",
       "eg": "dismissed it as rubbery and <em>flavorless</em>",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "gradual",
@@ -965,14 +975,16 @@
       "pos": "n.",
       "zh": "亲密；亲密关系",
       "eg": "the lasting <em>intimacy</em> and spiritual connection",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "isolation",
       "pos": "n.",
       "zh": "孤立；隔绝",
       "eg": "It may create connection or <em>isolation</em>",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "lobby",
@@ -1003,7 +1015,8 @@
       "pos": "adj.",
       "zh": "有营养的",
       "eg": "They're <em>nutritious</em>, inexpensive, and far more sustainable",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "on an equal footing",
@@ -1042,7 +1055,8 @@
       "pos": "n.",
       "zh": "怨恨；不满",
       "eg": "love turns into <em>resentment</em> and bitter court battles",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "resist",
@@ -1073,7 +1087,8 @@
       "pos": "adj.",
       "zh": "像橡胶的；嚼不动的",
       "eg": "dismissed it as <em>rubbery</em> and flavorless",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "shortsighted",
@@ -1088,7 +1103,8 @@
       "pos": "v.",
       "zh": "暴涨；猛增",
       "eg": "the market will <em>skyrocket</em> to $74 billion by 2030",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "slip",
@@ -1103,7 +1119,8 @@
       "pos": "adj.",
       "zh": "精神上的；心灵的",
       "eg": "lasting intimacy and <em>spiritual</em> connection",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "split",
@@ -1126,28 +1143,32 @@
       "pos": "adj.",
       "zh": "表面的；肤浅的",
       "eg": "from something <em>superficial</em> to something that connects us to our depths",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "superstar",
       "pos": "n.",
       "zh": "超级明星；领军者",
       "eg": "the current <em>superstars</em> of the alternative protein sector",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "surge",
       "pos": "n.",
       "zh": "激增；猛涨",
       "eg": "a 957 percent <em>surge</em>",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "sustainable",
       "pos": "adj.",
       "zh": "可持续的",
       "eg": "far more <em>sustainable</em> than any of the processed meatless substitutes",
-      "tag": "仔细阅读"
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "underused",
