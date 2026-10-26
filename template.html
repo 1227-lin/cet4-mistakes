@@ -571,7 +571,7 @@ function renderPapers(){
         list.forEach(q => out.push(qRow(p, q)));
       });
     }
-    out.push(diagnosisHTML());
+    out.push(diagnosisHTML(p));
     out.push('</div></article>');
   });
 
@@ -747,13 +747,12 @@ function renderByType(){
     out.push('</div></article>');
   });
   if (out.length <= 3) out.push('<div class="empty">还没有错题</div>');
-  out.push('<div class="diag" style="margin-top:18px">' + diagnosisHTML().replace(/^<div class="diag">/, '').replace(/<\/div>$/, '') + '</div>');
   el.innerHTML = out.join('');
 }
 
 /* ================= 诊断与训练（放在每套卷底部） ================= */
-function diagnosisHTML(){
-  const d = DATA.diagnosis;
+function diagnosisHTML(p){
+  const d = p && p.diagnosis;
   if (!d) return '';
   const steps = (d.steps || []).map(s =>
     '<div class="step"><span class="stag ' + (s.tag || '') + '">' + esc(s.tag || '') + '</span>' +
