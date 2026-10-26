@@ -1,9 +1,148 @@
 {
   "meta": {
     "title": "四级错题本",
-    "updated": "2026-10-24"
+    "updated": "2026-10-26"
   },
   "papers": [
+    {
+      "id": "secC-46-50",
+      "title": "阅读 Section C · 46–50（两页截图）",
+      "date": "2026-10-26",
+      "scope": "Section C 46–50",
+      "note": "只拍到第 4–5 页；51–55 的题面缺，听力与其他部分未包含",
+      "questions": [
+        {
+          "no": "46",
+          "sec": "C",
+          "yours": "C",
+          "ans": "B",
+          "ok": false,
+          "tag": "偷换概念",
+          "line": "原文只提 star，没提明星的体能；fitness 是脑补",
+          "stem": "What do we learn about American society from the first paragraph?",
+          "quote": "Our society <em>places a high value on physical beauty</em>. Americans spend an average of over $722 each year on their appearance. One in ten Americans has tried to look like a star.",
+          "why": "第一段三句话都在讲同一件事：外貌被高度重视——<i>high value on physical beauty</i>、人均 $722、十分之一想长得像明星。<b>B) It considers one's physical appearance very important.</b> 就是主题句的高保真改写。",
+          "you": "你选 C，<i>places a high value on the physical fitness of stars</i>。原文里 star 只出现在“十分之一的人想看起来像明星”，跟“社会重视明星的<b>体能</b>”是两回事——<i>fitness</i> 整段都没出现，是你把 star 抓过来自己补了一个意思。",
+          "fix": "问“整段说明什么”的题，答案要覆盖整段而不是某一句的细节。先找段落主题句（通常是首句），再挑和它同义的选项。",
+          "phrases": [
+            {
+              "p": "place a high value on sth",
+              "z": "高度重视某事"
+            },
+            {
+              "p": "spend an average of $722 on sth",
+              "z": "平均在…上花 722 美元"
+            },
+            {
+              "p": "one in ten",
+              "z": "十分之一",
+              "n": "同类：nine out of ten＝十有八九"
+            },
+            {
+              "p": "look like a star",
+              "z": "看起来像明星"
+            }
+          ]
+        },
+        {
+          "no": "47",
+          "sec": "C",
+          "yours": "C",
+          "ans": "C",
+          "ok": true,
+          "brief": "fail to attend to ourselves / never cultivate the inner qualities → neglect to cultivate"
+        },
+        {
+          "no": "48",
+          "sec": "C",
+          "yours": "D",
+          "ans": "D",
+          "ok": true,
+          "brief": "as much of a curse as a blessing＝既可能是福也可能是祸 → do as much harm as good"
+        },
+        {
+          "no": "49",
+          "sec": "C",
+          "yours": "A",
+          "ans": "A",
+          "ok": true,
+          "brief": "强调句 it is the meeting of our inner worlds that… → Meeting of minds"
+        },
+        {
+          "no": "50",
+          "sec": "C",
+          "yours": "A",
+          "ans": "C",
+          "ok": false,
+          "tag": "假对应",
+          "line": "compatible souls 被读成 toward other people's souls",
+          "stem": "What happens when we take the path toward cultivating inner beauty?",
+          "quote": "The path toward cultivating inner beauty is really simple. … Not everyone will see us and appreciate us as we take the courageous risk to allow ourselves to be seen as we really are. But if they don't, it is their loss, not ours. <em>Eventually we'll find those compatible souls who appreciate us as we are.</em>",
+          "why": "<b>C) We will meet people who value us for who we are.</b> 直接对应最后一句：<i>compatible souls</i>≈people，<i>appreciate us as we are</i>≈value us for who we are。四个要素三个对上。",
+          "you": "你选 A，<i>We may find a route toward other people's souls</i>。原文说的是“我们会遇到欣赏真实自我的人”，不是“我们找到了通往别人灵魂的路”。<i>route / toward other people's souls</i> 是把 compatible souls 和上一段的 inner worlds 两个词组拼出来的假对应——看着很高级，但原文没有这条“路”。",
+          "fix": "细节题定位到句子后逐个名词对：people ✓、value ✓、who we are ✓ 三个要素齐了才选；缺一个，就是改写出来的错项。",
+          "phrases": [
+            {
+              "p": "take the path toward",
+              "z": "走上…的道路"
+            },
+            {
+              "p": "appreciate sb as they are",
+              "z": "欣赏某人本来的样子",
+              "n": "as we are＝按我们原本的样子，高频搭配"
+            },
+            {
+              "p": "compatible souls",
+              "z": "契合的灵魂；合得来的人"
+            },
+            {
+              "p": "it is their loss, not ours",
+              "z": "那是他们的损失，不是我们的"
+            }
+          ]
+        }
+      ],
+      "diagnosis": {
+        "intro": "这套只做了 Section C 五题，错两题，但错的是同一个动作：没把选项里的词回原文对一遍。",
+        "steps": [
+          {
+            "tag": "P1",
+            "title": "细节题：三个要素齐了才选",
+            "fix": "50",
+            "d": "定位到句子后逐个名词对：people、value、who we are（对应 compatible souls / appreciate us as we are）。缺一个，就是改写出来的错项——A 的 route toward souls 就是拼出来的。"
+          },
+          {
+            "tag": "P1",
+            "title": "主题题：先找段落主题句",
+            "fix": "46",
+            "d": "问“整段说明什么”，答案要覆盖整段。第一段三句都在说外貌被重视（high value、$722、十分之一想像明星），B 是三句的总和；C 里的 fitness 全段没出现。"
+          },
+          {
+            "tag": "P3",
+            "title": "这套的复现",
+            "fix": "一周内",
+            "d": "遮答案重做 46 和 50，各写一句“我排除的三个选项错在哪个词”；再回看 47–49 为什么能一眼对（都是原文实词直译）。"
+          }
+        ]
+      },
+      "summary": {
+        "verdict": "Section C 五题对三错二（60%）。两题的错法不一样，但病根相同：选项里都多了一个原文没有的名词——46 多出 fitness，50 多出 route。",
+        "roots": [
+          {
+            "t": "选项里凭空多出的名词",
+            "c": "p4",
+            "d": "46 的 <i>fitness</i>、50 的 <i>route / toward other people's souls</i>，原文里都找不到对应。",
+            "f": "选完回原文，把选项里每个名词划到位置；划不到就排除。"
+          },
+          {
+            "t": "主题题只抓一句",
+            "c": "p2",
+            "d": "46 问的是\"第一段整体说明什么\"，C 只用了 star 一个词，其余全靠脑补。",
+            "f": "主题题先读段落首句，再看选项是否覆盖整段三句而不是某一句。"
+          }
+        ]
+      }
+    },
     {
       "id": "2024-12-1",
       "title": "2024年12月 · 第一套",
@@ -554,82 +693,51 @@
             "f": "填完把整句读一遍，只问一句：这句和上一句同向还是反向？"
           }
         ]
+      },
+      "diagnosis": {
+        "intro": "按错题分布看，问题不是\"读不懂\"，而是三处程序性漏洞。下面每条都给了可执行的改法，按顺序做，两周内能把这三块补上。",
+        "steps": [
+          {
+            "tag": "P0",
+            "title": "选词填空：先标词性槽位，再读句子",
+            "fix": "27 · 28 · 35",
+            "d": "拿到十个空先不读词库，只在每个空上方写一个符号——<i>to+原形 / 介词+n. / 限定词+adj. / 主+谓</i>。标完再用词库对号。这三题都还没读语义就已经错了。"
+          },
+          {
+            "tag": "P1",
+            "title": "填完必回读：检查句子的立场方向",
+            "fix": "29",
+            "d": "每空填完把整句读一遍，只问一句\"这句和我上一句是同向还是反向\"。<i>deteriorate</i> 和后半句 <i>well preserved</i> 直接对冲，回读一遍立刻能听出来。"
+          },
+          {
+            "tag": "P1",
+            "title": "匹配题：双词锁定，凑够两个证据再落笔",
+            "fix": "40 · 44 · 45",
+            "d": "题干里划两个\"抽象名词/动词\"，去原文找它们的同义替换；只找到一个就继续找。这三题你都找到了一个（balance / adjust），但都停在了第一个。"
+          },
+          {
+            "tag": "P2",
+            "title": "仔细阅读：选项与原文逐词对",
+            "fix": "50 · 51 · 55",
+            "d": "选中后回原文，把选项里每个实词划一遍。51 的 <i>attitude</i>、50 的 <i>awareness</i> 根本划不到；55 的 <i>capable</i> 是从 <i>flexibility</i> 换过来的。这一步做满十秒，三题全对。"
+          },
+          {
+            "tag": "P2",
+            "title": "访谈型文本专项（Passage Two 这种）",
+            "fix": "50 · 51 · 55",
+            "d": "46–49 说明文四连对、50/51/55 访谈文三错，说明你对\"多人引语\"的信息归属不敏感。读这类文章时给每句引语标\"谁说的、在回答什么\"，读完画出人物-观点对照表。"
+          },
+          {
+            "tag": "P3",
+            "title": "这一份试卷的复现计划",
+            "fix": "两周",
+            "d": "今天：遮住答案重做 27 / 28 / 29 / 35，计时 3 分钟。<br>三天后：只做 40 / 44 / 45，用双词锁定写下两个证据句。<br>一周后：重做 50 / 51 / 55，每题写下\"我排除的三个选项各错在哪个词\"。"
+          }
+        ]
       }
     }
   ],
   "words": [
-    {
-      "w": "emerge",
-      "pos": "v.",
-      "zh": "出现；浮现（研究、事实、问题）",
-      "eg": "the latest research that has <em>emerged</em> on language and aging",
-      "paper": "2024-12-1",
-      "tag": "选词填空"
-    },
-    {
-      "w": "capacity",
-      "pos": "n.",
-      "zh": "能力；容量",
-      "eg": "our <em>capacity</em> to speak, write and learn new vocabulary",
-      "paper": "2024-12-1",
-      "tag": "选词填空"
-    },
-    {
-      "w": "preserve",
-      "pos": "v.",
-      "zh": "保存；保持（使不变坏）",
-      "eg": "is well <em>preserved</em> into older adulthood",
-      "paper": "2024-12-1",
-      "tag": "选词填空"
-    },
-    {
-      "w": "mastery",
-      "pos": "n.",
-      "zh": "精通；掌握",
-      "eg": "language <em>mastery</em> is a journey",
-      "paper": "2024-12-1",
-      "tag": "选词填空"
-    },
-    {
-      "w": "by comparison",
-      "pos": "phr.",
-      "zh": "相比之下（两组对比）",
-      "eg": "but, <em>by comparison</em>, our ability to produce…",
-      "paper": "2024-12-1",
-      "tag": "选词填空"
-    },
-    {
-      "w": "in this regard",
-      "pos": "phr.",
-      "zh": "在这方面（回指上文刚说的事）",
-      "eg": "Morrison was not unique <em>in this regard</em>",
-      "paper": "2024-12-1",
-      "tag": "选词填空"
-    },
-    {
-      "w": "highlight",
-      "pos": "v.",
-      "zh": "强调；使突出",
-      "eg": "such accomplishments <em>highlight</em> an important point",
-      "paper": "2024-12-1",
-      "tag": "选词填空"
-    },
-    {
-      "w": "deteriorate",
-      "pos": "v.",
-      "zh": "恶化；退化（不及物）",
-      "eg": "does not seem to <em>deteriorate</em> with age",
-      "paper": "2024-12-1",
-      "tag": "选词填空"
-    },
-    {
-      "w": "comprehend",
-      "pos": "v.",
-      "zh": "理解；领会",
-      "eg": "our ability to produce and to <em>comprehend</em> language",
-      "paper": "2024-12-1",
-      "tag": "选词填空"
-    },
     {
       "w": "assume",
       "pos": "v.",
@@ -647,76 +755,18 @@
       "tag": "段落匹配"
     },
     {
-      "w": "endlessly",
-      "pos": "adv.",
-      "zh": "无休止地",
-      "eg": "few topics have been so <em>endlessly</em> analysed",
-      "paper": "2024-12-1",
-      "tag": "段落匹配"
+      "w": "authentic",
+      "pos": "adj.",
+      "zh": "真实的；真正的",
+      "eg": "the courage to be <em>authentic</em> that connects us",
+      "tag": "仔细阅读"
     },
     {
-      "w": "respondent",
-      "pos": "n.",
-      "zh": "受访者；答卷人",
-      "eg": "the other <em>respondents</em>… all worked long hours",
-      "paper": "2024-12-1",
-      "tag": "段落匹配"
-    },
-    {
-      "w": "resist",
-      "pos": "v.",
-      "zh": "抵制；忍住不做",
-      "eg": "<em>resisting</em> working long hours",
-      "paper": "2024-12-1",
-      "tag": "段落匹配"
-    },
-    {
-      "w": "implement",
-      "pos": "v.",
-      "zh": "实施；执行（计划、改变）",
-      "eg": "they <em>implemented</em> changes",
-      "paper": "2024-12-1",
-      "tag": "段落匹配"
-    },
-    {
-      "w": "substitute",
-      "pos": "n./v.",
-      "zh": "替代品；用…替代",
-      "eg": "a <em>substitute</em> to having a sense of fulfillment",
-      "paper": "2024-12-1",
-      "tag": "段落匹配"
-    },
-    {
-      "w": "split",
-      "pos": "v.",
-      "zh": "把…分成（几组）",
-      "eg": "<em>split</em> more than 1,000 employees into two groups",
-      "paper": "2024-12-1",
-      "tag": "段落匹配"
-    },
-    {
-      "w": "explicitly",
-      "pos": "adv.",
-      "zh": "明确地；公开地",
-      "eg": "reminded to <em>explicitly</em> support their employees",
-      "paper": "2024-12-1",
-      "tag": "段落匹配"
-    },
-    {
-      "w": "burnout",
-      "pos": "n.",
-      "zh": "精疲力竭；职业倦怠",
-      "eg": "to prevent <em>burnout</em>",
-      "paper": "2024-12-1",
-      "tag": "段落匹配"
-    },
-    {
-      "w": "in vain",
+      "w": "be based on",
       "pos": "phr.",
-      "zh": "徒劳；白费",
-      "eg": "any effort you attempt… will be <em>in vain</em>",
-      "paper": "2024-12-1",
-      "tag": "段落匹配"
+      "zh": "以…为基础；基于",
+      "eg": "may be based, in part, on physical chemistry",
+      "tag": "仔细阅读"
     },
     {
       "w": "better-off",
@@ -727,74 +777,138 @@
       "tag": "段落匹配"
     },
     {
-      "w": "utmost",
-      "pos": "adj.",
-      "zh": "极大的；最重要的",
-      "eg": "is of <em>utmost</em> importance",
+      "w": "blessing",
+      "pos": "n.",
+      "zh": "福气；幸事",
+      "eg": "as much of a curse as a <em>blessing</em>",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "burnout",
+      "pos": "n.",
+      "zh": "精疲力竭；职业倦怠",
+      "eg": "to prevent <em>burnout</em>",
       "paper": "2024-12-1",
       "tag": "段落匹配"
     },
     {
-      "w": "shortsighted",
-      "pos": "adj.",
-      "zh": "目光短浅的",
-      "eg": "Continuing to grow concrete forests… is <em>shortsighted</em>",
+      "w": "by comparison",
+      "pos": "phr.",
+      "zh": "相比之下（两组对比）",
+      "eg": "but, <em>by comparison</em>, our ability to produce…",
       "paper": "2024-12-1",
-      "tag": "仔细阅读"
+      "tag": "选词填空"
     },
     {
-      "w": "lobby",
-      "pos": "v.",
-      "zh": "游说（议员、政府）",
-      "eg": "the Woodland Trust successfully <em>lobbied</em> for it to be prescribed",
-      "paper": "2024-12-1",
-      "tag": "仔细阅读"
-    },
-    {
-      "w": "slip",
-      "pos": "v.",
-      "zh": "悄悄溜走；不知不觉消失",
-      "eg": "<em>slipping</em> from popular culture is the wonder… of the natural world",
-      "paper": "2024-12-1",
-      "tag": "仔细阅读"
-    },
-    {
-      "w": "remedy",
-      "pos": "v./n.",
-      "zh": "补救；纠正；疗法",
-      "eg": "part of <em>remedying</em> this social disease",
-      "paper": "2024-12-1",
-      "tag": "仔细阅读"
-    },
-    {
-      "w": "parliament",
+      "w": "capacity",
       "pos": "n.",
-      "zh": "议会；国会",
-      "eg": "for <em>parliament</em> to pass a “right to grow” law",
+      "zh": "能力；容量",
+      "eg": "our <em>capacity</em> to speak, write and learn new vocabulary",
       "paper": "2024-12-1",
+      "tag": "选词填空"
+    },
+    {
+      "w": "cholesterol",
+      "pos": "n.",
+      "zh": "胆固醇",
+      "eg": "they are <em>cholesterol</em>-free",
       "tag": "仔细阅读"
     },
     {
-      "w": "underused",
-      "pos": "adj.",
-      "zh": "未被充分利用的",
-      "eg": "turn <em>underused</em> public spaces into vegetable gardens",
-      "paper": "2024-12-1",
-      "tag": "仔细阅读"
-    },
-    {
-      "w": "vacant",
-      "pos": "adj.",
-      "zh": "空着的；闲置的",
-      "eg": "turn <em>vacant</em> plots of land green",
-      "paper": "2024-12-1",
-      "tag": "仔细阅读"
-    },
-    {
-      "w": "revive",
+      "w": "comprehend",
       "pos": "v.",
-      "zh": "使复兴；重新流行",
-      "eg": "has been <em>revived</em> by green-thumbed influencers",
+      "zh": "理解；领会",
+      "eg": "our ability to produce and to <em>comprehend</em> language",
+      "paper": "2024-12-1",
+      "tag": "选词填空"
+    },
+    {
+      "w": "cultivate",
+      "pos": "v.",
+      "zh": "培养；培育",
+      "eg": "<em>cultivate</em> the inner qualities necessary to sustain intimacy",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "curse",
+      "pos": "n.",
+      "zh": "诅咒；祸事",
+      "eg": "Outer beauty can be as much of a <em>curse</em> as a blessing",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "defy",
+      "pos": "v.",
+      "zh": "违抗；无视（规定）",
+      "eg": "who <em>defy</em> local US regulations",
+      "paper": "2024-12-1",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "deteriorate",
+      "pos": "v.",
+      "zh": "恶化；退化（不及物）",
+      "eg": "does not seem to <em>deteriorate</em> with age",
+      "paper": "2024-12-1",
+      "tag": "选词填空"
+    },
+    {
+      "w": "dismiss",
+      "pos": "v.",
+      "zh": "认为…不值一提；不予考虑",
+      "eg": "dismissed it as rubbery and flavorless",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "ditch",
+      "pos": "v.",
+      "zh": "抛弃；甩掉（口语）",
+      "eg": "people who <em>ditch</em> meat have lower blood pressure",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "emerge",
+      "pos": "v.",
+      "zh": "出现；浮现（研究、事实、问题）",
+      "eg": "the latest research that has <em>emerged</em> on language and aging",
+      "paper": "2024-12-1",
+      "tag": "选词填空"
+    },
+    {
+      "w": "endlessly",
+      "pos": "adv.",
+      "zh": "无休止地",
+      "eg": "few topics have been so <em>endlessly</em> analysed",
+      "paper": "2024-12-1",
+      "tag": "段落匹配"
+    },
+    {
+      "w": "excessive",
+      "pos": "adj.",
+      "zh": "过度的；过分的",
+      "eg": "<em>excessive</em> focus on physical appearance",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "explicitly",
+      "pos": "adv.",
+      "zh": "明确地；公开地",
+      "eg": "reminded to <em>explicitly</em> support their employees",
+      "paper": "2024-12-1",
+      "tag": "段落匹配"
+    },
+    {
+      "w": "flavorless",
+      "pos": "adj.",
+      "zh": "没味道的；寡淡的",
+      "eg": "dismissed it as rubbery and <em>flavorless</em>",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "gradual",
+      "pos": "adj.",
+      "zh": "逐渐的",
+      "eg": "the <em>gradual</em> weakening of male dominance",
       "paper": "2024-12-1",
       "tag": "仔细阅读"
     },
@@ -807,12 +921,74 @@
       "tag": "仔细阅读"
     },
     {
-      "w": "defy",
+      "w": "hail",
       "pos": "v.",
-      "zh": "违抗；无视（规定）",
-      "eg": "who <em>defy</em> local US regulations",
+      "zh": "称赞；欢呼",
+      "eg": "Many women engineers <em>hailed</em> the benefits of their chosen career",
       "paper": "2024-12-1",
       "tag": "仔细阅读"
+    },
+    {
+      "w": "highlight",
+      "pos": "v.",
+      "zh": "强调；使突出",
+      "eg": "such accomplishments <em>highlight</em> an important point",
+      "paper": "2024-12-1",
+      "tag": "选词填空"
+    },
+    {
+      "w": "implement",
+      "pos": "v.",
+      "zh": "实施；执行（计划、改变）",
+      "eg": "they <em>implemented</em> changes",
+      "paper": "2024-12-1",
+      "tag": "段落匹配"
+    },
+    {
+      "w": "in this regard",
+      "pos": "phr.",
+      "zh": "在这方面（回指上文刚说的事）",
+      "eg": "Morrison was not unique <em>in this regard</em>",
+      "paper": "2024-12-1",
+      "tag": "选词填空"
+    },
+    {
+      "w": "in vain",
+      "pos": "phr.",
+      "zh": "徒劳；白费",
+      "eg": "any effort you attempt… will be <em>in vain</em>",
+      "paper": "2024-12-1",
+      "tag": "段落匹配"
+    },
+    {
+      "w": "intimacy",
+      "pos": "n.",
+      "zh": "亲密；亲密关系",
+      "eg": "the lasting <em>intimacy</em> and spiritual connection",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "isolation",
+      "pos": "n.",
+      "zh": "孤立；隔绝",
+      "eg": "It may create connection or <em>isolation</em>",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "lobby",
+      "pos": "v.",
+      "zh": "游说（议员、政府）",
+      "eg": "the Woodland Trust successfully <em>lobbied</em> for it to be prescribed",
+      "paper": "2024-12-1",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "mastery",
+      "pos": "n.",
+      "zh": "精通；掌握",
+      "eg": "language <em>mastery</em> is a journey",
+      "paper": "2024-12-1",
+      "tag": "选词填空"
     },
     {
       "w": "nutrient",
@@ -823,26 +999,177 @@
       "tag": "仔细阅读"
     },
     {
-      "w": "witness",
-      "pos": "v.",
-      "zh": "见证；经历（某变化）",
-      "eg": "It <em>witnessed</em> a significant increase in women engineers",
-      "paper": "2024-12-1",
-      "tag": "仔细阅读"
-    },
-    {
-      "w": "hail",
-      "pos": "v.",
-      "zh": "称赞；欢呼",
-      "eg": "Many women engineers <em>hailed</em> the benefits of their chosen career",
-      "paper": "2024-12-1",
-      "tag": "仔细阅读"
-    },
-    {
-      "w": "gradual",
+      "w": "nutritious",
       "pos": "adj.",
-      "zh": "逐渐的",
-      "eg": "the <em>gradual</em> weakening of male dominance",
+      "zh": "有营养的",
+      "eg": "They're <em>nutritious</em>, inexpensive, and far more sustainable",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "on an equal footing",
+      "pos": "phr.",
+      "zh": "处于平等地位",
+      "eg": "are <em>on an equal footing</em> until they have children",
+      "paper": "2024-12-1",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "parliament",
+      "pos": "n.",
+      "zh": "议会；国会",
+      "eg": "for <em>parliament</em> to pass a “right to grow” law",
+      "paper": "2024-12-1",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "preserve",
+      "pos": "v.",
+      "zh": "保存；保持（使不变坏）",
+      "eg": "is well <em>preserved</em> into older adulthood",
+      "paper": "2024-12-1",
+      "tag": "选词填空"
+    },
+    {
+      "w": "remedy",
+      "pos": "v./n.",
+      "zh": "补救；纠正；疗法",
+      "eg": "part of <em>remedying</em> this social disease",
+      "paper": "2024-12-1",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "resentment",
+      "pos": "n.",
+      "zh": "怨恨；不满",
+      "eg": "love turns into <em>resentment</em> and bitter court battles",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "resist",
+      "pos": "v.",
+      "zh": "抵制；忍住不做",
+      "eg": "<em>resisting</em> working long hours",
+      "paper": "2024-12-1",
+      "tag": "段落匹配"
+    },
+    {
+      "w": "respondent",
+      "pos": "n.",
+      "zh": "受访者；答卷人",
+      "eg": "the other <em>respondents</em>… all worked long hours",
+      "paper": "2024-12-1",
+      "tag": "段落匹配"
+    },
+    {
+      "w": "revive",
+      "pos": "v.",
+      "zh": "使复兴；重新流行",
+      "eg": "has been <em>revived</em> by green-thumbed influencers",
+      "paper": "2024-12-1",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "rubbery",
+      "pos": "adj.",
+      "zh": "像橡胶的；嚼不动的",
+      "eg": "dismissed it as <em>rubbery</em> and flavorless",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "shortsighted",
+      "pos": "adj.",
+      "zh": "目光短浅的",
+      "eg": "Continuing to grow concrete forests… is <em>shortsighted</em>",
+      "paper": "2024-12-1",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "skyrocket",
+      "pos": "v.",
+      "zh": "暴涨；猛增",
+      "eg": "the market will <em>skyrocket</em> to $74 billion by 2030",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "slip",
+      "pos": "v.",
+      "zh": "悄悄溜走；不知不觉消失",
+      "eg": "<em>slipping</em> from popular culture is the wonder… of the natural world",
+      "paper": "2024-12-1",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "spiritual",
+      "pos": "adj.",
+      "zh": "精神上的；心灵的",
+      "eg": "lasting intimacy and <em>spiritual</em> connection",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "split",
+      "pos": "v.",
+      "zh": "把…分成（几组）",
+      "eg": "<em>split</em> more than 1,000 employees into two groups",
+      "paper": "2024-12-1",
+      "tag": "段落匹配"
+    },
+    {
+      "w": "substitute",
+      "pos": "n./v.",
+      "zh": "替代品；用…替代",
+      "eg": "a <em>substitute</em> to having a sense of fulfillment",
+      "paper": "2024-12-1",
+      "tag": "段落匹配"
+    },
+    {
+      "w": "superficial",
+      "pos": "adj.",
+      "zh": "表面的；肤浅的",
+      "eg": "from something <em>superficial</em> to something that connects us to our depths",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "superstar",
+      "pos": "n.",
+      "zh": "超级明星；领军者",
+      "eg": "the current <em>superstars</em> of the alternative protein sector",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "surge",
+      "pos": "n.",
+      "zh": "激增；猛涨",
+      "eg": "a 957 percent <em>surge</em>",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "sustainable",
+      "pos": "adj.",
+      "zh": "可持续的",
+      "eg": "far more <em>sustainable</em> than any of the processed meatless substitutes",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "underused",
+      "pos": "adj.",
+      "zh": "未被充分利用的",
+      "eg": "turn <em>underused</em> public spaces into vegetable gardens",
+      "paper": "2024-12-1",
+      "tag": "仔细阅读"
+    },
+    {
+      "w": "utmost",
+      "pos": "adj.",
+      "zh": "极大的；最重要的",
+      "eg": "is of <em>utmost</em> importance",
+      "paper": "2024-12-1",
+      "tag": "段落匹配"
+    },
+    {
+      "w": "vacant",
+      "pos": "adj.",
+      "zh": "空着的；闲置的",
+      "eg": "turn <em>vacant</em> plots of land green",
       "paper": "2024-12-1",
       "tag": "仔细阅读"
     },
@@ -855,10 +1182,10 @@
       "tag": "仔细阅读"
     },
     {
-      "w": "on an equal footing",
-      "pos": "phr.",
-      "zh": "处于平等地位",
-      "eg": "are <em>on an equal footing</em> until they have children",
+      "w": "witness",
+      "pos": "v.",
+      "zh": "见证；经历（某变化）",
+      "eg": "It <em>witnessed</em> a significant increase in women engineers",
       "paper": "2024-12-1",
       "tag": "仔细阅读"
     }
@@ -949,46 +1276,5 @@
       "zh": "对我来说，最大的挑战是：在我收到的所有信息都在告诉我\"你永远不会被认真对待，也不会像男人那样获得同样的晋升或加薪\"的时候，还要继续相信自己——而那些男人明显资历更浅，也不如我聪明。",
       "key": "一句话里套了状语从句 + 定语从句 + 表语从句 + 非限制性定语从句，是全卷最难的一句；先砍掉 when 从句，主干只有 8 个词。"
     }
-  ],
-  "diagnosis": {
-    "intro": "按错题分布看，问题不是\"读不懂\"，而是三处程序性漏洞。下面每条都给了可执行的改法，按顺序做，两周内能把这三块补上。",
-    "steps": [
-      {
-        "tag": "P0",
-        "title": "选词填空：先标词性槽位，再读句子",
-        "fix": "27 · 28 · 35",
-        "d": "拿到十个空先不读词库，只在每个空上方写一个符号——<i>to+原形 / 介词+n. / 限定词+adj. / 主+谓</i>。标完再用词库对号。这三题都还没读语义就已经错了。"
-      },
-      {
-        "tag": "P1",
-        "title": "填完必回读：检查句子的立场方向",
-        "fix": "29",
-        "d": "每空填完把整句读一遍，只问一句\"这句和我上一句是同向还是反向\"。<i>deteriorate</i> 和后半句 <i>well preserved</i> 直接对冲，回读一遍立刻能听出来。"
-      },
-      {
-        "tag": "P1",
-        "title": "匹配题：双词锁定，凑够两个证据再落笔",
-        "fix": "40 · 44 · 45",
-        "d": "题干里划两个\"抽象名词/动词\"，去原文找它们的同义替换；只找到一个就继续找。这三题你都找到了一个（balance / adjust），但都停在了第一个。"
-      },
-      {
-        "tag": "P2",
-        "title": "仔细阅读：选项与原文逐词对",
-        "fix": "50 · 51 · 55",
-        "d": "选中后回原文，把选项里每个实词划一遍。51 的 <i>attitude</i>、50 的 <i>awareness</i> 根本划不到；55 的 <i>capable</i> 是从 <i>flexibility</i> 换过来的。这一步做满十秒，三题全对。"
-      },
-      {
-        "tag": "P2",
-        "title": "访谈型文本专项（Passage Two 这种）",
-        "fix": "50 · 51 · 55",
-        "d": "46–49 说明文四连对、50/51/55 访谈文三错，说明你对\"多人引语\"的信息归属不敏感。读这类文章时给每句引语标\"谁说的、在回答什么\"，读完画出人物-观点对照表。"
-      },
-      {
-        "tag": "P3",
-        "title": "这一份试卷的复现计划",
-        "fix": "两周",
-        "d": "今天：遮住答案重做 27 / 28 / 29 / 35，计时 3 分钟。<br>三天后：只做 40 / 44 / 45，用双词锁定写下两个证据句。<br>一周后：重做 50 / 51 / 55，每题写下\"我排除的三个选项各错在哪个词\"。"
-      }
-    ]
-  }
+  ]
 }
