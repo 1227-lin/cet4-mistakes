@@ -1,16 +1,307 @@
 {
   "meta": {
     "title": "四级错题本",
-    "updated": "2026-10-26"
+    "updated": "2026-10-27"
   },
   "papers": [
     {
       "id": "2025-06-3",
       "title": "2025年6月 · 第三套",
       "date": "2025-06-14",
-      "scope": "Section C 46–50",
-      "note": "本卷只做了阅读 Section C（46–50）；51–55 题面缺，听力与其他部分未做",
+      "scope": "Part III 阅读 26–55",
+      "note": "本套听力与第一二套相同，试卷未重复显示；写作与翻译未作答",
       "questions": [
+        {
+          "no": "26",
+          "sec": "A",
+          "yours": "B",
+          "ans": "G",
+          "ok": false,
+          "tag": "语义方向",
+          "line": "hardly apparent 与全文主旨相反",
+          "stem": "This characteristic is <u>26</u> apparent in a new study, focusing on people who underwent a hemispherectomy, a surgical procedure in which half of the brain is removed to treat illness.",
+          "quote": "This means the brain has an almost magical ability to change. This characteristic is <em>particularly apparent</em> in a new study…",
+          "why": "前一句说大脑有\"近乎神奇的自我改变能力\"，本句要接着说\"这一点在新研究里<b>尤其明显</b>\"。<b>G) particularly（尤其）</b>既合语义也合程度：不是\"明显\"，是\"格外明显\"。",
+          "you": "你填 B) hardly，变成\"这一点在新研究里<b>几乎看不出来</b>\"，与上一句的\"近乎神奇的能力\"和下一句的\"通过半球切除研究证明可塑性\"直接对撞。这是\"修饰语方向反了\"，和 2024 年那套第 29 题同款。",
+          "fix": "副词空先判\"加强还是削弱\"：particularly / especially / largely 是加强，hardly / barely / rarely 是削弱。填完回读一句，方向反了立刻能听出来。",
+          "phrases": [
+            {
+              "p": "be particularly apparent",
+              "z": "格外明显"
+            },
+            {
+              "p": "undergo a procedure",
+              "z": "接受一项手术",
+              "n": "undergo 的过去式 underwent"
+            },
+            {
+              "p": "a surgical procedure",
+              "z": "外科手术"
+            }
+          ]
+        },
+        {
+          "no": "27",
+          "sec": "A",
+          "yours": "F",
+          "ans": "F",
+          "ok": true,
+          "brief": "a critical organ → F organ（器官）"
+        },
+        {
+          "no": "28",
+          "sec": "A",
+          "yours": "H",
+          "ans": "H",
+          "ok": true,
+          "brief": "the remaining half of their brain"
+        },
+        {
+          "no": "29",
+          "sec": "A",
+          "yours": "C",
+          "ans": "C",
+          "ok": true,
+          "brief": "This indicates that…"
+        },
+        {
+          "no": "30",
+          "sec": "A",
+          "yours": "I",
+          "ans": "E",
+          "ok": false,
+          "tag": "词性判断",
+          "line": "the medical + 名词，不能填 responsible",
+          "stem": "There are many other cases in the medical <u>30</u> that document the brain's amazing ability to adapt.",
+          "quote": "There are many other cases in the <em>medical literature</em> that document the brain's amazing ability to adapt.",
+          "why": "介词 in 后面要名词，且被 medical 修饰：\"医学<b>文献</b>\"。<b>E) literature</b> 才能构成 <i>the medical literature</i>（医学文献），后面的 <i>that document…</i> 是定语从句修饰它。",
+          "you": "你填 I) responsible。responsible 是形容词，<i>the medical responsible that document…</i> 直接不成句；而且 responsible 通常要接 for，不能单独作名词。",
+          "fix": "看到 <i>the + 形容词 + ___ + that 从句</i>，先确认空格是名词还是形容词。medical 已经是形容词，空格只能是名词。",
+          "phrases": [
+            {
+              "p": "the medical literature",
+              "z": "医学文献",
+              "n": "literature 这里是\"文献\"，不是\"文学\""
+            },
+            {
+              "p": "document sth",
+              "z": "记录／记载某事",
+              "n": "本句里 document 是动词"
+            },
+            {
+              "p": "be responsible for",
+              "z": "对…负责；是…的原因"
+            }
+          ]
+        },
+        {
+          "no": "31",
+          "sec": "A",
+          "yours": "A",
+          "ans": "A",
+          "ok": true,
+          "brief": "the brain's amazing ability to adapt"
+        },
+        {
+          "no": "32",
+          "sec": "A",
+          "yours": "O",
+          "ans": "I",
+          "ok": false,
+          "tag": "搭配",
+          "line": "be responsible for sight，不能填 visual",
+          "stem": "…which included the part of the brain <u>32</u> for sight.",
+          "quote": "…the part of the brain <em>responsible for</em> sight.",
+          "why": "<b>I) responsible</b> 与后面的 for 构成固定搭配 <i>be responsible for</i>（负责、主管），\"负责视觉的那部分大脑\"。<br>这类\"形容词 + for\"的空，考的就是搭配，不是词义。",
+          "you": "你填 O) visual。<i>visual for sight</i> 不成立：visual 不能接 for，而且\"视觉的…视觉\"语义重复。visual 的正确位置在 34 题（visual tasks）。",
+          "fix": "空格后面紧跟 for / to / with 时，先想搭配：responsible for、adapt to、dependent on。搭配对不上，词义再接近也是错的。",
+          "phrases": [
+            {
+              "p": "be responsible for",
+              "z": "负责；主管"
+            },
+            {
+              "p": "a significant portion of",
+              "z": "…的很大一部分"
+            }
+          ]
+        },
+        {
+          "no": "33",
+          "sec": "A",
+          "yours": "K",
+          "ans": "K",
+          "ok": true,
+          "brief": "he could still see"
+        },
+        {
+          "no": "34",
+          "sec": "A",
+          "yours": "A",
+          "ans": "O",
+          "ok": false,
+          "tag": "词性判断",
+          "line": "修饰 tasks 要用形容词，adapt 是动词",
+          "stem": "They determined that this was because other parts of his brain took over the missing part's <u>34</u> tasks.",
+          "quote": "…other parts of his brain took over the missing part's <em>visual</em> tasks.",
+          "why": "空格在名词 tasks 前，必须是形容词；前面的语境是\"负责视觉的那部分大脑被切除\"，所以是\"<b>视觉</b>任务\"→ <b>O) visual</b>。",
+          "you": "你填 A) adapt（适应，动词）。<i>adapt tasks</i> 语法不通；而且 adapt 的正确位置是 31 题（ability to adapt）。你把 31 和 34 的词库位置弄反了。",
+          "fix": "选词填空里同一个词只出现一次，一旦在别的空用了，就要回头检查两处是不是互换了。",
+          "phrases": [
+            {
+              "p": "take over",
+              "z": "接管；接手"
+            },
+            {
+              "p": "visual tasks",
+              "z": "视觉任务"
+            }
+          ]
+        },
+        {
+          "no": "35",
+          "sec": "A",
+          "yours": "E",
+          "ans": "J",
+          "ok": false,
+          "tag": "词性判断",
+          "line": "主语后要谓语，literature 是名词",
+          "stem": "Though they are not sure how these individuals <u>35</u> the ability to smell, scientists believe it is possible that another part of the brain took on that task.",
+          "quote": "…how these individuals <em>retained</em> the ability to smell.",
+          "why": "how 引导的从句里，主语 these individuals 后面必须是<b>谓语动词</b>：<i>retained the ability</i>（保留了这种能力）。<b>J) retained</b>。",
+          "you": "你填 E) literature，名词不能作谓语；而且 literature 已经在 30 题用过，词库里一个词只用一次。",
+          "fix": "先看\"主语后有没有谓语\"：individuals ___，空格只能是动词。选词填空十个空里通常有 3–4 个纯谓语位，先标出来能省一半时间。",
+          "phrases": [
+            {
+              "p": "retain the ability to",
+              "z": "保留…的能力"
+            },
+            {
+              "p": "take on a task",
+              "z": "承担一项任务"
+            }
+          ]
+        },
+        {
+          "no": "36",
+          "sec": "B",
+          "yours": "C",
+          "ans": "C",
+          "ok": true,
+          "brief": "new research has found the cause → age-long mystery resolved"
+        },
+        {
+          "no": "37",
+          "sec": "B",
+          "yours": "H",
+          "ans": "H",
+          "ok": true,
+          "brief": "bilateral control can almost double throughput per lane"
+        },
+        {
+          "no": "38",
+          "sec": "B",
+          "yours": "C",
+          "ans": "E",
+          "ok": false,
+          "tag": "单点定位",
+          "line": "equal spacing 在 C 段，但\"不断微调\"在 E 段",
+          "stem": "According to Horn, drivers making constant adjustments for equal spacing between cars in a flow of traffic can help reduce phantom traffic jams.",
+          "quote": "<b>E)</b> …By splitting the difference between the cars in front and the cars behind… In essence, <em>each driver would constantly make adjustments to keep their car roughly halfway</em> between the car in front and the car behind.",
+          "why": "题干有两个成分：<b>constant adjustments</b>（不断微调）和 <b>equal spacing</b>（等距）。E 段两个都有：<i>constantly make adjustments</i> ＋ <i>roughly halfway</i>（＝等距）。",
+          "you": "你选 C。C 段确实出现 <i>maintaining equal spacing between cars on the road</i>，但那是\"研究找到的解决办法是什么\"的概述，没有\"司机不断微调\"这个动作。你只对上了 equal spacing 一个名词短语。",
+          "fix": "题干是\"动作 + 方式\"时，两个成分都要在原文找到。只对上名词短语，就会落到 C 这种\"说了同一件事的另一面\"的段落。",
+          "phrases": [
+            {
+              "p": "make adjustments",
+              "z": "做出调整"
+            },
+            {
+              "p": "split the difference",
+              "z": "取中间值；折中"
+            },
+            {
+              "p": "keep roughly halfway between A and B",
+              "z": "大致保持在 A 和 B 中间"
+            }
+          ]
+        },
+        {
+          "no": "39",
+          "sec": "B",
+          "yours": "E",
+          "ans": "N",
+          "ok": false,
+          "tag": "单点定位",
+          "line": "until systems become standard 只在 N 段",
+          "stem": "Before systems for bilateral control are installed, drivers should not follow the car in front too closely so as to reduce phantom traffic jams.",
+          "quote": "<b>N)</b> But <em>until those systems become standard</em>, human drivers can help reduce phantom traffic jams simply by <em>not following the car in front so closely</em>. As Horn argues, “There's absolutely no advantage of tailgating the car in front of you.”",
+          "why": "三个点全在 N 段：<i>until those systems become standard</i> ≈ before systems are installed；<i>not following so closely</i> 原词；<i>reduce phantom traffic jams</i> 原词。",
+          "you": "你选 E。E 段讲的是\"霍恩想出的解决方案本身\"（用等距控制抑制堵车），不是\"系统装好之前的过渡建议\"。你抓的是\"解决方案\"这个大主题，没抓时间状语。",
+          "fix": "题干里有 before / until / once / after 这类时间条件时，它才是定位词——先找段落里的时间标记，再看内容。",
+          "phrases": [
+            {
+              "p": "until those systems become standard",
+              "z": "直到这些系统成为标配"
+            },
+            {
+              "p": "follow the car in front closely",
+              "z": "紧跟前面的车"
+            },
+            {
+              "p": "tailgate",
+              "z": "尾随；紧跟（前车）"
+            }
+          ]
+        },
+        {
+          "no": "40",
+          "sec": "B",
+          "yours": "F",
+          "ans": "F",
+          "ok": true,
+          "brief": "simple modifications + adaptive cruise control already in cars"
+        },
+        {
+          "no": "41",
+          "sec": "B",
+          "yours": "B",
+          "ans": "B",
+          "ok": true,
+          "brief": "drivers assume an accident or construction"
+        },
+        {
+          "no": "42",
+          "sec": "B",
+          "yours": "M",
+          "ans": "M",
+          "ok": true,
+          "brief": "forward-facing + rear-facing sensors"
+        },
+        {
+          "no": "43",
+          "sec": "B",
+          "yours": "G",
+          "ans": "G",
+          "ok": true,
+          "brief": "solving phantom jams could save $121 billion a year"
+        },
+        {
+          "no": "44",
+          "sec": "B",
+          "yours": "D",
+          "ans": "D",
+          "ok": true,
+          "brief": "slowing spreads backward like a wave"
+        },
+        {
+          "no": "45",
+          "sec": "B",
+          "yours": "L",
+          "ans": "L",
+          "ok": true,
+          "brief": "bats, birds and fish use bilateral control"
+        },
         {
           "no": "46",
           "sec": "C",
@@ -58,7 +349,7 @@
           "yours": "D",
           "ans": "D",
           "ok": true,
-          "brief": "as much of a curse as a blessing＝既可能是福也可能是祸 → do as much harm as good"
+          "brief": "as much of a curse as a blessing → do as much harm as good"
         },
         {
           "no": "49",
@@ -66,7 +357,7 @@
           "yours": "A",
           "ans": "A",
           "ok": true,
-          "brief": "强调句 it is the meeting of our inner worlds that… → Meeting of minds"
+          "brief": "强调句 the meeting of our inner worlds → Meeting of minds"
         },
         {
           "no": "50",
@@ -100,45 +391,103 @@
               "z": "那是他们的损失，不是我们的"
             }
           ]
+        },
+        {
+          "no": "51",
+          "sec": "C",
+          "yours": "C",
+          "ans": "C",
+          "ok": true,
+          "brief": "skyrocket to $74 billion = a huge boost in consumption"
+        },
+        {
+          "no": "52",
+          "sec": "C",
+          "yours": "A",
+          "ans": "A",
+          "ok": true,
+          "brief": "nine out of ten buyers also eat meat → mostly non-vegetarians"
+        },
+        {
+          "no": "53",
+          "sec": "C",
+          "yours": "B",
+          "ans": "B",
+          "ok": true,
+          "brief": "she couldn't stand to take another bite → very much resemble animal meat"
+        },
+        {
+          "no": "54",
+          "sec": "C",
+          "yours": "D",
+          "ans": "D",
+          "ok": true,
+          "brief": "ditch meat → lower blood pressure / blood sugar / cholesterol"
+        },
+        {
+          "no": "55",
+          "sec": "C",
+          "yours": "A",
+          "ans": "A",
+          "ok": true,
+          "brief": "whole grains and vegetables / beans → naturally produced foods"
         }
       ],
       "diagnosis": {
-        "intro": "这套只做了 Section C 五题，错两题，但错的是同一个动作：没把选项里的词回原文对一遍。",
+        "intro": "这套卷的错题比上一套少一个，但错法一样。下面四条按优先级排，前两条能直接吃掉 7 道错题。",
         "steps": [
           {
-            "tag": "P1",
-            "title": "细节题：三个要素齐了才选",
-            "fix": "50",
-            "d": "定位到句子后逐个名词对：people、value、who we are（对应 compatible souls / appreciate us as we are）。缺一个，就是改写出来的错项——A 的 route toward souls 就是拼出来的。"
+            "tag": "P0",
+            "title": "选词填空：先标词性槽位",
+            "fix": "26 · 30 · 32 · 34 · 35",
+            "d": "每个空上方先写一个符号：<i>adj + n.</i> / <i>prep + n.</i> / <i>主语 + 谓语</i> / <i>adv + adj.</i>。五个错题里有四个，标完槽位就不用看语义了。"
           },
           {
             "tag": "P1",
-            "title": "主题题：先找段落主题句",
-            "fix": "46",
-            "d": "问“整段说明什么”，答案要覆盖整段。第一段三句都在说外貌被重视（high value、$722、十分之一想像明星），B 是三句的总和；C 里的 fitness 全段没出现。"
+            "title": "副词看方向",
+            "fix": "26",
+            "d": "particularly / especially 是加强，hardly / barely 是削弱。填完回读一句，和上一句冲突就说明方向反了。"
+          },
+          {
+            "tag": "P1",
+            "title": "匹配题：两个成分同时命中",
+            "fix": "38 · 39",
+            "d": "38 的\"动作+方式\"、39 的\"时间+内容\"。只对上名词短语（equal spacing）或主题词（solution），就会落到相邻的段落。"
+          },
+          {
+            "tag": "P2",
+            "title": "细节题：选项逐词回原文",
+            "fix": "46 · 50",
+            "d": "fitness、route 这类原文没有的名词，是最好抓的排除信号。"
           },
           {
             "tag": "P3",
-            "title": "这套的复现",
+            "title": "复现",
             "fix": "一周内",
-            "d": "遮答案重做 46 和 50，各写一句“我排除的三个选项错在哪个词”；再回看 47–49 为什么能一眼对（都是原文实词直译）。"
+            "d": "遮答案重做 26/30/32/34/35 五个空，只标词性不动笔选；再做 38/39，写下两个定位成分。"
           }
         ]
       },
       "summary": {
-        "verdict": "Section C 五题对三错二（60%）。两题的错法不一样，但病根相同：选项里都多了一个原文没有的名词——46 多出 fitness，50 多出 route。",
+        "verdict": "Part III 阅读 30 题对 21 错 9，正确率 70%。选词填空错 5 个（26/30/32/34/35），清一色是\"词性没对上\"；段落匹配错 2 个（38/39），都是抓住一个词就落笔；仔细阅读错 2 个（46/50），都是选项里多出原文没有的名词。比 2024 年 12 月那套（66.7%）略好，但错因几乎没变。",
         "roots": [
           {
-            "t": "选项里凭空多出的名词",
+            "t": "词性槽位没先标",
             "c": "p4",
-            "d": "46 的 <i>fitness</i>、50 的 <i>route / toward other people's souls</i>，原文里都找不到对应。",
-            "f": "选完回原文，把选项里每个名词划到位置；划不到就排除。"
+            "d": "30 填形容词、32 填错配形容词、34 把动词当形容词、35 把名词当谓语、26 副词方向反。五道题里有四道是词性问题。",
+            "f": "十个空先标槽位（to+原形 / 介词+n. / 限定词+adj. / 主+谓 / 副+adj.），标完再读词库。"
           },
           {
-            "t": "主题题只抓一句",
+            "t": "单点定位",
             "c": "p2",
-            "d": "46 问的是\"第一段整体说明什么\"，C 只用了 star 一个词，其余全靠脑补。",
-            "f": "主题题先读段落首句，再看选项是否覆盖整段三句而不是某一句。"
+            "d": "38 只对上 equal spacing，漏了 constant adjustments；39 只抓\"解决方案\"主题，漏了 until 这个时间状语。",
+            "f": "匹配题要\"动作+方式\"或\"时间+内容\"两个成分同时命中。"
+          },
+          {
+            "t": "选项凭空多名词",
+            "c": "p3",
+            "d": "46 多出 fitness，50 多出 route。原文没有的名词，就是命题人埋的坑。",
+            "f": "选完回原文逐词圈，圈不到立刻排除。"
           }
         ]
       }
@@ -739,6 +1088,22 @@
   ],
   "words": [
     {
+      "w": "amplify",
+      "pos": "v.",
+      "zh": "放大；增强",
+      "eg": "prevent the slow-down effect from being <em>amplified</em>",
+      "tag": "段落匹配",
+      "paper": "2025-06-3"
+    },
+    {
+      "w": "apparent",
+      "pos": "adj.",
+      "zh": "明显的；显而易见的",
+      "eg": "This characteristic is particularly <em>apparent</em> in a new study",
+      "tag": "选词填空",
+      "paper": "2025-06-3"
+    },
+    {
       "w": "assume",
       "pos": "v.",
       "zh": "以为；假定（未证实）",
@@ -777,6 +1142,14 @@
       "eg": "a privilege reserved for the <em>better-off</em>",
       "paper": "2024-12-1",
       "tag": "段落匹配"
+    },
+    {
+      "w": "bilateral",
+      "pos": "adj.",
+      "zh": "双向的；双边的",
+      "eg": "<em>bilateral</em> control",
+      "tag": "段落匹配",
+      "paper": "2025-06-3"
     },
     {
       "w": "blessing",
@@ -819,12 +1192,36 @@
       "paper": "2025-06-3"
     },
     {
+      "w": "compensate for",
+      "pos": "phr.",
+      "zh": "补偿；弥补",
+      "eg": "the brain is able to <em>compensate for</em> loss of certain brain structure",
+      "tag": "选词填空",
+      "paper": "2025-06-3"
+    },
+    {
       "w": "comprehend",
       "pos": "v.",
       "zh": "理解；领会",
       "eg": "our ability to produce and to <em>comprehend</em> language",
       "paper": "2024-12-1",
       "tag": "选词填空"
+    },
+    {
+      "w": "crawl to a halt",
+      "pos": "phr.",
+      "zh": "慢慢停下来",
+      "eg": "dense traffic <em>crawls to a halt</em> for no apparent reason",
+      "tag": "段落匹配",
+      "paper": "2025-06-3"
+    },
+    {
+      "w": "critical",
+      "pos": "adj.",
+      "zh": "关键的；至关重要的",
+      "eg": "despite missing half of this <em>critical</em> organ",
+      "tag": "选词填空",
+      "paper": "2025-06-3"
     },
     {
       "w": "cultivate",
@@ -840,6 +1237,14 @@
       "zh": "诅咒；祸事",
       "eg": "Outer beauty can be as much of a <em>curse</em> as a blessing",
       "tag": "仔细阅读",
+      "paper": "2025-06-3"
+    },
+    {
+      "w": "damper",
+      "pos": "n.",
+      "zh": "抑制因素；减震器",
+      "eg": "act as a <em>damper</em> on phantom traffic jams",
+      "tag": "段落匹配",
       "paper": "2025-06-3"
     },
     {
@@ -875,12 +1280,28 @@
       "paper": "2025-06-3"
     },
     {
+      "w": "document",
+      "pos": "v.",
+      "zh": "记录；记载",
+      "eg": "cases … that <em>document</em> the brain’s amazing ability to adapt",
+      "tag": "选词填空",
+      "paper": "2025-06-3"
+    },
+    {
       "w": "emerge",
       "pos": "v.",
       "zh": "出现；浮现（研究、事实、问题）",
       "eg": "the latest research that has <em>emerged</em> on language and aging",
       "paper": "2024-12-1",
       "tag": "选词填空"
+    },
+    {
+      "w": "emergent property",
+      "pos": "phr.",
+      "zh": "突现属性（整体才有的性质）",
+      "eg": "an <em>emergent property</em> of the flow of vehicles",
+      "tag": "段落匹配",
+      "paper": "2025-06-3"
     },
     {
       "w": "endlessly",
@@ -931,6 +1352,14 @@
       "tag": "仔细阅读"
     },
     {
+      "w": "grind to a halt",
+      "pos": "phr.",
+      "zh": "逐渐停摆",
+      "eg": "the traffic <em>grinds to a halt</em> over nothing",
+      "tag": "段落匹配",
+      "paper": "2025-06-3"
+    },
+    {
       "w": "hail",
       "pos": "v.",
       "zh": "称赞；欢呼",
@@ -971,6 +1400,14 @@
       "tag": "段落匹配"
     },
     {
+      "w": "intact",
+      "pos": "adj.",
+      "zh": "完好无损的",
+      "eg": "people with <em>intact</em> brains",
+      "tag": "选词填空",
+      "paper": "2025-06-3"
+    },
+    {
       "w": "intimacy",
       "pos": "n.",
       "zh": "亲密；亲密关系",
@@ -1001,6 +1438,14 @@
       "eg": "language <em>mastery</em> is a journey",
       "paper": "2024-12-1",
       "tag": "选词填空"
+    },
+    {
+      "w": "modification",
+      "pos": "n.",
+      "zh": "改装；修改",
+      "eg": "relatively simple <em>modifications</em> to adaptive cruise control",
+      "tag": "段落匹配",
+      "paper": "2025-06-3"
     },
     {
       "w": "nutrient",
@@ -1035,12 +1480,36 @@
       "tag": "仔细阅读"
     },
     {
+      "w": "phantom",
+      "pos": "adj.",
+      "zh": "幻影般的；凭空出现的",
+      "eg": "“<em>phantom</em>” traffic jams",
+      "tag": "段落匹配",
+      "paper": "2025-06-3"
+    },
+    {
+      "w": "portion",
+      "pos": "n.",
+      "zh": "部分；一份",
+      "eg": "a significant <em>portion</em> of his brain",
+      "tag": "选词填空",
+      "paper": "2025-06-3"
+    },
+    {
       "w": "preserve",
       "pos": "v.",
       "zh": "保存；保持（使不变坏）",
       "eg": "is well <em>preserved</em> into older adulthood",
       "paper": "2024-12-1",
       "tag": "选词填空"
+    },
+    {
+      "w": "refrain from",
+      "pos": "phr.",
+      "zh": "克制不做",
+      "eg": "Most of them <em>refrain from</em> eating meat for health reasons",
+      "tag": "仔细阅读",
+      "paper": "2025-06-3"
     },
     {
       "w": "remedy",
@@ -1073,6 +1542,14 @@
       "eg": "the other <em>respondents</em>… all worked long hours",
       "paper": "2024-12-1",
       "tag": "段落匹配"
+    },
+    {
+      "w": "retain",
+      "pos": "v.",
+      "zh": "保留；保持",
+      "eg": "how these individuals <em>retained</em> the ability to smell",
+      "tag": "选词填空",
+      "paper": "2025-06-3"
     },
     {
       "w": "revive",
@@ -1155,6 +1632,14 @@
       "paper": "2025-06-3"
     },
     {
+      "w": "suppress",
+      "pos": "v.",
+      "zh": "抑制；压制",
+      "eg": "<em>suppress</em> phantom traffic jams",
+      "tag": "段落匹配",
+      "paper": "2025-06-3"
+    },
+    {
       "w": "surge",
       "pos": "n.",
       "zh": "激增；猛涨",
@@ -1168,6 +1653,22 @@
       "zh": "可持续的",
       "eg": "far more <em>sustainable</em> than any of the processed meatless substitutes",
       "tag": "仔细阅读",
+      "paper": "2025-06-3"
+    },
+    {
+      "w": "tailgate",
+      "pos": "v.",
+      "zh": "紧跟前车",
+      "eg": "no advantage of <em>tailgating</em> the car in front of you",
+      "tag": "段落匹配",
+      "paper": "2025-06-3"
+    },
+    {
+      "w": "throughput",
+      "pos": "n.",
+      "zh": "吞吐量；通行量",
+      "eg": "1,800 cars per lane per hour <em>throughput</em>",
+      "tag": "段落匹配",
       "paper": "2025-06-3"
     },
     {
