@@ -1797,6 +1797,48 @@
       ],
       "zh": "对我来说，最大的挑战是：在我收到的所有信息都在告诉我\"你永远不会被认真对待，也不会像男人那样获得同样的晋升或加薪\"的时候，还要继续相信自己——而那些男人明显资历更浅，也不如我聪明。",
       "key": "一句话里套了状语从句 + 定语从句 + 表语从句 + 非限制性定语从句，是全卷最难的一句；先砍掉 when 从句，主干只有 8 个词。"
+    },
+    {
+      "paper": "2025-06-3",
+      "src": "Passage Two · 第 1 段",
+      "en": "<b>If</b> you tried a vegetable burger years ago and <b>dismissed it as</b> rubbery and flavorless.",
+      "parts": [
+        {
+          "t": "只有从句，没有主句",
+          "d": "括号里是一个 <b>If 引导的条件状语从句</b>，主句在括号外：<i>It’s a good time to give meatless meat another chance.</i> 读到这里以为句子结束了，是因为主句被留在了下一句。"
+        },
+        {
+          "t": "从句内部",
+          "d": "主语 you；谓语 tried 和 dismissed 由 and 并列；<i>a vegetable burger years ago</i> 是 tried 的宾语和时间状语。"
+        },
+        {
+          "t": "两个小结构",
+          "d": "<b>dismiss sth as + adj.</b>＝认为某物…而不屑一顾；<i>rubbery and flavorless</i> 是形容词作 as 的宾语补足语（像橡胶的、没味道的）。"
+        }
+      ],
+      "zh": "如果你几年前尝过植物汉堡，觉得它像嚼橡胶、又没味道，就把它否掉了——现在该再给它一次机会。",
+      "key": "括号只圈了 if 从句，主句在括号外，读完容易以为句子断了；另外 dismiss…as… 是\"认为…是…所以不理会\"，不是\"解雇\"。"
+    },
+    {
+      "paper": "2025-06-3",
+      "src": "Passage Two · 第 1 段",
+      "en": "Analysts don’t expect the meat-free movement to slow anytime soon; a 2021 report predicts the market will skyrocket to $74 billion by 2030 — <b>a 957 percent surge</b>.",
+      "parts": [
+        {
+          "t": "分号 → 两个独立句",
+          "d": "分号前：<i>Analysts don’t expect the meat-free movement to slow anytime soon</i>；分号后：<i>a 2021 report predicts (that) the market will skyrocket…</i>。两句都完整，各自有主谓。"
+        },
+        {
+          "t": "否定转移",
+          "d": "<b>don’t expect … to slow</b> 不是\"不期待它放缓\"，而是\"预计它<b>不会</b>放缓\"——英语里否定常前移到 expect/believe/think，翻译时要还原到后面的动词上。"
+        },
+        {
+          "t": "破折号 + 同位语",
+          "d": "— a 957 percent surge 是同位语，解释前面 $74 billion 这个数字意味着多大的增幅；surge＝激增，与 skyrocket 呼应。"
+        }
+      ],
+      "zh": "分析人士预计，这股无肉潮流短期内不会放缓；一份 2021 年的报告预测，该市场规模到 2030 年将飙升至 740 亿美元——增幅达 957%。",
+      "key": "分号切断成两句、破折号再挂一个同位语，句子被切成三段；加上 don’t expect…to… 的否定转移，容易读成相反的意思。"
     }
   ]
 }
