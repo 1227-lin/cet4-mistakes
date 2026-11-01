@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "四级错题本",
-    "updated": "2026-10-27"
+    "updated": "2026-11-01"
   },
   "papers": [
     {
@@ -1084,9 +1084,536 @@
           }
         ]
       }
+    },
+    {
+      "id": "2024-06-1",
+      "title": "2024年6月 · 第一套",
+      "date": "2024-06-15",
+      "scope": "Part III 阅读 26–55",
+      "note": "听力部分卷面无作答痕迹，未计入；写作与翻译未作答",
+      "questions": [
+        {
+          "no": "26",
+          "sec": "A",
+          "yours": "F",
+          "ans": "D",
+          "ok": false,
+          "tag": "词性+语义",
+          "line": "detailed 才是\"详尽的指南\"，dipping 是动名词",
+          "stem": "Yet whereas most countries have <u>26</u> evidence-backed guidelines on the type and intensity of exercise…",
+          "quote": "…most countries have <em>detailed</em> evidence-backed guidelines on the type and intensity of exercise…",
+          "why": "空格在名词短语 guidelines 前，只能是形容词：<b>D) detailed</b>（详尽的）。<i>detailed evidence-backed guidelines</i>＝详尽的、有证据支撑的指南。",
+          "you": "你填 F) dipping。<i>dipping</i> 是动名词/分词，放这里语法不通；它的正确位置是 29 题（dipping into）。",
+          "fix": "空格前后若已是\"形容词位\"（限定词 + ___ + 名词），先把词库里的形容词挑出来，其余全排除。",
+          "phrases": [
+            {
+              "p": "evidence-backed guidelines",
+              "z": "有证据支撑的指南"
+            },
+            {
+              "p": "detailed guidelines on sth",
+              "z": "关于…的详尽指南"
+            }
+          ]
+        },
+        {
+          "no": "27",
+          "sec": "A",
+          "yours": "D",
+          "ans": "M",
+          "ok": false,
+          "tag": "词性+搭配",
+          "line": "required for＝为…所必需的，detailed 不能后接 for",
+          "stem": "…guidelines on the type and intensity of exercise <u>27</u> for various physical health benefits…",
+          "quote": "…the type and intensity of exercise <em>required for</em> various physical health benefits…",
+          "why": "空格后紧跟 <b>for</b>，要找一个能带 for 的分词形容词：<b>M) required</b>，<i>required for</i>＝为…所必需的。",
+          "you": "你填 D) detailed。<i>detailed for</i> 不成立；而且 detailed 已经在 26 题用过，词库一词一用。",
+          "fix": "看到空格后面是 for / to / in，先按搭配过滤，别急着按意思挑。",
+          "phrases": [
+            {
+              "p": "be required for sth",
+              "z": "是…所必需的"
+            },
+            {
+              "p": "physical health benefits",
+              "z": "身体健康方面的益处"
+            }
+          ]
+        },
+        {
+          "no": "28",
+          "sec": "A",
+          "yours": "M",
+          "ans": "L",
+          "ok": false,
+          "tag": "词性+语义",
+          "line": "partly 副词修饰 due to，required 是形容词",
+          "stem": "This is <u>28</u> due to a lack of necessary evidence.",
+          "quote": "This is <em>partly</em> due to a lack of necessary evidence.",
+          "why": "<i>is ___ due to</i>，空格必须是副词：<b>L) partly</b>（部分原因是）。这类\"留余地的副词\"在学术文本里极常见。",
+          "you": "你填 M) required，形容词塞进副词位；而且 required 已在 27 题用过。",
+          "fix": "be + ___ + due to / because of 的结构，空格只可能是副词或 much/largely/partly 这一类。",
+          "phrases": [
+            {
+              "p": "be partly due to",
+              "z": "部分是由于"
+            },
+            {
+              "p": "a lack of evidence",
+              "z": "缺乏证据"
+            }
+          ]
+        },
+        {
+          "no": "29",
+          "sec": "A",
+          "yours": "H",
+          "ans": "F",
+          "ok": false,
+          "tag": "固定搭配",
+          "line": "dip into＝浏览、涉猎，不是 falling into",
+          "stem": "Before <u>29</u> into some of the key take-aways, an important distinction…",
+          "quote": "Before <em>dipping</em> into some of the key take-aways…",
+          "why": "<b>F) dipping</b>，<i>dip into</i>＝浏览、粗略涉猎（书、话题），和 into 是死搭配。",
+          "you": "你填 H) falling，<i>fall into</i> 是\"陷入/落入\"，\"落入要点\"讲不通；而且 H 的词义与这里要的\"浏览\"相距太远。",
+          "fix": "Before + 动名词开头是论文常用过渡；先想哪个动词能和后面的介词组成固定搭配。",
+          "phrases": [
+            {
+              "p": "dip into sth",
+              "z": "浏览；涉猎"
+            },
+            {
+              "p": "take-aways",
+              "z": "要点；可带走的东西"
+            }
+          ]
+        },
+        {
+          "no": "30",
+          "sec": "A",
+          "yours": "A",
+          "ans": "G",
+          "ok": false,
+          "tag": "名词辨析",
+          "line": "distinction 是\"区分\"，constitutes 是动词",
+          "stem": "…an important <u>30</u> made in the review is between aerobic exercise and anaerobic.",
+          "quote": "…an important <em>distinction</em> made in the review is between aerobic exercise and anaerobic.",
+          "why": "<i>a distinction between A and B</i>＝A 与 B 之间的区分，是固定表达；空格要名词，且后面接 between…and…。<b>G) distinction</b>。",
+          "you": "你填 A) constitutes（构成，动词），词性就不对；而且 constitutes 在 31 题才是答案位置。",
+          "fix": "名词空看后置搭配：between A and B 前面通常是 distinction / difference / relationship。",
+          "phrases": [
+            {
+              "p": "draw/make a distinction between A and B",
+              "z": "区分 A 和 B"
+            },
+            {
+              "p": "aerobic vs anaerobic exercise",
+              "z": "有氧运动与无氧运动"
+            }
+          ]
+        },
+        {
+          "no": "31",
+          "sec": "A",
+          "yours": "M",
+          "ans": "I",
+          "ok": false,
+          "tag": "主谓一致+搭配",
+          "line": "The former involves…，且 M 已被 28 题用掉",
+          "stem": "The former <u>31</u> such things as walking, jogging and cycling…",
+          "quote": "The former <em>involves</em> such things as walking, jogging and cycling…",
+          "why": "主语 The former 是单数第三人称，需要谓语动词：<b>I) involves</b>（包括）。<i>involve such things as…</i> 也是常见搭配。",
+          "you": "你又填了 M。28 题已经用过 M（required），一个词只能用一次；而且这里要动词，M 是形容词。",
+          "fix": "选词填空最后一定要回头点数：哪个字母用了两次，哪两个空可能互换了。你的 28/31、34/35 就是互换的典型。",
+          "phrases": [
+            {
+              "p": "involve such things as",
+              "z": "包括…之类的东西"
+            },
+            {
+              "p": "the former… the latter…",
+              "z": "前者…后者…"
+            }
+          ]
+        },
+        {
+          "no": "32",
+          "sec": "A",
+          "yours": "O",
+          "ans": "O",
+          "ok": true,
+          "brief": "of such vigorous intensity，形容词修饰 intensity"
+        },
+        {
+          "no": "33",
+          "sec": "A",
+          "yours": "B",
+          "ans": "B",
+          "ok": true,
+          "brief": "found contradictory results from 19 studies"
+        },
+        {
+          "no": "34",
+          "sec": "A",
+          "yours": "J",
+          "ans": "E",
+          "ok": false,
+          "tag": "名词搭配",
+          "line": "make no difference to＝对…没影响",
+          "stem": "Some favoured higher intensity, others low, while seven studies found that intensity made no <u>34</u> to mood benefits.",
+          "quote": "…intensity made no <em>difference</em> to mood benefits.",
+          "why": "<b>E) difference</b>，<i>make no difference to sth</i>＝对…没有影响，是固定搭配，后面的 to 就是提示。",
+          "you": "你填 J) moderate。<i>made no moderate to</i> 不成句；moderate 是形容词，34 题要名词，它的正确位置是 35 题（moderate intensity）。",
+          "fix": "看到 make / have / take + no ___ + to，先想固定搭配：make no difference to、have no access to。",
+          "phrases": [
+            {
+              "p": "make no difference to sth",
+              "z": "对…没有影响"
+            },
+            {
+              "p": "favour higher intensity",
+              "z": "偏向更高强度"
+            }
+          ]
+        },
+        {
+          "no": "35",
+          "sec": "A",
+          "yours": "E",
+          "ans": "J",
+          "ok": false,
+          "tag": "词义",
+          "line": "moderate intensity＝中等强度",
+          "stem": "…the optimum for improving mood is <u>35</u> intensity, perhaps because low intensity is too dull while high intensity is too unpleasant.",
+          "quote": "…the optimum for improving mood is <em>moderate</em> intensity…",
+          "why": "后半句给了线索：\"低强度太乏味、高强度太难受\"，所以最优是<b>中等强度</b> → <b>J) moderate</b>。",
+          "you": "你填 E) difference，名词修饰 intensity 讲不通；这是 34 题该用的词，两题互换了。",
+          "fix": "同一段里出现\"太低…太高…\"的对举，中间那个词（optimum / moderate / middle）就是答案。",
+          "phrases": [
+            {
+              "p": "moderate intensity",
+              "z": "中等强度"
+            },
+            {
+              "p": "the optimum for doing sth",
+              "z": "做某事的最佳选择"
+            }
+          ]
+        },
+        {
+          "no": "36",
+          "sec": "B",
+          "yours": "E",
+          "ans": "E",
+          "ok": true,
+          "brief": "socializing at work → develop personal relationships"
+        },
+        {
+          "no": "37",
+          "sec": "B",
+          "yours": "H",
+          "ans": "H",
+          "ok": true,
+          "brief": "hourly pay decreased but productivity rose → work as many hours"
+        },
+        {
+          "no": "38",
+          "sec": "B",
+          "yours": "B",
+          "ans": "B",
+          "ok": true,
+          "brief": "still just below 40 hours for nearly five decades"
+        },
+        {
+          "no": "39",
+          "sec": "B",
+          "yours": "F",
+          "ans": "F",
+          "ok": true,
+          "brief": "inequality keeps hours up → productivity 没换成休闲"
+        },
+        {
+          "no": "40",
+          "sec": "B",
+          "yours": "D",
+          "ans": "D",
+          "ok": true,
+          "brief": "thirst for material things → 一直想要下一件新东西"
+        },
+        {
+          "no": "41",
+          "sec": "B",
+          "yours": "G",
+          "ans": "A",
+          "ok": false,
+          "tag": "段落定位",
+          "line": "prediction 对了\"一段时间\"——A 段 1930–1970",
+          "stem": "An economist's prediction about a shorter average working week seemed to be correct for a time in the 20th century.",
+          "quote": "<b>A)</b> …For a while, it looked like Keynes was right. In 1930 the average working week was 47 hours in the United States. But by 1970, the number of hours Americans worked on average had fallen to slightly less than 39.",
+          "why": "<i>seemed to be correct for a time</i> 对应 A 段的 <b>For a while, it looked like Keynes was right</b>，后面 47→39 小时就是\"工时变短\"的证据。",
+          "you": "你选 G。G 段讲的是\"堵车…\"不对——G 段讲的是\"工时为什么没变短\"的原因（住房、医疗、教育成本上涨），讲的是\"没变短\"，与题干\"一段时间里猜对了\"正好相反。",
+          "fix": "题干里有 for a time / for a while 这种\"阶段性\"限定词，就要找段落里同样带时间范围的那一句。",
+          "phrases": [
+            {
+              "p": "for a while",
+              "z": "有一段时间"
+            },
+            {
+              "p": "be correct for a time",
+              "z": "在一段时间内是对的"
+            }
+          ]
+        },
+        {
+          "no": "42",
+          "sec": "B",
+          "yours": "I",
+          "ans": "I",
+          "ok": true,
+          "brief": "less schooling → 先保住任何工作"
+        },
+        {
+          "no": "43",
+          "sec": "B",
+          "yours": "C",
+          "ans": "C",
+          "ok": true,
+          "brief": "Keynes got that right: technology has made the economy more productive"
+        },
+        {
+          "no": "44",
+          "sec": "B",
+          "yours": "J",
+          "ans": "J",
+          "ok": true,
+          "brief": "work is a labour of love for top earners"
+        },
+        {
+          "no": "45",
+          "sec": "B",
+          "yours": "G",
+          "ans": "G",
+          "ok": true,
+          "brief": "Keynes 预测：工时更短、生活水平继续上升"
+        },
+        {
+          "no": "46",
+          "sec": "C",
+          "yours": "C",
+          "ans": "C",
+          "ok": true,
+          "brief": "taking to heart others’ opinion → never truly free"
+        },
+        {
+          "no": "47",
+          "sec": "C",
+          "yours": "D",
+          "ans": "B",
+          "ok": false,
+          "tag": "词义对应",
+          "line": "unproductive and exhausting → life will be unfruitful and exhausting",
+          "stem": "What will happen if we base our self-worth on other people's approval?",
+          "quote": "People-pleasing, or seeking self-worth through others' approval, is <em>unproductive and an exhausting way to go through life</em>.",
+          "why": "<b>B) Our life will be unfruitful and exhausting.</b> 原文 <i>unproductive</i>（无成效）＝unfruitful，<i>exhausting</i> 原词保留，<i>way to go through life</i>＝our life。",
+          "you": "你选 D) Our sense of self will be sharpened and enhanced。sharpened / enhanced 是\"增强\"，与原文\"无成效、耗人\"的负面评价完全相反——方向反了。",
+          "fix": "态度题先定正负：原文是贬义（unproductive / exhausting），选项里出现\"enhance / sharpen\"这类褒义词就直接排除。",
+          "phrases": [
+            {
+              "p": "people-pleasing",
+              "z": "讨好他人"
+            },
+            {
+              "p": "seek self-worth through others' approval",
+              "z": "通过他人认可寻找自我价值"
+            },
+            {
+              "p": "go through life",
+              "z": "过一辈子"
+            }
+          ]
+        },
+        {
+          "no": "48",
+          "sec": "C",
+          "yours": "C",
+          "ans": "D",
+          "ok": false,
+          "tag": "因果定位",
+          "line": "terrified of abandonment 是童年恐惧 → early childhood fear",
+          "stem": "What may account for our need to be liked or approved of?",
+          "quote": "This need to be liked can be traced back to when we were children… there is the danger that they will abandon them… that little kid part of us that is still <em>terrified of abandonment</em>.",
+          "why": "<b>D) Our early childhood fear of being deserted.</b> 原文：need to be liked 可追溯到童年，怕被父母抛弃，成年后仍\"terrified of abandonment\"。deserted＝abandoned。",
+          "you": "你选 C) Our knowledge about the pain of abandonment——原文不是\"我们知道被抛弃有多痛\"，而是\"小时候就怕被抛弃\"这个恐惧本身在驱动；C 把\"恐惧\"换成了\"知识\"。",
+          "fix": "问\"是什么导致\"的题，答案要落在原因上（fear / need / habit），不是落在\"我们对此的了解\"上。",
+          "phrases": [
+            {
+              "p": "be traced back to",
+              "z": "可追溯到"
+            },
+            {
+              "p": "be terrified of abandonment",
+              "z": "极度害怕被抛弃"
+            }
+          ]
+        },
+        {
+          "no": "49",
+          "sec": "C",
+          "yours": "A",
+          "ans": "A",
+          "ok": true,
+          "brief": "becoming able to provide approval → happier life"
+        },
+        {
+          "no": "50",
+          "sec": "C",
+          "yours": "D",
+          "ans": "D",
+          "ok": true,
+          "brief": "embrace life for ourselves → love ourselves as we are"
+        },
+        {
+          "no": "51",
+          "sec": "C",
+          "yours": "B",
+          "ans": "B",
+          "ok": true,
+          "brief": "slide into forgetfulness → memory gradually deteriorates"
+        },
+        {
+          "no": "52",
+          "sec": "C",
+          "yours": "C",
+          "ans": "C",
+          "ok": true,
+          "brief": "Raisman 的发现：受损脑区仍能长出新连接 → brains can refresh"
+        },
+        {
+          "no": "53",
+          "sec": "C",
+          "yours": "A",
+          "ans": "D",
+          "ok": false,
+          "tag": "细节定位",
+          "line": "taking a different route / going somewhere new → approaching tasks in novel ways",
+          "stem": "What is one thing that helps maintain the health of our brain even as it shrinks?",
+          "quote": "Even something as simple as <em>taking a different route to the grocery store</em> or going somewhere new on vacation can keep the brain healthy.",
+          "why": "<b>D) Approaching everyday tasks in novel ways.</b> 原文的\"换条路去超市\"\"去新地方度假\"就是\"用新方式做日常事\"。",
+          "you": "你选 A) Doing daily routines by conventional means。原文恰恰相反：按老办法重复（conventional）不会让大脑受益，要的是\"换新路\"。conventional 这个词是最大的陷阱。",
+          "fix": "选项里出现与原文态度相反的形容词（conventional vs different / new），基本都是错项。",
+          "phrases": [
+            {
+              "p": "take a different route",
+              "z": "换一条路走"
+            },
+            {
+              "p": "in novel ways",
+              "z": "用新颖的方式"
+            }
+          ]
+        },
+        {
+          "no": "54",
+          "sec": "C",
+          "yours": "B",
+          "ans": "A",
+          "ok": false,
+          "tag": "细节定位",
+          "line": "openness / curiosity → being curious and desiring knowledge",
+          "stem": "What does the author say can contribute to the improvement of brain function?",
+          "quote": "A desire for new life challenges can further boost brainpower. … <em>Openness—a characteristic defined by curiosity and a desire for knowledge</em>—may also help folks pass brain tests.",
+          "why": "<b>A) Being curious and desiring knowledge.</b> 原文把 openness 直接定义成 curiosity + a desire for knowledge，与 A 逐词对应。",
+          "you": "你选 B) Being eager to pass brain tests at an old age。原文说的是 openness 能帮人\"通过脑力测试\"，不是\"急于通过测试\"；你把结果（pass brain tests）当成了原因。",
+          "fix": "问\"什么能改善…\"的题，答案必须是能力/特质，不是\"想通过测试\"这种动机。",
+          "phrases": [
+            {
+              "p": "boost brainpower",
+              "z": "提升脑力"
+            },
+            {
+              "p": "a desire for knowledge",
+              "z": "求知欲"
+            }
+          ]
+        },
+        {
+          "no": "55",
+          "sec": "C",
+          "yours": "C",
+          "ans": "C",
+          "ok": true,
+          "brief": "a 2012 study：练推理任务能增强对新体验的渴望 → 渴望新体验能重塑大脑"
+        }
+      ],
+      "summary": {
+        "verdict": "Part III 阅读 30 题对 17 错 13，正确率 56.7%，是目前三套里最低的一套。选词填空错 8 个（26–31、34、35）——不是不会，是把答案整体\"错位\"了；段落匹配只错 1 个；仔细阅读错 4 个（47、48、53、54），全是\"方向反了\"或\"把结果当原因\"。",
+        "roots": [
+          {
+            "t": "选词填空整体错位",
+            "c": "p4",
+            "d": "28/31 两次用了 M，34/35 的 difference 和 moderate 互换；26 该用 detailed 却填了 dipping。属于\"词库位置串了\"。",
+            "f": "填完回头点名：哪个字母出现两次，哪两个空可能是互换的。"
+          },
+          {
+            "t": "方向反了",
+            "c": "p2",
+            "d": "47 原文 unproductive / exhausting（贬义），你选了 sharpened / enhanced（褒义）；53 原文要\"换新路\"，你选了 conventional（老办法）。",
+            "f": "态度题先定正负号，再比词义。"
+          },
+          {
+            "t": "把结果当原因",
+            "c": "p3",
+            "d": "48 把\"怕被抛弃\"读成\"知道被抛弃有多痛\"；54 把\"能通过脑力测试\"读成\"急于通过测试\"。",
+            "f": "问\"什么导致\"的题，答案要落在原因上。"
+          }
+        ]
+      },
+      "diagnosis": {
+        "intro": "这套的错题比前两套多，但结构很清楚：选词填空是\"操作失误\"，仔细阅读是\"判断方向错\"。先修操作，再修判断。",
+        "steps": [
+          {
+            "tag": "P0",
+            "title": "选词填空：填完回头点名",
+            "fix": "26–31 · 34 · 35",
+            "d": "十个空填完后花 20 秒点数：哪个字母用了两次（你这里 M 用了两次）、哪两个空可能互换（28/31、34/35）。这一步能直接捞回 3–4 分。"
+          },
+          {
+            "tag": "P0",
+            "title": "先标词性槽位再读词库",
+            "fix": "26 · 28 · 30",
+            "d": "26 要形容词、28 要副词、30 要名词。三题都是\"没看槽位就按意思挑\"。"
+          },
+          {
+            "tag": "P1",
+            "title": "态度题先定正负",
+            "fix": "47 · 53",
+            "d": "原文是贬义就排除褒义选项；原文要\"新\"，就排除 conventional 这类\"旧\"。"
+          },
+          {
+            "tag": "P1",
+            "title": "因果题看落脚点",
+            "fix": "48 · 54",
+            "d": "答案是\"原因/特质\"，不是\"我们对它的了解\"或\"想通过测试\"。"
+          },
+          {
+            "tag": "P2",
+            "title": "复现",
+            "fix": "一周内",
+            "d": "重做 26–31 只标词性不动笔；再重做 47/48/53/54，各写一句\"我排除的三个选项错在哪个词\"。"
+          }
+        ]
+      }
     }
   ],
   "words": [
+    {
+      "w": "abandonment",
+      "pos": "n.",
+      "zh": "抛弃；遗弃",
+      "eg": "that little kid part of us that is still terrified of <em>abandonment</em>",
+      "tag": "仔细阅读",
+      "paper": "2024-06-1"
+    },
     {
       "w": "amplify",
       "pos": "v.",
@@ -1102,6 +1629,14 @@
       "eg": "This characteristic is particularly <em>apparent</em> in a new study",
       "tag": "选词填空",
       "paper": "2025-06-3"
+    },
+    {
+      "w": "approval",
+      "pos": "n.",
+      "zh": "认可；赞同",
+      "eg": "seeking self-worth through others’ <em>approval</em>",
+      "tag": "仔细阅读",
+      "paper": "2024-06-1"
     },
     {
       "w": "assume",
@@ -1192,6 +1727,14 @@
       "paper": "2025-06-3"
     },
     {
+      "w": "cliché",
+      "pos": "n.",
+      "zh": "老生常谈",
+      "eg": "So embrace the <em>cliché</em> and love yourself",
+      "tag": "仔细阅读",
+      "paper": "2024-06-1"
+    },
+    {
       "w": "compensate for",
       "pos": "phr.",
       "zh": "补偿；弥补",
@@ -1206,6 +1749,14 @@
       "eg": "our ability to produce and to <em>comprehend</em> language",
       "paper": "2024-12-1",
       "tag": "选词填空"
+    },
+    {
+      "w": "contradictory",
+      "pos": "adj.",
+      "zh": "相互矛盾的",
+      "eg": "found <em>contradictory</em> results from 19 relevant studies",
+      "tag": "选词填空",
+      "paper": "2024-06-1"
     },
     {
       "w": "crawl to a halt",
@@ -1264,12 +1815,28 @@
       "tag": "选词填空"
     },
     {
+      "w": "dip into",
+      "pos": "phr.",
+      "zh": "浏览；涉猎",
+      "eg": "Before <em>dipping into</em> some of the key take-aways",
+      "tag": "选词填空",
+      "paper": "2024-06-1"
+    },
+    {
       "w": "dismiss",
       "pos": "v.",
       "zh": "认为…不值一提；不予考虑",
       "eg": "dismissed it as rubbery and flavorless",
       "tag": "仔细阅读",
       "paper": "2025-06-3"
+    },
+    {
+      "w": "distinction",
+      "pos": "n.",
+      "zh": "区别；区分",
+      "eg": "an important <em>distinction</em> between aerobic and anaerobic exercise",
+      "tag": "选词填空",
+      "paper": "2024-06-1"
     },
     {
       "w": "ditch",
@@ -1286,6 +1853,14 @@
       "eg": "cases … that <em>document</em> the brain’s amazing ability to adapt",
       "tag": "选词填空",
       "paper": "2025-06-3"
+    },
+    {
+      "w": "durability",
+      "pos": "n.",
+      "zh": "持久性；耐久力",
+      "eg": "can contribute to mental <em>durability</em>",
+      "tag": "仔细阅读",
+      "paper": "2024-06-1"
     },
     {
       "w": "emerge",
@@ -1312,12 +1887,36 @@
       "tag": "段落匹配"
     },
     {
+      "w": "enterprise",
+      "pos": "n.",
+      "zh": "事业；新项目",
+      "eg": "aging adults who take on new <em>enterprises</em>",
+      "tag": "仔细阅读",
+      "paper": "2024-06-1"
+    },
+    {
+      "w": "evidence-backed",
+      "pos": "adj.",
+      "zh": "有证据支撑的",
+      "eg": "<em>evidence-backed</em> guidelines",
+      "tag": "选词填空",
+      "paper": "2024-06-1"
+    },
+    {
       "w": "excessive",
       "pos": "adj.",
       "zh": "过度的；过分的",
       "eg": "<em>excessive</em> focus on physical appearance",
       "tag": "仔细阅读",
       "paper": "2025-06-3"
+    },
+    {
+      "w": "exhausting",
+      "pos": "adj.",
+      "zh": "令人疲惫的",
+      "eg": "an <em>exhausting</em> way to go through life",
+      "tag": "仔细阅读",
+      "paper": "2024-06-1"
     },
     {
       "w": "explicitly",
@@ -1440,6 +2039,14 @@
       "tag": "选词填空"
     },
     {
+      "w": "moderate",
+      "pos": "adj.",
+      "zh": "中等的；适度的",
+      "eg": "the optimum for improving mood is <em>moderate</em> intensity",
+      "tag": "选词填空",
+      "paper": "2024-06-1"
+    },
+    {
       "w": "modification",
       "pos": "n.",
       "zh": "改装；修改",
@@ -1480,6 +2087,14 @@
       "tag": "仔细阅读"
     },
     {
+      "w": "people-pleasing",
+      "pos": "n.",
+      "zh": "讨好他人",
+      "eg": "<em>people-pleasing</em>, or seeking self-worth through others’ approval",
+      "tag": "仔细阅读",
+      "paper": "2024-06-1"
+    },
+    {
       "w": "phantom",
       "pos": "adj.",
       "zh": "幻影般的；凭空出现的",
@@ -1504,6 +2119,14 @@
       "tag": "选词填空"
     },
     {
+      "w": "productivity",
+      "pos": "n.",
+      "zh": "生产率",
+      "eg": "technology has made the economy massively more <em>productive</em>",
+      "tag": "段落匹配",
+      "paper": "2024-06-1"
+    },
+    {
       "w": "refrain from",
       "pos": "phr.",
       "zh": "克制不做",
@@ -1518,6 +2141,14 @@
       "eg": "part of <em>remedying</em> this social disease",
       "paper": "2024-12-1",
       "tag": "仔细阅读"
+    },
+    {
+      "w": "renovate",
+      "pos": "v.",
+      "zh": "翻新；更新",
+      "eg": "people’s brains constantly <em>renovate</em> themselves",
+      "tag": "仔细阅读",
+      "paper": "2024-06-1"
     },
     {
       "w": "resentment",
@@ -1568,6 +2199,14 @@
       "paper": "2025-06-3"
     },
     {
+      "w": "self-worth",
+      "pos": "n.",
+      "zh": "自我价值感",
+      "eg": "our <em>self-worth</em> is dependent upon whether we win someone’s approval",
+      "tag": "仔细阅读",
+      "paper": "2024-06-1"
+    },
+    {
       "w": "shortsighted",
       "pos": "adj.",
       "zh": "目光短浅的",
@@ -1582,6 +2221,14 @@
       "eg": "the market will <em>skyrocket</em> to $74 billion by 2030",
       "tag": "仔细阅读",
       "paper": "2025-06-3"
+    },
+    {
+      "w": "slide into",
+      "pos": "phr.",
+      "zh": "不知不觉陷入",
+      "eg": "aging is more a <em>slide into</em> forgetfulness than a journey towards wisdom",
+      "tag": "仔细阅读",
+      "paper": "2024-06-1"
     },
     {
       "w": "slip",
@@ -1664,6 +2311,14 @@
       "paper": "2025-06-3"
     },
     {
+      "w": "take-away",
+      "pos": "n.",
+      "zh": "要点；结论",
+      "eg": "some of the key <em>take-aways</em>",
+      "tag": "选词填空",
+      "paper": "2024-06-1"
+    },
+    {
       "w": "throughput",
       "pos": "n.",
       "zh": "吞吐量；通行量",
@@ -1678,6 +2333,14 @@
       "eg": "turn <em>underused</em> public spaces into vegetable gardens",
       "paper": "2024-12-1",
       "tag": "仔细阅读"
+    },
+    {
+      "w": "unproductive",
+      "pos": "adj.",
+      "zh": "没有成效的",
+      "eg": "is <em>unproductive</em> and an exhausting way to go through life",
+      "tag": "仔细阅读",
+      "paper": "2024-06-1"
     },
     {
       "w": "utmost",
@@ -1702,6 +2365,14 @@
       "eg": "a retired <em>vice president</em> from a major chemical company",
       "paper": "2024-12-1",
       "tag": "仔细阅读"
+    },
+    {
+      "w": "vigorous",
+      "pos": "adj.",
+      "zh": "剧烈的；强力的",
+      "eg": "of such <em>vigorous</em> intensity",
+      "tag": "选词填空",
+      "paper": "2024-06-1"
     },
     {
       "w": "witness",
@@ -1839,6 +2510,69 @@
       ],
       "zh": "分析人士预计，这股无肉潮流短期内不会放缓；一份 2021 年的报告预测，该市场规模到 2030 年将飙升至 740 亿美元——增幅达 957%。",
       "key": "分号切断成两句、破折号再挂一个同位语，句子被切成三段；加上 don’t expect…to… 的否定转移，容易读成相反的意思。"
+    },
+    {
+      "paper": "2024-06-1",
+      "src": "Passage One · 第 2 段",
+      "en": "<b>However</b>, where we get into trouble is <b>when</b> our self-worth is dependent upon <b>whether</b> we win someone’s approval or not.",
+      "parts": [
+        {
+          "t": "主干",
+          "d": "<i>where we get into trouble</i> 是主语从句，<b>is</b> 是系动词，后面整块是表语从句。句子骨架其实只有\"麻烦出在哪里，是什么\"两层。"
+        },
+        {
+          "t": "表语从句套两个从句",
+          "d": "<i>when our self-worth is dependent upon…</i> 是时间状语从句；<i>whether we win someone’s approval or not</i> 是介词 upon 的宾语从句。"
+        },
+        {
+          "t": "固定搭配",
+          "d": "<b>be dependent upon sth</b>＝取决于某事；<i>whether… or not</i>＝是否…"
+        }
+      ],
+      "zh": "不过，我们真正出问题的地方在于：我们的自我价值感取决于能不能赢得别人的认可。",
+      "key": "三个从句（where / when / whether）挤在一句话里，先抓 is 这个系动词，前后各一块。"
+    },
+    {
+      "paper": "2024-06-1",
+      "src": "Passage Two · 第 1 段",
+      "en": "<b>Some people have said</b> aging is more <b>a slide into forgetfulness than a journey towards wisdom</b>.",
+      "parts": [
+        {
+          "t": "主干",
+          "d": "<i>Some people have said (that) aging is…</i>，that 省略；宾语从句的主语是 aging，系动词 is，表语是后面整个比较结构。"
+        },
+        {
+          "t": "比较结构",
+          "d": "<b>more A than B</b>＝与其说是 B，不如说是 A（不是\"A 比 B 多\"）。这里 A＝a slide into forgetfulness，B＝a journey towards wisdom。"
+        },
+        {
+          "t": "介词短语",
+          "d": "<i>a slide into forgetfulness</i>＝滑向遗忘；<i>a journey towards wisdom</i>＝通往智慧的旅程。"
+        }
+      ],
+      "zh": "有些人说，衰老与其说是一段走向智慧的旅程，不如说是慢慢滑向遗忘。",
+      "key": "more A than B 的译法最容易错译成\"比…更…\"，其实它是\"与其说 B，不如说 A\"。"
+    },
+    {
+      "paper": "2024-06-1",
+      "src": "Passage One · 第 4 段",
+      "en": "<b>If</b> we base our worth on the opinions of others, we <b>cheat ourselves of</b> the power to shape our experiences and embrace life not only for others but also for ourselves, <b>because</b> ultimately, there is no difference.",
+      "parts": [
+        {
+          "t": "主干",
+          "d": "<i>If we base our worth on the opinions of others</i>（条件状语从句）+ 主句 <i>we cheat ourselves of the power to shape our experiences and embrace life</i>。"
+        },
+        {
+          "t": "固定搭配",
+          "d": "<b>base A on B</b>＝把 A 建立在 B 上；<b>cheat sb of sth</b>＝骗走某人某物，这里是\"剥夺了自己…的权力\"。"
+        },
+        {
+          "t": "两个并列不定式 / 原因从句",
+          "d": "<i>to shape… and (to) embrace…</i> 并列；<i>not only for others but also for ourselves</i> 是状语；末尾 because 从句解释为什么\"为自己活\"不是自私。"
+        }
+      ],
+      "zh": "如果我们把自身价值建立在别人的看法上，就等于剥夺了自己塑造人生、不仅为他人也为自已拥抱生活的权力，因为说到底，这两者没有区别。",
+      "key": "cheat sb of sth 是个低频搭配，\"骗自己\"直译会走偏；另外 not only… but also… 夹在不定式中间，容易读断。"
     }
   ]
 }
