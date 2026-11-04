@@ -195,6 +195,21 @@
   .tcount{display:inline-block;font-size:13px;font-weight:800;color:#fff;background:var(--p4);border-radius:999px;padding:2px 12px;line-height:1.5}
   .paper.type .paper-body{border-top:1px solid var(--line)}
 
+  /* ================= 译文 ================= */
+  .trcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:16px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.03),0 8px 24px -16px rgba(0,0,0,.18)}
+  .trhead{display:flex;align-items:center;gap:10px;padding:13px 18px;background:var(--bg);border-bottom:1px solid var(--line)}
+  .trhead b{font-size:14.5px}
+  .trtag{flex:0 0 auto;font-size:11px;font-weight:800;color:#fff;background:var(--accent);border-radius:6px;padding:2px 8px}
+  .trbody{padding:6px 18px 14px}
+  .pair{padding:12px 0;border-bottom:1px dashed var(--line)}
+  .pair:last-child{border-bottom:0}
+  .pair .en{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:15px;line-height:1.72;margin:0 0 6px;color:var(--ink)}
+  .pair .pno{display:inline-block;min-width:20px;font-size:11px;font-weight:700;color:var(--muted);font-family:-apple-system,sans-serif;vertical-align:top;margin-top:3px}
+  .pair .zh{font-size:14.5px;line-height:1.82;margin:0;color:var(--ink2)}
+  .pair .zh::before{content:"译";display:inline-block;font-size:10px;color:var(--accent);background:var(--accent-soft);border-radius:4px;padding:0 5px;margin-right:7px;vertical-align:1px}
+  .pair.hideen .en{display:none}
+  .pair.hideen{padding:10px 0}
+
   /* ================= 诊断与训练 ================= */
   .diag{margin:18px 0 4px;padding:15px 17px;background:var(--bg);border:1px solid var(--line);border-radius:12px}
   .diag-h{display:flex;align-items:baseline;gap:10px;margin-bottom:4px;flex-wrap:wrap}
@@ -343,6 +358,10 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11M4 18h7"/><path d="M16 15l2 2 2.5-2.5"/></svg>
         <span>长难句</span><em class="cnt" id="c-sents">0</em>
       </a>
+      <a href="#/trans" data-tab="trans">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h9M8.5 3v2M11 5c-.6 4-3 6.5-7 8"/><path d="M6 9c1.2 2 3 3.4 5 4"/><path d="M14 21l4-9 4 9M15.5 18h5"/></svg>
+        <span>译文</span><em class="cnt" id="c-trans">0</em>
+      </a>
       <a href="#/review" data-tab="review">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/></svg>
         <span>复习</span><em class="cnt" id="c-todo">0</em>
@@ -381,6 +400,18 @@
         </div>
       </div>
       <div id="sents"></div>
+    </section>
+
+    <section id="view-trans" class="view" hidden>
+      <div class="card">
+        <h2>全文翻译</h2>
+        <div class="sub" id="transSub">—</div>
+        <div class="chips" style="margin-top:6px">
+          <button class="chip big on" data-act="trmode" data-v="both">双语对照</button>
+          <button class="chip big" data-act="trmode" data-v="zh">只看中文</button>
+        </div>
+      </div>
+      <div id="trans"></div>
     </section>
 
     <section id="view-review" class="view" hidden>
@@ -446,6 +477,7 @@ function renderTop(){
   document.getElementById('c-papers').textContent = PAPERS.length;
   document.getElementById('c-words').textContent = WORDS.length;
   document.getElementById('c-sents').textContent = (DATA.sentences || []).length;
+  document.getElementById('c-trans').textContent = new Set((DATA.translations || []).map(t => t.paper)).size;
   document.getElementById('c-todo').textContent = todo;
   document.getElementById('f-master').textContent = r + '%';
   document.getElementById('f-bar').style.width = r + '%';
@@ -766,8 +798,43 @@ function diagnosisHTML(p){
     '</div>';
 }
 
+/* ================= 译文 ================= */
+const TRANS = DATA.translations || [];
+let trMode = 'both';
+
+function renderTrans(){
+  const el = document.getElementById('trans');
+  const sub = document.getElementById('transSub');
+  if (!TRANS.length) { sub.textContent = '还没有译文'; el.innerHTML = ''; return; }
+  const papersT = new Set(TRANS.map(t => t.paper)).size;
+  const paras = TRANS.reduce((n, t) => n + (t.paras || []).length, 0);
+  sub.textContent = papersT + ' 套卷 · ' + TRANS.length + ' 篇 · ' + paras + ' 段';
+
+  const papers = {};
+  PAPERS.forEach(p => papers[p.id] = p.title);
+
+  const out = [];
+  let last = null;
+  TRANS.forEach(t => {
+    if (t.paper !== last) {
+      out.push('<div class="sec-h" style="margin-top:22px">' + esc(papers[t.paper] || t.paper) + '</div>');
+      last = t.paper;
+    }
+    const pairs = (t.paras || []).map((p, i) =>
+      '<div class="pair' + (trMode === 'zh' ? ' hideen' : '') + '">' +
+        '<p class="en"><span class="pno">' + (i + 1) + '</span>' + p.en + '</p>' +
+        '<p class="zh">' + p.zh + '</p>' +
+      '</div>').join('');
+    out.push('<article class="trcard">' +
+      '<div class="trhead"><span class="trtag">' + esc(t.sec) + '</span><b>' + esc(t.title) + '</b>' +
+      '<span class="pmeta" style="margin-left:auto">' + (t.paras || []).length + ' 段</span></div>' +
+      '<div class="trbody">' + pairs + '</div></article>');
+  });
+  el.innerHTML = out.join('');
+}
+
 /* ================= 路由 ================= */
-const VIEWS = { papers: 'view-papers', words: 'view-words', sentences: 'view-sentences', review: 'view-review' };
+const VIEWS = { papers: 'view-papers', words: 'view-words', sentences: 'view-sentences', trans: 'view-trans', review: 'view-review' };
 function route(){
   let h = (location.hash || '#/papers').replace(/^#\//, '');
   if (!VIEWS[h]) h = 'papers';
@@ -777,6 +844,7 @@ function route(){
   if (h === 'papers') { renderToday(); renderPapers(); }
   if (h === 'words') renderWords();
   if (h === 'sentences') renderSentences();
+  if (h === 'trans') renderTrans();
   if (h === 'review') renderReview();
   window.scrollTo(0, 0);
 }
@@ -866,6 +934,7 @@ document.addEventListener('click', (e) => {
   if (!t) return;
   const act = t.dataset.act;
   if (act === 'pmode') { pMode = t.dataset.v; renderPapers(); }
+  else if (act === 'trmode') { trMode = t.dataset.v; renderTrans(); document.querySelectorAll('[data-act=\"trmode\"]').forEach(b => b.classList.toggle('on', b.dataset.v === trMode)); }
   else if (act === 'pfilter') { pFilter = t.dataset.v; renderPapers(); }
   else if (act === 'toggle-paper') {
     const id = t.dataset.id;
