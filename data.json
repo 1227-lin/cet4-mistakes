@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "四级错题本",
-    "updated": "2026-11-01"
+    "updated": "2026-11-04"
   },
   "papers": [
     {
@@ -2573,6 +2573,460 @@
       ],
       "zh": "如果我们把自身价值建立在别人的看法上，就等于剥夺了自己塑造人生、不仅为他人也为自已拥抱生活的权力，因为说到底，这两者没有区别。",
       "key": "cheat sb of sth 是个低频搭配，\"骗自己\"直译会走偏；另外 not only… but also… 夹在不定式中间，容易读断。"
+    }
+  ],
+  "translations": [
+    {
+      "paper": "2025-06-3",
+      "sec": "A",
+      "title": "选词填空 · 大脑的可塑性",
+      "paras": [
+        {
+          "en": "The human brain has the ability to constantly form new networks and connections between brain cells. This means the brain has an almost magical ability to change. This characteristic is <b>particularly</b> apparent in a new study, focusing on people who underwent a hemispherectomy, a surgical procedure in which half of the brain is removed to treat illness.",
+          "zh": "人脑有能力不断在脑细胞之间形成新的网络与连接。这意味着大脑拥有近乎神奇的自我改变能力。这一特征在一项新研究中<b>格外</b>明显，该研究聚焦于接受过“大脑半球切除术”的人——这是一种通过切除一半大脑来治疗疾病的外科手术。"
+        },
+        {
+          "en": "The findings showed that, despite missing half of this critical <b>organ</b>, participants could function well. This was because the <b>remaining</b> half of their brain strengthened. In fact, researchers found that connections — and thus communication — between parts of different brain networks are actually stronger in people who had hemispherectomies than in people with intact brains. This <b>indicates</b> that the brain is able to compensate for loss of certain brain structure.",
+          "zh": "研究结果显示，尽管缺少了这个关键<b>器官</b>的一半，参与者仍能正常运作。这是因为他们大脑<b>剩余的</b>那一半变强了。事实上，研究者发现，接受过半球切除术的人，不同脑网络各部分之间的连接——以及由此产生的信息交流——实际上比大脑完好的人更强。这<b>表明</b>，大脑能够对某些脑组织的缺失作出补偿。"
+        },
+        {
+          "en": "There are many other cases in the medical <b>literature</b> that document the brain’s amazing ability to <b>adapt</b>. For example, a young boy had a significant portion of his brain removed for medical reasons, which included the part of the brain <b>responsible</b> for sight. But a few years after his surgery, scientists found that he could <b>still</b> see. They determined that this was because other parts of his brain took over the missing part’s <b>visual</b> tasks. Another study involved people who could smell, despite missing the region in the brain that processes information about smells. Though they are not sure how these individuals <b>retained</b> the ability to smell, scientists believe it is possible that another part of the brain took on that task.",
+          "zh": "医学<b>文献</b>里还有许多其他病例，记载了大脑惊人的<b>适应</b>能力。例如，一个男孩因医疗原因切除了相当一部分大脑，其中包括负责视觉的那部分。但手术几年后，科学家发现他<b>仍然</b>能看见。他们判断，这是因为大脑的其他部分接替了缺失部分的<b>视觉</b>任务。另一项研究涉及一些仍能闻到气味的人，尽管他们缺少大脑中处理气味信息的区域。虽然科学家不确定这些人如何<b>保留</b>了嗅觉能力，但他们认为，另一种可能是大脑的另一部分承担了那项任务。"
+        }
+      ]
+    },
+    {
+      "paper": "2025-06-3",
+      "sec": "B",
+      "title": "段落匹配 · 幽灵堵车",
+      "paras": [
+        {
+          "en": "A. Traffic jams are a common problem of most big cities, either in developed or in developing countries, but one kind of traffic jams in particular can be especially frustrating. These are generally known as “phantom” traffic jams, in which dense traffic crawls to a halt for no apparent reason at all.",
+          "zh": "A. 交通拥堵是大多数大城市——无论在发达国家还是发展中国家——的共同问题，但有一类拥堵尤其令人沮丧。它们通常被称为“幽灵”堵车：密集的车流无缘无故地慢慢停下来。"
+        },
+        {
+          "en": "B. “When caught in such a traffic jam, it is common for drivers to assume that there must be an accident, or construction or something,” said Massachusetts Institute of Technology (MIT) computer science professor Berthold Horn. “And then you drive and drive and drive... and there isn’t anything there.”",
+          "zh": "B. “遇到这种堵车时，司机通常会以为一定是出了事故，或者有施工之类的，”麻省理工学院计算机科学教授贝特霍尔德·霍恩说。“然后你开啊开啊开……结果那里什么都没有。”"
+        },
+        {
+          "en": "C. The exact cause of these phantom traffic jams has long remained a mystery. But now, new research has found the cause and researchers may have come up with a solution for this frustrating traffic pattern: maintaining equal spacing between cars on the road, rather than driving so closely behind another vehicle that a collision (碰撞) is likely if that vehicle brakes suddenly.",
+          "zh": "C. 这些幽灵堵车的确切原因长期以来一直是个谜。但现在，新研究找到了原因，研究者也可能已经为这种恼人的交通模式想出了解决办法：在道路上保持车辆之间的等距，而不是紧贴着前车行驶——那样一旦前车突然刹车就很可能相撞。"
+        },
+        {
+          "en": "D. Horn said phantom traffic jams are an emergent property of the flow of vehicles down a highway. A phantom jam begins when a car in dense traffic slows down even slightly, which causes the car behind that vehicle to slow even more — and the slowing action spreads backward through the lane of traffic like a wave, getting worse the farther it spreads. Eventually, the cars far behind are forced to stop completely or risk hitting the slower vehicles ahead — and so the traffic grinds to a halt over nothing, Horn said.",
+          "zh": "D. 霍恩说，幽灵堵车是高速公路车流的一种“突现属性”。当密集车流中有一辆车哪怕只是稍微减速，它后面的车就会减得更多——这种减速像波一样沿车道向后传，传得越远越严重。最终，远处的车被迫完全停下，否则就可能撞上前方较慢的车辆——于是整条车流就无缘无故地停摆了，霍恩说。"
+        },
+        {
+          "en": "E. Horn has been working on the problem of phantom traffic jams for years, and he has come up with a solution: By splitting the difference between the cars in front and the cars behind, the spacing of cars in a stream of traffic can act as a damper (抑制) on phantom traffic jams. That is, it can prevent the slow-down effect from being amplified (增强) by the cars that follow behind, he said. In essence, each driver would constantly make adjustments to keep their car roughly halfway between the car in front and the car behind.",
+          "zh": "E. 霍恩研究幽灵堵车问题已有多年，他提出了一个解决方案：在前车与后车之间取中间值，让车流中车辆之间的间距对幽灵堵车起到“减震”作用。也就是说，它能防止减速效应被后方的车<b>放大</b>，他说。本质上，每位司机都要不断微调，让自己的车大致保持在前后车之间的中点。"
+        },
+        {
+          "en": "F. Horn calls this method of vehicle spacing bilateral (双方的) control, and he said it could be achieved with relatively simple modifications to the adaptive cruise control that many new cars already have. Adaptive cruise control is a driver assistance technology that sets a maximum speed for vehicles and automatically slows the speed of the car when traffic is sensed in front of the vehicle. The technology is also known as autonomous cruise control. Such modifications, Horn said, could help fight phantom jams within a few years, maybe decades before an alternative solution, such as networked self-driving cars, becomes a reality on the roads.",
+          "zh": "F. 霍恩把这种车辆间距控制方法称为“双向控制”，他说只要对许多新车已配备的自适应巡航系统做相对简单的改装就能实现。自适应巡航是一项驾驶辅助技术，能为车辆设定最高速度，并在探测到前方有车流时自动减速。这项技术也被称为自动巡航。霍恩说，这样的改装可能在几年内就能帮助对抗幽灵堵车——比另一种方案（例如联网的自动驾驶汽车）真正上路可能还要早几十年。"
+        },
+        {
+          "en": "G. Traffic jams are caused by a number of factors, such as roads that are poorly designed or over-capacity, localized factors like city traffic-lighting patterns, and events like accidents and construction. But phantom traffic jams can make all those problems worse, Horn said. And the researchers in the new study have calculated that solving phantom jams could save at least some of the estimated $121 billion per year that traffic jams are estimated to cost the U.S. economy, Horn told Live Science.",
+          "zh": "G. 堵车由多种因素造成，例如道路设计不佳或容量超载、城市交通灯配时这类局部因素，以及事故和施工这类事件。但幽灵堵车会让这些问题雪上加霜，霍恩说。新研究的研究者还计算出，解决幽灵堵车至少能省下堵车每年给美国经济造成的约 1210 亿美元损失中的一部分，霍恩对《生活科学》说。"
+        },
+        {
+          "en": "H. New research by Horn and MIT postdoctoral associate Liang Wang, published in the journal IEEE Transactions on Intelligent Transportation Systems, shows how bilateral control can fight the problem. The researchers made computer models of real-world traffic conditions, showing how a typical U.S. freeway could benefit from cars using bilateral control. That would be in place when human drivers fail to slow down, thus avoiding tailgating (紧跟) the car in front, Horn said. “Under reasonable conditions today, you might get 1,800 cars per lane per hour throughput (the volume of traffic passing through),” he added. “But with bilateral control, you could almost double that.”",
+          "zh": "H. 霍恩与麻省理工学院博士后梁旺发表在《IEEE 智能交通系统汇刊》上的新研究，展示了双向控制如何对抗这一问题。研究者对现实交通状况做了计算机建模，显示出典型的美国高速公路如何从使用双向控制的车辆中获益。当人类司机没能及时减速时，这套控制就会介入，从而避免紧跟（尾随）前车，霍恩说。“在今天合理的条件下，每条车道每小时大约能通过 1800 辆车（即通行量），”他补充说，“而采用双向控制，几乎可以翻倍。”"
+        },
+        {
+          "en": "I. The main alternative to increasing traffic throughput per lane has been to build more lanes and more highways, and putting in new roads is very expensive, he said. “If we can increase the throughput on major highways, even if it is only by 50 percent, that would be a big deal,” Horn said.",
+          "zh": "I. 他说，提高单车道通行量的主要替代办法一直是多修车道、多修高速，而修新路非常昂贵。“如果我们能提高主干高速的通行量，哪怕只提高 50%，那也是了不起的事，”霍恩说。"
+        },
+        {
+          "en": "J. With the help of engineering students at high schools in Maine, Horn and Wang have also built a robot simulation (模拟) that shows how bilateral control can suppress phantom traffic jams. Increasing the spacing of vehicles dampens the effect of slowdowns by cars in front of a given car, so that the slowing is not worsened until it becomes a phantom jam, the researchers said.",
+          "zh": "J. 在缅因州几所高中的工程专业学生帮助下，霍恩和梁旺还搭建了一个机器人模拟，展示双向控制如何抑制幽灵堵车。研究者说，加大车辆间距会削弱前车减速带来的影响，使减速不会一路恶化成幽灵堵车。"
+        },
+        {
+          "en": "K. A video from the project shows a train of autonomous robots running along a track without bilateral control; they eventually back up in phantom jams. But when the robots are switched over to bilateral control (by flashing the lights in the room), each autonomous robot tries to keep itself halfway between the robot in front and the one behind; the phantom jams disappear as a result, Horn said.",
+          "zh": "K. 项目视频显示，一队自主机器人在没有双向控制的情况下沿轨道行驶，最终会因幽灵堵车而堆积起来。但当机器人切换到双向控制（通过房间里闪烁的灯光）后，每个自主机器人都会尽量让自己处在前一个和后一个机器人中间；结果幽灵堵车就消失了，霍恩说。"
+        },
+        {
+          "en": "L. Since starting his research on phantom traffic jams, Horn has learned that schools of fish and flocks of birds and bats use similar spacing strategies to avoid hitting each other while swimming or flying in densely packed groups. In particular, studies of millions of bats emerging at dusk from caves in Southeast Asia showed that each bat used a form of bilateral control to reduce the likelihood of collisions with other bats in the densely packed swarm (一大群), Horn said.",
+          "zh": "L. 自开始研究幽灵堵车以来，霍恩了解到，鱼群、鸟群和蝙蝠群也采用类似的间距策略，以免在密集群体中游泳或飞行时相互碰撞。霍恩说，尤其是对东南亚洞穴中黄昏时分成千上万只蝙蝠出洞的研究显示，每只蝙蝠都会使用某种双向控制，以降低在密集群体中与其他蝙蝠相撞的可能。"
+        },
+        {
+          "en": "M. Unlike bats, birds and fish, however, humans have difficulty judging distances behind them. To address that weakness, Horn is now working with the car company Toyota to enable a form of bilateral control via modifications to existing adaptive cruise control systems, which use forward-facing sensors to judge the distance to the vehicle ahead. The bilateral control approach would include adding rear-facing sensors to determine the distance to the vehicle following a car.",
+          "zh": "M. 然而，与蝙蝠、鸟和鱼不同，人类很难判断身后的距离。为弥补这一弱点，霍恩目前正与丰田汽车合作，通过对现有自适应巡航系统做改装来实现一种双向控制——这些系统用朝前的传感器判断与前车的距离。双向控制方案还包括加装朝后的传感器，以确定与后车的距离。"
+        },
+        {
+          "en": "N. But until those systems become standard, human drivers can help reduce phantom traffic jams simply by not following the car in front so closely. As Horn argues, “There is absolutely no advantage of tailgating the car in front of you.”",
+          "zh": "N. 但在这些系统成为标配之前，人类司机只要不紧跟前面的车，就能帮助减少幽灵堵车。正如霍恩所说：“紧跟前车绝对没有任何好处。”"
+        }
+      ]
+    },
+    {
+      "paper": "2025-06-3",
+      "sec": "C1",
+      "title": "仔细阅读 Passage One · 美貌与内在",
+      "paras": [
+        {
+          "en": "Our society places a high value on physical beauty. Americans spend an average of over $722 each year on their appearance. One in ten Americans has tried to look like a star.",
+          "zh": "我们的社会高度重视外貌之美。美国人平均每年在容貌上花费超过 722 美元。每十个美国人中就有一个尝试过让自己看起来像明星。"
+        },
+        {
+          "en": "There is nothing wrong with trying to look our best, but excessive focus on physical appearance misses the soulful aspects of what it means to be beautiful. Trying to look like the magazine pictures can take us on a long ride away from what beauty is really about.",
+          "zh": "想让自己呈现最好的一面并没有错，但过度关注外表，会错过“美”所包含的那些触及心灵的层面。试图长得像杂志照片，可能让我们一路偏离美的真正含义。"
+        },
+        {
+          "en": "Many of us spend far too much time, energy, and money trying to polish an image of what we think will bring attention, love, and connection. In the process, we may fail to attend to ourselves in a way that would move us toward deeper intimacy, fulfillment, and meaning.",
+          "zh": "我们中许多人花太多时间、精力和金钱，去打磨一个自以为能带来关注、爱与联结的形象。在这个过程中，我们可能没能以一种能带我们走向更深亲密、满足与意义的方式照顾自己。"
+        },
+        {
+          "en": "It may sound trite (老生常谈的), but beauty is only skin deep; it is not what brings love toward us. Just read about the latest Hollywood starlets whose seeming love turns into resentment and bitter court battles.",
+          "zh": "这话可能听起来老生常谈，但美貌只是表面的；它并不能把爱带向我们。只要读读最近那些好莱坞年轻女星的故事：看似甜蜜的爱情，最后变成了怨恨和难堪的官司。"
+        },
+        {
+          "en": "Outer beauty can be as much of a curse as a blessing. We may develop a habit of being so focused on maintaining a perfect appearance that we never cultivate the inner qualities necessary to sustain and deepen intimacy and connection. As I describe in my book, <i>The Authentic Heart</i>, it is the courage to be authentic that connects us in a deeper way.",
+          "zh": "外在的美既可能是福，也可能是祸。我们可能养成一种习惯：过度专注于维持完美的外表，以至于从未去培养维系并加深亲密与联结所必需的内在品质。正如我在《真实的心》一书中所说，是“做真实自己的勇气”让我们以更深的方式彼此联结。"
+        },
+        {
+          "en": "While our initial attraction may be based, in part, on physical chemistry, it is the meeting of our inner worlds that creates the lasting intimacy and spiritual connection for which we long. If we redirect our attention toward cultivating inner qualities, we might find a magnetic attraction that moves us from something superficial to something that connects us to our depths.",
+          "zh": "虽然我们最初被吸引，部分原因可能是身体上的化学反应，但真正创造出我们渴望的持久亲密与心灵联结的，是内心世界的相遇。如果我们把注意力转向培养内在品质，也许会发现一种磁石般的吸引力，把我们从肤浅之处带向与我们内心深处相连的地方。"
+        },
+        {
+          "en": "The path toward cultivating inner beauty is really simple. But what is simple is not always easy. Not everyone will see us and appreciate us as we take the courageous risk to allow ourselves to be seen as we really are. But if they do not, it is their loss, not ours. Eventually we will find those compatible souls who appreciate us as we are.",
+          "zh": "培养内在美的道路其实很简单，但简单并不等于容易。当我们鼓起勇气、允许自己被以真实的样子看见时，并非每个人都会看见并欣赏我们。但如果不是，那是他们的损失，不是我们的。最终我们会遇到那些契合的灵魂，欣赏我们本来的样子。"
+        },
+        {
+          "en": "The path toward cultivating inner beauty is really simple. But what is simple is not always easy.",
+          "zh": "（此段与上段重复排版，原卷如此。）"
+        }
+      ]
+    },
+    {
+      "paper": "2025-06-3",
+      "sec": "C2",
+      "title": "仔细阅读 Passage Two · 植物肉",
+      "paras": [
+        {
+          "en": "Plant-based meats are coming soon to a dinner table near you, but do they deserve a spot on your plate? If you tried a vegetable burger years ago and dismissed it as rubbery and flavorless. It is a good time to give meatless meat another chance. Newer varieties imitate the look, flavor, and texture of meat. Analysts do not expect the meat-free movement to slow anytime soon; a 2021 report predicts the market will skyrocket to $74 billion by 2030 — a 957 percent surge.",
+          "zh": "植物肉很快就要来到你身边的餐桌上了，但它们值得在你盘子里占一个位置吗？如果你几年前尝过素汉堡，觉得它像橡胶又没味道，就把它否掉了——现在正是给“无肉之肉”第二次机会的好时机。更新一代的产品在模仿肉的外观、风味和口感。分析人士预计这股无肉潮流短期内不会放缓；一份 2021 年的报告预测，该市场规模到 2030 年将飙升至 740 亿美元——增幅达 957%。"
+        },
+        {
+          "en": "Plant-based meats are no longer just for vegetarians. Companies such as Impossible Foods and Beyond Meat — the current superstars of the alternative protein sector — are pursuing consumers who enjoy meat but want to reduce their meat consumption for animal rights, health, or environmental reasons. So far, it is a winning strategy: More than nine out of ten consumers who buy Beyond Burger and Impossible Foods products also eat meat.",
+          "zh": "植物肉不再只是给素食者的。Impossible Foods 和 Beyond Meat 这样的公司——当下替代蛋白领域的明星——正在争取那些爱吃肉、但出于动物权益、健康或环保原因想减少吃肉的人。到目前为止这是成功的策略：购买 Beyond Burger 和 Impossible Foods 产品的消费者中，十有九个自己也吃肉。"
+        },
+        {
+          "en": "Many vegetarians do not actually care for food that resembles meat. When reporter Joan Solsman, a longtime vegetarian, tried a dish from Impossible Foods, she felt so sick that she could not finish it. “Maybe the best sign that Impossible Foods has cracked the code to realistic fake meat is that I could not stand to take another bite,” she wrote.",
+          "zh": "许多素食者其实并不喜欢像肉的食品。记者琼·索尔斯曼是多年的素食者，她尝了一道 Impossible Foods 的菜后难受得没能吃完。“Impossible Foods 也许真的破解了‘逼真假肉’的密码——最好的证据就是：我实在吃不下去第二口，”她写道。"
+        },
+        {
+          "en": "Meatless meats are generally a healthier choice than beef because they are cholesterol-free, plus they are a good source of vitamins, minerals, protein, and fiber.",
+          "zh": "无肉之肉总体上比牛肉更健康，因为它们不含胆固醇，而且是维生素、矿物质、蛋白质和膳食纤维的良好来源。"
+        },
+        {
+          "en": "If meatless meat can help you stick to a plant-based diet, that in itself can lead to better health. Not only has red meat been linked to cancer, but studies show that people who ditch meat have lower blood pressure, lower average blood sugar, and lower cholesterol levels.",
+          "zh": "如果无肉之肉能帮你坚持植物性饮食，这本身就能带来更好的健康。红肉不仅被指与癌症相关，研究还表明，戒掉吃肉的人血压更低、平均血糖更低、胆固醇水平也更低。"
+        },
+        {
+          "en": "However, just because it is plant-based does not mean it is health food. Most imitation meats are highly processed and contain high amounts of sodium (钠) compared to traditional beef.",
+          "zh": "然而，植物基并不等于健康食品。大多数仿制肉经过高度加工，与传统的牛肉相比含钠量很高。"
+        },
+        {
+          "en": "These new generations of alternate meat get all the attention, but do not forget about whole grains and vegetables. Beans are an especially excellent protein substitute. They are nutritious, inexpensive, and far more sustainable than any of the processed meatless substitutes on the market today.",
+          "zh": "这些新一代的替代肉吸引了所有关注，但别忘了全谷物和蔬菜。豆类是格外优秀的蛋白质替代品：有营养、便宜，而且比市面上任何加工过的无肉替代品都更可持续。"
+        }
+      ]
+    },
+    {
+      "paper": "2024-12-1",
+      "sec": "A",
+      "title": "选词填空 · 语言与衰老",
+      "paras": [
+        {
+          "en": "When Toni Morrison died in 2019, the world lost one of its most influential authors. But Morrison was not an early success. Her first novel was not published until she was 39, and her last appeared when she was 84. And Morrison was not <b>unique</b> in this regard. Numerous writers produce masterpieces well into their 70s and beyond. Such <b>literary</b> accomplishments highlight an important point. Our capacity to speak, write and learn new vocabulary does not seem to <b>deteriorate</b> with age. Our eyesight may dim and our recall may weaken, but, by comparison, our ability to produce and to <b>comprehend</b> language is well preserved into older adulthood.",
+          "zh": "2019 年托妮·莫里森去世时，世界失去了一位最具影响力的作家。但莫里森并非少年成名：她的第一部小说直到 39 岁才出版，最后一部问世时她已 84 岁。在这方面，莫里森并非<b>独一份</b>。许多作家到七十多岁甚至更晚才写出杰作。这类<b>文学</b>成就凸显了一个重要观点：我们说话、写作和学习新词汇的能力，似乎并不会随年龄<b>退化</b>。我们的视力可能变差、记忆力可能减弱，但相比之下，我们产出和<b>理解</b>语言的能力，一直到成年后期都保存得很好。"
+        },
+        {
+          "en": "Indeed, the latest research that has emerged on language and aging shows that language mastery is a <b>journey</b> that we begin as infants and continue on for the rest of our lives. Some aspects of our language abilities, such as our knowledge of word meanings, <b>actually</b> improve during middle and late adulthood.",
+          "zh": "的确，最近出现的关于语言与衰老的研究表明，语言<b>精通</b>是一段我们从婴儿时期就开始、并持续一生的<b>旅程</b>。我们语言能力的某些方面，比如对词义的了解，在中年和成年后期<b>实际上</b>还会提高。"
+        },
+        {
+          "en": "One study, for example, found that adults over sixty had an average vocabulary size of over 21,000 words. The researchers also studied a <b>sample</b> of college students and found that their average vocabulary contained <b>approximately</b> 16,000 words.",
+          "zh": "例如，一项研究发现，六十岁以上的成年人平均词汇量超过 21,000 个词。研究者还研究了一个大学生<b>样本</b>，发现他们的平均词汇量<b>大约</b>包含 16,000 个词。"
+        },
+        {
+          "en": "In another study, older adults, with an average age of 75, <b>performed</b> better than participants in their youth or middle years on tasks that required them to determine the meaning of words. Thus, language seems to be a skill that, contrary to what many might <b>assume</b>, does not weaken with age.",
+          "zh": "在另一项研究中，平均年龄 75 岁的年长者在需要判断词义的任务上<b>表现</b>优于青年或中年的参与者。因此，语言似乎是一种技能——与许多人可能<b>以为的</b>相反——它并不会随年龄衰退。"
+        }
+      ]
+    },
+    {
+      "paper": "2024-12-1",
+      "sec": "B",
+      "title": "段落匹配 · 工作与生活的平衡",
+      "paras": [
+        {
+          "en": "Few topics have been so endlessly analysed as work-life balance. The quest to attain this mysterious state has dominated discussion around careers for years—especially for working parents. The concept is often presented as something to achieve, or a goal to reach. And once you have reached it, congratulations: you have made it; you are a successful human being of the 21st century.",
+          "zh": "很少有话题像“工作与生活的平衡”这样被无休止地分析。多年来，追求这种神秘状态一直主导着关于职业生涯的讨论——对职场父母尤其如此。这个概念常常被当作某种要达成的东西、一个要抵达的目标。而一旦你抵达了，恭喜：你成功了；你是 21 世纪的成功人士。"
+        },
+        {
+          "en": "But the problem is that we often tell ourselves: “I am going to put in eight hours worth of work, and then I am going to put in eight hours worth of me time, which will include my family, my hobbies, my workout, my everything,” says Anat Lechner, clinical associate professor of management at New York University. “I do not think it is such a simple formula.”",
+          "zh": "但问题在于，我们常常这样告诉自己：“我要投入八小时的工作，然后再投入八小时的‘我的时间’，其中包含家人、爱好、锻炼、我的一切。”纽约大学管理学临床副教授阿纳特·莱希纳说，“我不认为这是这么简单的公式。”"
+        },
+        {
+          "en": "And, according to new findings, it may not be. Some researchers are now encouraging us to stop thinking about work-life balance as an achievement that you either hit or do not. Instead, they suggest it may be more of a lifelong process—a continuous, never-ending exercise that requires self-awareness and timely adjustments. Researchers Ioana Lupu and Mayra Ruiz-Castro argue that work-life balance is “a cycle, not an achievement”. In their 2020 study, the researchers interviewed nearly 80 employees at two London-based firms—an equal number of men and women between the ages of 30 and 50, all with at least one dependent child—who worked in middle or senior management roles.",
+          "zh": "而根据新的研究，它可能确实没那么简单。一些研究者现在鼓励我们不要再把工作与生活的平衡看作一种“要么做到、要么没做到”的成就。相反，他们提出，它更像是一个终身的过程——一项持续的、永无止境的练习，需要自我觉察和及时的调整。研究者约安娜·卢普和迈拉·鲁伊斯-卡斯特罗认为，工作与生活的平衡是“一个循环，而不是一项成就”。在他们 2020 年的研究中，研究者访谈了两家伦敦公司的近 80 名员工——男女各半，年龄在 30 到 50 岁之间，都至少有一个需要抚养的孩子——他们都在中层或高层管理岗位上。"
+        },
+        {
+          "en": "Although it sounds like the respondents had a lot in common, here is what separated them: about 30% of the men and 50% of the women reported resisting working long hours. The other respondents, meanwhile, all worked long hours because they thought that is what successful professionals should do.",
+          "zh": "虽然听起来这些受访者有很多共同点，但让他们分出差别的是这一点：约 30% 的男性和 50% 的女性表示自己抵制长时间工作。而其他受访者都长时间工作，因为他们认为成功的专业人士就该这样。"
+        },
+        {
+          "en": "Lupu and Ruiz-Castro looked at those who rejected the long hours and they found that those workers actually had strikingly similar strategies for maintaining their work-life balance. They had a tendency to reflect and question assumptions in the name of self-awareness and regularly took steps to adjust the things standing in their way to work-life balance.",
+          "zh": "卢普和鲁伊斯-卡斯特罗把目光投向那些拒绝长时间工作的人，他们发现，这些员工在维持工作与生活平衡方面的策略其实惊人地相似。他们倾向于以“自我觉察”为名去反思、质疑既有假设，并定期采取措施，调整那些妨碍他们实现平衡的事情。"
+        },
+        {
+          "en": "Lupu and Ruiz-Castro identified five steps that the respondents in the study who had better work-life balance used in their jobs. First, they paused and reconsidered beliefs such as “I am a professional, so I should work, work, work”, and asked themselves questions like, “What is currently causing me stress?” Second, after identifying the cause, they zeroed in on their resultant emotions. Did they feel angry, sad, energised? Third, they reprioritised, asking “Is working long hours really worth cutting back on family time?”, for example. Fourth, they considered their alternatives: is there anything at work that could be changed to accommodate these new priorities? And finally, they implemented changes, like asking their supervisor for greater flexibility, or deciding not to take on every project that comes their way.",
+          "zh": "卢普和鲁伊斯-卡斯特罗总结出，研究中平衡得较好的受访者在工作中用了五个步骤。第一，他们停下来重新审视诸如“我是专业人士，所以我应该工作、工作、工作”这类信念，并问自己“目前是什么在给我压力？”。第二，找出原因后，他们聚焦于由此产生的情绪：自己是愤怒、悲伤，还是精力充沛？第三，他们重新排定优先级，比如问“长时间工作真的值得削减家庭时间吗？”。第四，他们考虑替代方案：工作上有没有什么地方可以调整，来容纳这些新的优先级？最后，他们落实改变，比如向主管申请更大的灵活性，或者决定不接每一个找上门的项目。"
+        },
+        {
+          "en": "This five-step process is something anyone can adopt. Going through the steps, and constantly checking in with yourself, can help you shift and adapt your professional life to something that will better harmonise with your personal one. “Awareness of your emotional state is essential in order to determine the changes you want to make in your work and in your life,” says Lupu.",
+          "zh": "这个五步流程任何人都可以采用。走完这些步骤、并且不断与自己对话，能帮你把职业生活调整、改造成与个人生活更协调的样子。“觉察自己的情绪状态，对于确定你想在工作和生活中做出哪些改变至关重要，”卢普说。"
+        },
+        {
+          "en": "New York University’s Lechner agrees that finding that balance is an ongoing pursuit. It is not simply about dividing up the hours in your day between work, the gym, kids and chores. If the underlying emotional sources of stress are still there, then the time you actually spend at home may not be enjoyable. “We come home and even though physically we are there, mentally we still may be processing things that happened at work. We are not present,” she says. What we call “work-life balance” is actually just a substitute to having a sense of fulfillment and contentment.",
+          "zh": "纽约大学的莱希纳也认为，找到这种平衡是一个持续的过程。它不只是把一天的时间在工作、健身、孩子和家务之间分配。如果压力背后的情绪源头依然存在，那么你真正待在家里的时间也可能并不愉快。“我们回到家，虽然身体在那里，脑子里却可能还在处理工作上发生的事。我们并不在场，”她说。我们所谓的“工作与生活的平衡”，其实只是“拥有满足感与知足感”的替代品。"
+        },
+        {
+          "en": "Of course, finding that balance probably should not be something you have to do by yourself. Research by Erin Kelly, professor of work and organisation studies at MIT, shows companies and managers can play a key role in creating a better environment for workers. For her book <i>Overload: How Good Jobs Went Bad and What to Do about It</i>, she and co-author Phyllis Moen split more than 1,000 employees at a Fortune 500 company into two groups, one that worked under a management redesign and one that continued working within the existing management structure.",
+          "zh": "当然，寻找这种平衡大概不该是你一个人扛的事。麻省理工学院工作与组织研究教授艾琳·凯利的研究表明，公司和经理可以在为员工创造更好环境方面发挥关键作用。为了写《超载：好工作如何变坏，以及该怎么办》一书，她和合著者菲利斯·莫恩把一家《财富》500 强公司的 1000 多名员工分成两组：一组在管理改革下工作，另一组继续在现有管理结构内工作。"
+        },
+        {
+          "en": "Under the management redesign, many steps were taken to ensure better work-life balance and prevent burnout (精疲力竭). Managers were regularly reminded to explicitly support their employees. Workers were allowed to make changes, like cancelling 9 am meetings. All of this was done in the name of increasing job satisfaction and giving workers greater flexibility, and to assure workers that it was something management was committed to. Unsurprisingly, Kelly and Moen found that employees in the redesign group reported less stress and less burnout. They were less likely to quit their jobs; indeed, over the next four years, they were 40% less likely to quit than those who kept working under the old policies.",
+          "zh": "在管理改革之下，公司采取了许多措施来确保更好的工作与生活平衡、防止精疲力竭。经理们被定期提醒要明确地支持员工。员工被允许做出改变，比如取消上午九点的会议。所有这些都以“提高工作满意度、给员工更大灵活性”的名义进行，也让员工确信这是管理层下决心要做的事。不出所料，凯利和莫恩发现，改革组的员工报告的压力和倦怠都更少。他们更不可能辞职；事实上在接下来的四年里，他们辞职的可能性比那些继续在旧政策下工作的人低 40%。"
+        },
+        {
+          "en": "“Work-life balance is understood to be an individual’s response, so people think it is up to me to manage the craziness of my work life,” says Kelly. But organisations need to examine the demands they are placing on employees. “The root problem is not how the two pieces of work and life come together. It is that we have unrealistic expectations of what we are asked to do on the work side.” If your workplace is not an environment where work-life balance is possible in the first place, any effort you attempt to make toward it on a personal level will be in vain.",
+          "zh": "“工作与生活的平衡被理解为个人的应对方式，所以人们会想‘管理我这乱糟糟的工作生活是我自己的事’，”凯利说。但组织需要审视自己加在员工身上的要求。“根本问题不在于工作与生活这两块如何结合，而在于我们对‘工作方面被要求做什么’抱有不切实际的期待。”如果你的工作场所本来就不是一个可能实现平衡的环境，那么你在个人层面为此做的任何努力都将徒劳。"
+        },
+        {
+          "en": "That is a conversation that appears to be gathering pace. The new prevalence of remote and flexible working models will likely all play important roles in how we balance our professional and personal lives. And if it seems like finding that perfect balance remains difficult to achieve, the experts say that keeping some perspective can help. For millions of people, work is about being able to put food on the table. Talking about work-life balance “is a very privileged conversation”, says Lechner. “If we are reflecting, maybe we should also reflect on that.”",
+          "zh": "这场讨论似乎正在加速。远程办公和灵活工作模式的新普及，很可能对我们如何平衡职业与个人生活发挥重要作用。而如果看起来找到那种完美的平衡依然难以实现，专家们说，保持一些全局视角会有帮助。对数百万人来说，工作关乎能不能把饭摆上桌。谈论工作与生活的平衡“是一种非常特权化的对话”，莱希纳说。“如果我们在反思，也许也该反思这一点。”"
+        }
+      ]
+    },
+    {
+      "paper": "2024-12-1",
+      "sec": "C1",
+      "title": "仔细阅读 Passage One · 人与自然",
+      "paras": [
+        {
+          "en": "The weakening of the human connection to nature might be good for economic growth but is bad for people. A tipping point was reached in 2020 when human-made materials—such as steel, concrete and plastic—were found to weigh more than all life on Earth. Continuing to grow concrete forests rather than real ones is shortsighted. Simply being in the nearest wood has such health benefits that the Woodland Trust successfully lobbied for it to be prescribed by doctors.",
+          "zh": "人类与自然联系的减弱，也许有利于经济增长，但对人却有害。2020 年达到了一个临界点：人造材料——如钢、混凝土和塑料——被发现其重量已超过地球上所有生命的总和。继续种“混凝土森林”而不是真正的森林，是目光短浅的。仅仅待在最近的树林里就有如此大的健康益处，以至于林地信托基金成功游说医生把“亲近自然”开成处方。"
+        },
+        {
+          "en": "Yet slipping from popular culture is the wonder and beauty of the natural world. For every three nature-related words in hit songs of the 1950s, researchers found, there was only slightly more than one 50 years later. It is not a moment too soon that teenagers will be able to take a natural history test, given that for decades children have been able to name more video game characters than wildlife species.",
+          "zh": "然而，正从流行文化中悄悄溜走的，是自然世界的神奇与美丽。研究者发现，20 世纪 50 年代的热门歌曲里每出现三个与自然有关的词，50 年后就只剩略多于一个。让青少年能通过自然史考试，一点都不算早——因为几十年来，孩子们能叫出的电子游戏角色名字比野生物种还多。"
+        },
+        {
+          "en": "Part of remedying this social disease would be for parliament to pass a “right to grow” law, allowing anyone to turn underused public spaces into vegetable and fruit gardens. The idea is for people to get back in touch with the soil—while producing food sustainably.",
+          "zh": "要补救这种社会病症，一部分工作在于让议会通过一部“种植权”法案，允许任何人把未被充分利用的公共空间变成蔬菜和水果园。其想法是让人们重新与土壤接触——同时可持续地生产食物。"
+        },
+        {
+          "en": "Vegetable planting has a respectable tradition. In April 1649, locals responded to high prices and food shortages by cultivating vegetables on common land in Southern England. The practice of throwing seed bombs to turn vacant plots of land green took off in 1970s New York, and has been revived (使复活) by green-thumbed (有园艺才能的) social media influencers who defy local US regulations in a war on ugly spots in cities.",
+          "zh": "种菜有着值得尊重的传统。1649 年 4 月，南英格兰的当地人为应对高物价和食物短缺，在公地上种植蔬菜。用“种子炸弹”把闲置地块变绿的做法在 1970 年代的纽约兴起，如今又被那些有园艺才能、无视美国地方规定、在城市丑陋角落“开战”的社交媒体网红复兴。"
+        },
+        {
+          "en": "Apart from the urgent task of providing more healthy nutrients to those who increasingly cannot afford them, publicly accessible fruit and vegetable gardens connect what we eat to where it comes from—the means of production, if you will. They can make unlovely spaces lovely, and marry use and beauty as well as help promote a sense of community. Plants are also, of course, our first defence against species loss and climate change. Such planting is a small step for humanity—in the right direction.",
+          "zh": "除了为越来越多买不起健康食物的人提供更多营养这一紧迫任务之外，人人都能进的果蔬园还把“我们吃什么”与“它从哪来”——如果你愿意，可以说“生产方式”——连接起来。它们能把不美的空间变美，把实用与美感结合起来，还能促进社区归属感。当然，植物也是我们抵御物种流失和气候变化的第一道防线。这样的种植对人类来说是小小的一步——但是朝着正确的方向。"
+        }
+      ]
+    },
+    {
+      "paper": "2024-12-1",
+      "sec": "C2",
+      "title": "仔细阅读 Passage Two · 女性与工程",
+      "paras": [
+        {
+          "en": "Engineering in the U.S. has long been a male-dominated profession. Fifty years ago, it looked like that might change.",
+          "zh": "美国的工程行业长期以来是男性主导的职业。五十年前，情况看起来可能会改变。"
+        },
+        {
+          "en": "In 1970, the percentage of women majoring in engineering was less than 1%. In 1979, that number was 9%. Many hoped women would continue to enter the field at the same rate. But that is not what happened. Today, only 21% of engineering majors are women, a number largely unchanged since 2000.",
+          "zh": "1970 年，主修工程的女性比例不到 1%；1979 年，这个数字是 9%。许多人希望女性会以同样的速度继续进入这一领域。但事实并非如此。如今，工程专业学生中只有 21% 是女性，这个数字自 2000 年以来基本没有变化。"
+        },
+        {
+          "en": "I am a historian who, along with my colleagues, surveyed 251 women engineers who graduated from college in the 1970s. These pioneers reflected on the challenges they faced—and had advice for women entering the field today.",
+          "zh": "我是一名历史学者，和同事一起调查了 251 位 1970 年代大学毕业的女性工程师。这些先驱回顾了她们面对的挑战，也为今天进入这一领域的女性留下了建议。"
+        },
+        {
+          "en": "One survey taker explained, “The greatest challenge for me was continuing to believe in myself, when all the messages I was getting were that I would never be taken seriously or promoted or given raises at the same rate as men, who were clearly less qualified and not as smart as I was.”",
+          "zh": "一位受访者解释道：“对我来说，最大的挑战是继续相信自己——当我接收到的所有信息都在说，我永远不会被认真对待，也不会像男性那样获得同样的晋升或加薪，而那些男性明显资历更浅，也不如我聪明。”"
+        },
+        {
+          "en": "A chemical engineer who worked in manufacturing agreed, “You have to prove yourself just because you are female. And you have to work twice as hard!”",
+          "zh": "一位在制造业工作的化学工程师表示同意：“就因为你是女性，你就必须证明自己。而且你必须付出两倍的努力！”"
+        },
+        {
+          "en": "A civil engineer said, “We are women engineers. People do not refer to a man as a man engineer—he is an engineer. We are constantly reminded that we do not truly belong.” Another civil engineer stated, “On many levels, you are never quite one of the groups.”",
+          "zh": "一位土木工程师说：“我们是‘女工程师’。人们不会把一个男人叫作‘男工程师’——他就是工程师。我们不断被提醒：我们并不真正属于这里。”另一位土木工程师说：“在很多层面上，你永远不算真正属于哪个群体。”"
+        },
+        {
+          "en": "Women also talked about family caregiving responsibilities. A retired vice president from a major chemical company stated, “Young women engineers are on an equal footing until they have children, then they struggle to balance work and family—and compete with men who do not have the same household responsibilities.”",
+          "zh": "女性也谈到了家庭照护责任。一位大型化工公司的退休副总裁说：“年轻的女工程师在生孩子之前是处于平等地位的，之后就很难平衡工作与家庭——还要和那些没有同等家务责任的男性竞争。”"
+        },
+        {
+          "en": "But over the years things have changed a lot. Young women engineers are more accepted mostly because there are just more of them.",
+          "zh": "但多年来情况变化很大。年轻女性工程师如今更容易被接受，主要是因为她们的人数确实更多了。"
+        },
+        {
+          "en": "Many women engineers hailed the benefits of their chosen career. A program manager in manufacturing stated that engineering is the best degree. A mechanical engineer said, “It will give you the flexibility to do almost anything. It is also satisfying to see the effects of what you have done.”",
+          "zh": "许多女性工程师盛赞自己选择的职业带来的好处。一位制造业的项目经理说，工程是最好的学位。一位机械工程师说：“它会给你几乎什么都能做的自由度。看到自己所作所为带来的成效，也很令人满足。”"
+        }
+      ]
+    },
+    {
+      "paper": "2024-06-1",
+      "sec": "A",
+      "title": "选词填空 · 运动与情绪",
+      "paras": [
+        {
+          "en": "It is well known that physical exercise is beneficial not just to physical health but also to mental health. Yet whereas most countries have <b>detailed</b> evidence-backed guidelines on the type and intensity of exercise <b>required</b> for various physical health benefits, such guidelines do not yet exist for exercise and mood.",
+          "zh": "众所周知，体育锻炼不仅有益于身体健康，也有益于心理健康。然而，尽管大多数国家都针对“为获得各种身体健康益处<b>所需的</b>运动类型与强度”制定了<b>详尽的</b>、有证据支撑的指南，针对“运动与情绪”的这类指南却还不存在。"
+        },
+        {
+          "en": "This is <b>partly</b> due to a lack of necessary evidence. However, a new systematic review brings us usefully up-to-date on the current findings in this area.",
+          "zh": "这<b>部分</b>是因为缺乏必要的证据。不过，一项新的系统性综述让我们得以了解该领域当前研究的最新进展。"
+        },
+        {
+          "en": "Before <b>dipping</b> into some of the key take-aways, an important <b>distinction</b> made in the review is between aerobic exercise and anaerobic. The former <b>involves</b> such things as walking, jogging and cycling and means exercising in such a way that your body is able to use oxygen to burn fat for energy.",
+          "zh": "在<b>浏览</b>一些要点之前，这篇综述作出的一个重要<b>区分</b>是有氧运动与无氧运动。前者<b>包括</b>步行、慢跑和骑行之类的活动，指的是以这样一种方式锻炼：你的身体能够利用氧气燃烧脂肪来供能。"
+        },
+        {
+          "en": "In contrast, anaerobic exercise—such as lifting heavy weights—is of such <b>vigorous</b> intensity that your body does not have time to use oxygen to create energy and so instead it breaks down glucose (葡萄糖) in your blood or muscles.",
+          "zh": "相比之下，无氧运动——比如举重——强度<b>剧烈</b>到身体来不及利用氧气产生能量，于是转而分解血液或肌肉中的葡萄糖。"
+        },
+        {
+          "en": "Beginning first with the influence of exercise intensity on the mood benefits of aerobic exercise, the researchers, led by John Chan at Shenzhen University, found <b>contradictory</b> results from 19 relevant studies. Some favoured higher intensity, others low, while seven studies found that intensity made no <b>difference</b> to mood benefits.",
+          "zh": "研究者先从“运动强度对有氧运动情绪收益的影响”入手，由深圳大学约翰·陈领衔的团队在 19 项相关研究中发现了<b>相互矛盾</b>的结果。有些研究支持高强度，有些支持低强度，另有七项研究发现强度对情绪收益没有<b>影响</b>。"
+        },
+        {
+          "en": "In relation to the intensity of anaerobic exercise, however, the results were far clearer—the optimum (最佳选择) for improving mood is <b>moderate</b> intensity, perhaps because low intensity is too dull while high intensity is too unpleasant.",
+          "zh": "不过，就无氧运动的强度而言，结果要清楚得多——改善情绪的最佳选择是<b>中等</b>强度，也许是因为低强度太乏味，而高强度又太难受。"
+        }
+      ]
+    },
+    {
+      "paper": "2024-06-1",
+      "sec": "B",
+      "title": "段落匹配 · 美国人为什么工作这么久",
+      "paras": [
+        {
+          "en": "A. How will we all keep busy when we only have to work 15 hours a week? That was the question that worried the British economist John Maynard Keynes when he wrote his short essay “Economic Possibilities for Our Grandchildren” in 1930. Over the next century, he predicted, the economy would become so productive that people would barely need to work at all. For a while, it looked like Keynes was right. In 1930 the average working week was 47 hours in the United States. But by 1970, the number of hours Americans worked on average had fallen to slightly less than 39.",
+          "zh": "A. 如果每周只需工作 15 小时，我们该如何打发时间？英国经济学家约翰·梅纳德·凯恩斯 1930 年写《我们子孙后代的经济可能性》一文时，担心的正是这个问题。他预测，在接下来的一个世纪里，经济会变得如此高效，以致人们几乎不需要工作。有一段时间，看起来凯恩斯是对的：1930 年美国的平均周工时为 47 小时，但到 1970 年，美国人平均工作的小时数已降到略低于 39 小时。"
+        },
+        {
+          "en": "B. But then something changed. Instead of continuing to decline, the duration of the working week remained stable. It has stayed at just below 40 hours for nearly five decades. So what happened? Why are people working just as much today as in 1970?",
+          "zh": "B. 但后来情况变了。周工作时长没有继续下降，而是趋于稳定，近五十年来一直保持在略低于 40 小时。那么发生了什么？为什么今天人们工作的时间和 1970 年一样多？"
+        },
+        {
+          "en": "C. There would be no mystery in this if Keynes had been wrong about the power of technology to increase the economy productivity, which he thought would lead to a standard of living “between four and eight times as high as it is today.” But Keynes got that right: Technology has made the economy massively more productive. According to Benjamin M. Friedman, an economist at Harvard, the U.S. economy is right on track to reach Keynes eight-fold (八倍) multiple by 2029. That is a century after the last data Keynes would have had access to.",
+          "zh": "C. 如果凯恩斯错判了技术提升经济生产率的力量，这一切都不成谜——他认为生产率会让生活水平达到“今天的四到八倍”。但这一点凯恩斯说对了：技术让经济效率大幅提高。哈佛经济学家本杰明·M·弗里德曼指出，美国经济正按部就班地在 2029 年达到凯恩斯所说的八倍，而这距离凯恩斯能拿到的最后一批数据正好一个世纪。"
+        },
+        {
+          "en": "D. In a new paper, Friedman tries to figure out why that increased productivity has not translated into increased leisure time. Perhaps people just never feel materially satisfied, always wanting more money to buy the next new thing. This is a theory that appeals to many economists. “This argument is, at best, far from sufficient,” he writes. “If that were the case, why did the duration of the working week decline in the first place?”",
+          "zh": "D. 在一篇新论文中，弗里德曼试图弄清，为什么生产率的提高没有转化为更多的闲暇时间。也许人们从不觉得物质上已经满足，总想要更多钱去买下一件新东西。这个理论受到许多经济学家的青睐。他写道：“这个论证充其量远远不够。如果真是那样，周工作时长当初为什么会下降呢？”"
+        },
+        {
+          "en": "E. Another theory Friedman considers is that, in an era of ever fewer settings that provide effective opportunities for personal connections and relationships, people may place more value on the socializing that happens at work. There is support for this theory. Many people today consider colleagues as friends. But Friedman argues that the evidence for this theory is far from conclusive. Many workers report that they would like to spend more time with family, rather than at work. Furthermore, this theory cannot explain the change in trend in the U.S. working week in the 1970s.",
+          "zh": "E. 弗里德曼考虑的另一理论是：在能提供有效人际联结与关系的机会越来越少的时代，人们可能更看重工作中发生的社交。这个理论有支持者——今天很多人把同事当作朋友。但弗里德曼认为，支持该理论的证据远不充分：许多工人表示，他们更愿意多陪家人而不是待在工作场所；而且这个理论无法解释 1970 年代美国周工时趋势的变化。"
+        },
+        {
+          "en": "F. A third possibility proves more convincing for Friedman. That is: American inequality means that the gains of increasing productivity are not widely shared by everyone. In other words, most Americans are too poor to work less. Unlike the other two explanations Friedman considers, this one fits chronologically (按年代). Inequality declined in America during the period following World War II, along with the duration of the working week. But since the early 1970s it has risen dramatically.",
+          "zh": "F. 第三种可能对弗里德曼更有说服力：美国的不平等意味着生产率提高带来的收益并未被所有人广泛分享。换句话说，大多数美国人穷到没法少工作。与前两种解释不同，这一种在时间线上完全对得上：二战后的一段时期，美国的不平等程度与周工时一同下降；但自 1970 年代初以来，不平等急剧上升。"
+        },
+        {
+          "en": "G. Keynes prediction of a shorter working week rests on the idea that the standard of living would continue rising for everyone. But Friedman says that this is not what has happened. Although Keynes eight-fold figure holds up for the economy as a whole, it is not at all the case for the median (中位数的) American worker. For them, output by 2029 is likely to be around 3.5 times what it was when Keynes was writing. This is a bit below his four- to eight-fold predicted range.",
+          "zh": "G. 凯恩斯关于工时缩短的预测，建立在一个前提上：每个人的生活水平都会持续上升。但弗里德曼说，事实并非如此。尽管八倍这个数字对整个经济成立，对中位数美国工人却完全不成立——到 2029 年，他们的产出可能只有凯恩斯写作时的 3.5 倍左右，略低于他预测的四到八倍区间。"
+        },
+        {
+          "en": "H. This can be seen in the median worker income over this time period, complete with a shift in 1973 that fits in precisely with when the working week stopped shrinking. According to Friedman, between 1947 and 1973 the average hourly wage for normal workers (those who were not in management roles) in private industries other than agriculture nearly doubled in terms of what their money could buy. But by 2013 the average hourly wage for ordinary workers had fallen 5 percent from the 1973 level in terms of actual purchasing power. Thus, though American incomes may have gone up since 1973, the amount that American workers can actually buy with their money has gone down. For most Americans, then, the magic of increasing productivity stopped working around 1973. Thus, they had to keep working just as much in order to maintain their standard of living.",
+          "zh": "H. 这从中位数工人这一时期的收入可以看出，其中 1973 年的一个转折点，恰好与周工时停止缩短的时间吻合。弗里德曼指出，1947 到 1973 年间，除农业外的私营行业中普通工人（非管理岗）的平均时薪按购买力计算几乎翻了一倍。但到 2013 年，普通工人的平均时薪按实际购买力计算，比 1973 年的水平下降了 5%。因此，尽管 1973 年以来美国人的收入数字可能涨了，他们实际能用这些钱买到的东西却变少了。对大多数美国人来说，生产率提升的魔力在 1973 年前后就不再生效，于是他们只能继续以同样的强度工作，以维持生活水平。"
+        },
+        {
+          "en": "I. What Keynes predicted was a very optimistic version of what economists call technological unemployment. This is the idea that less labor will be necessary because machines can do so much. In Keynes vision, the resulting unemployment would be distributed more or less evenly across society in the form of increased leisure. But Friedman says that, for Americans, reality is much darker. Americans now have a labor market in which millions of people—those with fewer skills and less education—are seeking whatever poorly paid work they can get. This is confirmed by a recent poll that found that, for half of hourly workers, their top concern is not that they work too much but that they work too little. This is most likely not because they like their jobs so much. Rather, we can assume it is because they need the money.",
+          "zh": "I. 凯恩斯预测的是经济学家所谓“技术性失业”的一种非常乐观的版本：由于机器能干很多事，所需劳动力会减少；而在凯恩斯的设想里，由此产生的“失业”会以增加闲暇的形式，差不多均匀地分配给全社会。但弗里德曼说，对美国而言现实要阴暗得多：美国的劳动力市场上有数百万人——技能较少、教育程度较低的人——在拼命寻找能得到的任何低薪工作。最近一项民调印证了这一点：对一半的计时工来说，他们最担心的不是工作太多，而是工作太少。这多半不是因为他们太爱这份工作，而是因为他们需要钱。"
+        },
+        {
+          "en": "J. This explanation leaves an important question. If the very rich—the workers who have reaped above-average gains from the increased productivity since Keynes time—can afford to work less, why do they continue to work so much? (Indeed, research has shown that the highest earners in America tend to work the most.) Friedman believes that for many top earners, work is a labor of love. They are doing work they care about and are interested in, and doing more of it is not necessarily a burden. For them, it may even be a pleasure. These top earners derive meaning from their jobs and work is an important part of how they think of themselves. And, of course, they are compensated for it at a level that makes it worth their while.",
+          "zh": "J. 这个解释留下一个重要问题：如果最富的人——自凯恩斯时代以来从生产率提升中获得超平均收益的那批人——完全有条件少工作，为什么他们仍工作这么多？（研究确实表明，美国收入最高的人往往工作得最多。）弗里德曼认为，对许多高收入者来说，工作是“出于热爱的工作”：他们做的是自己在乎、感兴趣的事，多做一些并不一定是负担，对他们甚至可能是乐趣。这些高收入者从工作中获得意义，工作是他们自我认知的重要部分；当然，他们为此获得的报酬也让这一切值得。"
+        },
+        {
+          "en": "K. Friedman concludes that the prosperity (繁荣) Keynes predicted is here. After all, the economy as a whole has grown even more brilliantly than he expected. But for most Americans, that prosperity is nowhere to be seen. And, as a result, neither are those shorter working weeks.",
+          "zh": "K. 弗里德曼的结论是：凯恩斯所预测的繁荣确实已经到来——整个经济的增长甚至比他预想的还要亮眼。但对大多数美国人来说，这份繁荣根本看不到；于是，那些更短的工时也就同样无处可寻。"
+        }
+      ]
+    },
+    {
+      "paper": "2024-06-1",
+      "sec": "C1",
+      "title": "仔细阅读 Passage One · 讨好他人",
+      "paras": [
+        {
+          "en": "Lao Zi once said, “Care about what other people think and you will always be their prisoner.”",
+          "zh": "老子曾说：“在意别人怎么想，你就永远是他们的囚徒。”"
+        },
+        {
+          "en": "People-pleasing, or seeking self-worth through others approval, is unproductive and an exhausting way to go through life. Why do we allow what others think of us to have so much power over how we feel about ourselves? If it is true that you cannot please all people all of the time, would it not make sense to stop trying?",
+          "zh": "讨好他人，也就是通过别人的认可来寻找自我价值，是一种没有成效、又令人疲惫的活法。为什么我们允许别人对我们的看法，如此左右我们对自己的感受？如果你确实不可能时时刻刻取悦所有人，那停下来不试，不是更合理吗？"
+        },
+        {
+          "en": "Unfortunately, sense often is not driving our behavior. For social beings who desire love and belonging, wanting to be liked, and caring about the effect we have on others, is healthy and allows us to make connections. However, where we get into trouble is when our self-worth is dependent upon whether we win someone approval or not.",
+          "zh": "不幸的是，常常驱动我们行为的并不是理性。对于渴望爱与归属的社会性动物来说，想被人喜欢、在意自己对他人的影响，是健康的，也让我们能够建立联结。然而，我们真正出问题的地方在于：我们的自我价值感取决于能不能赢得别人的认可。"
+        },
+        {
+          "en": "This need to be liked can be traced back to when we were children and were completely dependent on others to take care of us. Small children are not just learning how to walk and communicate, they are also trying to learn how the world works. We learn about who we are and what is expected of us based on interactions with others, so, to a four-year-old, if Mommy or Daddy does not like him or her, there is the danger that they will abandon them. We need to understand that when we desperately want someone to approve of us, it is being driven by that little kid part of us that is still terrified of abandonment.",
+          "zh": "这种“想被喜欢”的需要可以追溯到童年——那时我们完全依赖他人照顾。小孩子不仅在学走路和说话，也在试图弄懂世界如何运转。我们通过与别人的互动来认识“我是谁”“别人期待我什么”。所以，对一个四岁的孩子来说，如果爸爸妈妈不喜欢他，就意味着有被抛弃的危险。我们需要明白：当我们极度渴望得到某人的认可时，驱动它的是我们心里那个仍然极度害怕被抛弃的小孩。"
+        },
+        {
+          "en": "As you become more capable of providing yourself with the approval you seek, your need for external validation will start to vanish, leaving you stronger, more confident, and yes, happier in your life. Imagine how much time we lose each moment we restrain our authentic selves in an effort to be liked.",
+          "zh": "当你越来越有能力给自己那份你想要的认可时，你对外部肯定的需要就会开始消失，让你更强大、更自信，是的，也更快乐。想想看：每当我们为了讨人喜欢而压抑真实的自己，就白白丢掉了多少时间。"
+        },
+        {
+          "en": "If we base our worth on the opinions of others, we cheat ourselves of the power to shape our experiences and embrace life not only for others but also for ourselves, because ultimately, there is no difference. So embrace the cliché (老话) and love yourself as it is highly doubtful that you will regret it.",
+          "zh": "如果我们把自身价值建立在别人的看法上，就等于剥夺了自己塑造人生、不仅为他人也为自已拥抱生活的权力——因为说到底，这两者并没有区别。所以，接受这句老话吧：爱你自己，你几乎不可能为此后悔。"
+        }
+      ]
+    },
+    {
+      "paper": "2024-06-1",
+      "sec": "C2",
+      "title": "仔细阅读 Passage Two · 衰老与大脑",
+      "paras": [
+        {
+          "en": "Some people have said aging is more a slide into forgetfulness than a journey towards wisdom. However, a growing body of research suggests that late-in-life learning is possible. In reality, education does an aging brain good.",
+          "zh": "有些人说，衰老与其说是一段走向智慧的旅程，不如说是慢慢滑向遗忘。然而，越来越多的研究表明，晚年学习是可能的。事实上，教育对衰老的大脑有好处。"
+        },
+        {
+          "en": "Throughout life, people brains constantly renovate themselves. In the late 1960s, British brain scientist Geoffrey Raisman spied growth in damaged brain regions of rats through an electron microscope; their brains were forging new connections. This meant brains may change every time a person learns something new.",
+          "zh": "人的一生中，大脑一直在自我翻新。1960 年代末，英国脑科学家杰弗里·雷斯曼通过电子显微镜观察到老鼠受损脑区出现了生长；它们的脑在锻造新的连接。这意味着，每当人学到新东西，大脑就可能发生变化。"
+        },
+        {
+          "en": "Of course, that does not mean the brain is not affected by the effects of time. Just as height usually declines over the years, so does brain volume. Humans lose about 4 percent every decade starting in their 40s. But that reduction does not necessarily make people think slower; as long as we are alive and functioning, we can alter our brains with new information and experiences.",
+          "zh": "当然，这不意味着大脑不受时间影响。正如身高通常随年龄下降，脑容量也会。人从四十多岁起，每十年大约减少 4%。但这种减少未必让人思维变慢；只要我们活着、还在运转，就能用新的信息和经历来改变自己的大脑。"
+        },
+        {
+          "en": "In fact, scientists now suspect accumulating novel experiences, facts, and skills can keep people minds more flexible. New pathways can strengthen our ever-changing mental structure, even as the brain shrinks.",
+          "zh": "事实上，科学家现在怀疑，累积新奇的经历、事实与技能，能让人头脑更灵活。新的通路能强化我们不断变化的心智结构——即使大脑在缩小。"
+        },
+        {
+          "en": "Conventional fixes like word puzzles and brain-training apps can contribute to mental durability. Even something as simple as taking a different route to the grocery store or going somewhere new on vacation can keep the brain healthy.",
+          "zh": "填字游戏、脑力训练 App 这类常规办法，有助于提升心智的持久性。甚至像换一条路去杂货店、度假时去个没去过的地方这样的小事，也能让大脑保持健康。"
+        },
+        {
+          "en": "A desire for new life challenges can further boost brainpower. Research about aging adults who take on new enterprises shows improved function and memory as well as a reduced risk of mental disease. Openness—a characteristic defined by curiosity and a desire for knowledge—may also help folks pass brain tests.",
+          "zh": "对新挑战的渴望还能进一步提升脑力。针对接手新事业的中老年人的研究显示，他们的功能与记忆都有改善，患精神疾病的风险也更低。开放性——一种由好奇心与求知欲定义的特质——也可能帮人通过脑力测试。"
+        },
+        {
+          "en": "Some folks are born with this take-in-the-world attitude, but those who are not as genetically gifted are not necessarily out of luck. While genes can encourage an interest in doing new things, a 2012 study in the journal <i>Psychology and Aging</i> found completing reasoning tasks like puzzles and number games can enhance that desire for novel experiences, which can, in turn, refresh the brain. That is why brain scientist Richard Kennedy says “It is not that old dogs cannot learn new tricks. It is that maybe old dogs do not realize why they should.”",
+          "zh": "有些人天生就有这种拥抱世界的好奇态度，但基因上没那么占优势的人也未必就倒霉。基因固然能促进对新事物的兴趣，但 2012 年发表在《心理学与衰老》期刊上的一项研究发现，完成拼图、数字游戏这类推理任务，能增强人对新体验的渴望，而这份渴望又能反过来刷新大脑。这就是为什么脑科学家理查德·肯尼迪说：“不是老狗学不了新把戏，而是老狗可能没意识到自己为什么要学。”"
+        }
+      ]
     }
   ]
 }
