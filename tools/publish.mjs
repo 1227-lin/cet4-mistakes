@@ -111,7 +111,7 @@ console.log('[4/6] 上传文件');
 const FILES = [
   'index.html', 'data.json', 'template.html', 'build.mjs',
   'manifest.json', 'sw.js', 'icon-180.png', 'icon-192.png', 'icon-512.png',
-  'README.md', '.gitignore', 'tools/add-paper.mjs', 'tools/publish.mjs',
+  'README.md', '.gitignore', '.nojekyll', 'tools/add-paper.mjs', 'tools/publish.mjs', 'tools/check.mjs',
   '.github/workflows/rebuild.yml',
 ];
 let pushed = 0, skipped = 0;
