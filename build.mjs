@@ -4,6 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { checkPapers } from './tools/check.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const CHECK = process.argv.includes('--check');
@@ -26,6 +27,14 @@ for (const p of data.papers || []) {
   }
 }
 for (const w of data.words || []) if (!w.w || !w.zh) errors.push('生词缺 w/zh：' + JSON.stringify(w));
+
+/* ---------- 交付标准（缺项直接失败） ---------- */
+const { errors: stdErrors, report } = checkPapers(data);
+for (const r of report) {
+  const flag = r.problems.length ? '✗' : '✓';
+  console.log(`${flag} ${r.title}  ${r.q}题·错${r.wrong}·短语${r.phrase}·词${r.words}·句${r.sent}·译${r.trans}篇`);
+}
+errors.push(...stdErrors);
 
 const stat = {
   papers: (data.papers || []).length,
