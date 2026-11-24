@@ -49,6 +49,13 @@ export function checkPapers(data) {
     if (paperTr.length < 4) problems.push(`译文只有 ${paperTr.length} 篇（要求 4 篇）`);
     if (trSecs.size < 3) problems.push('译文缺少 A/B/C 某一类');
     if (thinTr.length) problems.push(`${thinTr.length} 篇译文段落少于 3 段`);
+    if (p.partial === true) {
+      // 半卷（例如 Section C 原文为图片层、暂未取到）：译文要求降为 ≥1 篇，其余照旧
+      const keep = problems.filter(x => !x.startsWith('译文'));
+      problems.length = 0;
+      problems.push(...keep);
+      if (paperTr.length < 1) problems.push('半卷也至少要 1 篇译文');
+    }
 
     report.push({
       id: p.id, title: p.title,
