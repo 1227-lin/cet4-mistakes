@@ -195,6 +195,19 @@
   .tcount{display:inline-block;font-size:13px;font-weight:800;color:#fff;background:var(--p4);border-radius:999px;padding:2px 12px;line-height:1.5}
   .paper.type .paper-body{border-top:1px solid var(--line)}
 
+  /* ================= 按套折叠的分组 ================= */
+  .grp{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:14px;overflow:hidden}
+  .grp-head{display:flex;align-items:center;gap:10px;padding:15px 18px;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
+  .grp-head h3{font-size:16px;font-weight:800;margin:0;letter-spacing:.01em}
+  .grp-head .gcount{font-size:11.5px;font-weight:700;color:var(--accent);background:var(--accent-soft);border-radius:20px;padding:2px 9px}
+  .grp-head .chev{margin-left:auto;font-size:20px;line-height:1;color:var(--muted);transition:transform .18s;transform:rotate(0deg)}
+  .grp.open .grp-head .chev{transform:rotate(90deg)}
+  .grp-body{display:none;padding:2px 14px 14px}
+  .grp.open .grp-body{display:block}
+  .grp-body .trcard:first-child,.grp-body .sent:first-child{margin-top:0}
+  .grp-body .trcard{box-shadow:none;border-color:var(--line)}
+  .grp.open .grp-head{border-bottom:1px solid var(--line)}
+
   /* ================= 译文 ================= */
   .trcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:16px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.03),0 8px 24px -16px rgba(0,0,0,.18)}
   .trhead{display:flex;align-items:center;gap:10px;padding:13px 18px;background:var(--bg);border-bottom:1px solid var(--line)}
@@ -455,7 +468,7 @@ let S = load();
 S.mastered = S.mastered || {};
 S.box = S.box || {};
 S.seen = S.seen || {};
-S.open = S.open || {};
+S.open = S.open || {}; S.openT = S.openT || {}; S.openS = S.openS || {};
 S.stat = S.stat || { answers: 0 };
 
 /* ================= 工具 ================= */
@@ -726,27 +739,49 @@ function renderSentences(){
   const el = document.getElementById('sents');
   if (!SENTS.length) {
     sub.textContent = '还没有句子';
-    el.innerHTML = '<div class="empty">这一套还没有标长难句</div>';
+    el.innerHTML = '<div class="empty">还没有录入长难句</div>';
     return;
   }
-  const papers = {};
-  PAPERS.forEach(p => papers[p.id] = p.title);
-  sub.textContent = SENTS.length + ' 句 · 来自 ' + new Set(SENTS.map(s => s.paper)).size + ' 套卷';
+  const groups = {};
+  SENTS.forEach(x => (groups[x.paper] = groups[x.paper] || []).push(x));
+  const order = PAPERS.map(p => p.id).filter(id => groups[id]);
+  const titleOf = {};
+  PAPERS.forEach(p => titleOf[p.id] = p.title);
+  sub.textContent = SENTS.length + ' 句 · ' + order.length + ' 套卷';
 
-  el.innerHTML = SENTS.map((s, i) => {
-    const parts = (s.parts || []).map(p =>
-      '<li><b>' + esc(p.t) + '</b><span>' + p.d + '</span></li>').join('');
-    return '<article class="sent">' +
-      '<div class="sent-head">' +
-        '<span class="sidx num">' + pad2(i + 1) + '</span>' +
-        '<span class="src">' + esc(papers[s.paper] || '') + ' · ' + esc(s.src) + '</span>' +
-      '</div>' +
-      '<p class="en">' + s.en + '</p>' +
-      '<ul class="tree">' + parts + '</ul>' +
-      '<div class="tr"><b>译文</b>' + s.zh + '</div>' +
-      (s.key ? '<p class="key"><b>难在哪</b>' + s.key + '</p>' : '') +
-      '</article>';
-  }).join('');
+  const out = [];
+  out.push('<div class="chips" style="margin:0 0 12px">' +
+    '<button class="chip big" data-act="sopen">全部展开</button>' +
+    '<button class="chip big" data-act="sclose">全部收起</button></div>');
+
+  let n = 0;
+  order.forEach(pid => {
+    const list = groups[pid];
+    const open = !!S.openS[pid];
+    out.push('<article class="grp' + (open ? ' open' : '') + '">');
+    out.push('<div class="grp-head" data-act="stog" data-k="' + pid + '">' +
+      '<h3>' + esc(titleOf[pid]) + '</h3>' +
+      '<span class="gcount">' + list.length + ' 句</span>' +
+      '<span class="chev">›</span></div>');
+    out.push('<div class="grp-body">');
+    list.forEach(x => {
+      n++;
+      const parts = (x.parts || []).map(p =>
+        '<li><b>' + esc(p.t) + '</b><span>' + p.d + '</span></li>').join('');
+      out.push('<article class="sent">' +
+        '<div class="sent-head">' +
+          '<span class="sidx num">' + pad2(n) + '</span>' +
+          '<span class="src">' + esc(x.src) + '</span>' +
+        '</div>' +
+        '<p class="en">' + x.en + '</p>' +
+        '<ul class="tree">' + parts + '</ul>' +
+        '<div class="tr"><b>译文</b>' + x.zh + '</div>' +
+        (x.key ? '<p class="key"><b>难在哪</b>' + x.key + '</p>' : '') +
+        '</article>');
+    });
+    out.push('</div></article>');
+  });
+  el.innerHTML = out.join('');
 }
 
 /* ================= 按题型 ================= */
@@ -813,22 +848,37 @@ function renderTrans(){
   const papers = {};
   PAPERS.forEach(p => papers[p.id] = p.title);
 
+  const groups = {};
+  TRANS.forEach(t => (groups[t.paper] = groups[t.paper] || []).push(t));
+  const order = PAPERS.map(p => p.id).filter(id => groups[id]);
+
   const out = [];
-  let last = null;
-  TRANS.forEach(t => {
-    if (t.paper !== last) {
-      out.push('<div class="sec-h" style="margin-top:22px">' + esc(papers[t.paper] || t.paper) + '</div>');
-      last = t.paper;
-    }
-    const pairs = (t.paras || []).map((p, i) =>
-      '<div class="pair' + (trMode === 'zh' ? ' hideen' : '') + '">' +
-        '<p class="en"><span class="pno">' + (i + 1) + '</span>' + p.en + '</p>' +
-        '<p class="zh">' + p.zh + '</p>' +
-      '</div>').join('');
-    out.push('<article class="trcard">' +
-      '<div class="trhead"><span class="trtag">' + esc(t.sec) + '</span><b>' + esc(t.title) + '</b>' +
-      '<span class="pmeta" style="margin-left:auto">' + (t.paras || []).length + ' 段</span></div>' +
-      '<div class="trbody">' + pairs + '</div></article>');
+  out.push('<div class="chips" style="margin:0 0 12px">' +
+    '<button class="chip big" data-act="topen">全部展开</button>' +
+    '<button class="chip big" data-act="tclose">全部收起</button></div>');
+
+  order.forEach(pid => {
+    const list = groups[pid];
+    const open = !!S.openT[pid];
+    const pn = list.reduce((a, t) => a + (t.paras || []).length, 0);
+    out.push('<article class="grp' + (open ? ' open' : '') + '">');
+    out.push('<div class="grp-head" data-act="ttog" data-k="' + pid + '">' +
+      '<h3>' + esc(papers[pid]) + '</h3>' +
+      '<span class="gcount">' + list.length + ' 篇 · ' + pn + ' 段</span>' +
+      '<span class="chev">›</span></div>');
+    out.push('<div class="grp-body">');
+    list.forEach(t => {
+      const pairs = (t.paras || []).map((p, i) =>
+        '<div class="pair' + (trMode === 'zh' ? ' hideen' : '') + '">' +
+          '<p class="en"><span class="pno">' + (i + 1) + '</span>' + p.en + '</p>' +
+          '<p class="zh">' + p.zh + '</p>' +
+        '</div>').join('');
+      out.push('<article class="trcard">' +
+        '<div class="trhead"><span class="trtag">' + esc(t.sec) + '</span><b>' + esc(t.title) + '</b>' +
+        '<span class="pmeta" style="margin-left:auto">' + (t.paras || []).length + ' 段</span></div>' +
+        '<div class="trbody">' + pairs + '</div></article>');
+    });
+    out.push('</div></article>');
   });
   el.innerHTML = out.join('');
 }
@@ -934,6 +984,12 @@ document.addEventListener('click', (e) => {
   if (!t) return;
   const act = t.dataset.act;
   if (act === 'pmode') { pMode = t.dataset.v; renderPapers(); }
+  else if (act === 'ttog') { const k = t.dataset.k; S.openT[k] = !S.openT[k]; save(S); renderTrans(); }
+  else if (act === 'topen') { TRANS.forEach(x => S.openT[x.paper] = true); save(S); renderTrans(); }
+  else if (act === 'tclose') { S.openT = {}; save(S); renderTrans(); }
+  else if (act === 'stog') { const k = t.dataset.k; S.openS[k] = !S.openS[k]; save(S); renderSentences(); }
+  else if (act === 'sopen') { SENTS.forEach(x => S.openS[x.paper] = true); save(S); renderSentences(); }
+  else if (act === 'sclose') { S.openS = {}; save(S); renderSentences(); }
   else if (act === 'trmode') { trMode = t.dataset.v; renderTrans(); document.querySelectorAll('[data-act=\"trmode\"]').forEach(b => b.classList.toggle('on', b.dataset.v === trMode)); }
   else if (act === 'pfilter') { pFilter = t.dataset.v; renderPapers(); }
   else if (act === 'toggle-paper') {
