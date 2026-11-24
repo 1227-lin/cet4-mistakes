@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "四级错题本",
-    "updated": "2026-11-04"
+    "updated": "2026-11-24"
   },
   "papers": [
     {
@@ -1603,6 +1603,458 @@
           }
         ]
       }
+    },
+    {
+      "id": "2023-12-1",
+      "title": "2023年12月 · 第一套",
+      "date": "2023-12-16",
+      "scope": "Part III 阅读 26–55",
+      "note": "听力未作答；Section C 两篇译文待补（PDF 里正文为图片层，未能提取）",
+      "partial": true,
+      "questions": [
+        {
+          "no": "26",
+          "sec": "A",
+          "yours": "F",
+          "ans": "F",
+          "ok": true,
+          "brief": "have a meaningful impact on health，固定搭配"
+        },
+        {
+          "no": "27",
+          "sec": "A",
+          "yours": "B",
+          "ans": "D",
+          "ok": false,
+          "tag": "词性",
+          "line": "somewhat 后面接形容词，alter 是动词",
+          "stem": "It is also somewhat <u>27</u>, since the federal physical activity guidelines recommend at least 75 minutes of vigorous exercise…",
+          "quote": "It is also somewhat <em>controversial</em>, since the federal guidelines recommend…",
+          "why": "<i>somewhat + 形容词</i>＝\"有点…\"；<b>D) controversial</b>（有争议的）。10 分钟运动就能延寿这个结论，与官方指南的门槛确实冲突，所以\"有争议\"。",
+          "you": "你填 B) alter——动词\"改变\"。somewhat 后面不能接动词原形；而且 alter 若要成立，前面得有 to do。",
+          "fix": "看到 somewhat / rather / quite / extremely 这类程度副词，直接锁定形容词或副词，动词一律排除。",
+          "phrases": [
+            {
+              "p": "be somewhat controversial",
+              "z": "有些争议"
+            },
+            {
+              "p": "federal physical activity guidelines",
+              "z": "联邦体育活动指南"
+            }
+          ]
+        },
+        {
+          "no": "28",
+          "sec": "A",
+          "yours": "E",
+          "ans": "H",
+          "ok": false,
+          "tag": "搭配+对举",
+          "line": "vigorous 与 moderate 是固定对举",
+          "stem": "…at least 75 minutes of vigorous exercise or 150 minutes of <u>28</u> exercise each week.",
+          "quote": "…75 minutes of <em>vigorous</em> exercise or 150 minutes of <em>moderate</em> exercise each week.",
+          "why": "<b>H) moderate</b>。运动强度分级是固定说法：<i>vigorous</i>（剧烈）↔ <i>moderate</i>（中等）。而且\"75 分钟剧烈\"对\"150 分钟中等\"，正好是两倍关系，语义上也对得上。",
+          "you": "你填 E) coordinates（协调／坐标），词性和语义都不搭：空格要修饰 exercise 的形容词。",
+          "fix": "遇到 A or B 的对举结构，先想\"哪两个词是天生一对\"：vigorous / moderate、maximum / minimum、physical / mental。",
+          "phrases": [
+            {
+              "p": "vigorous exercise",
+              "z": "剧烈运动"
+            },
+            {
+              "p": "moderate exercise",
+              "z": "中等强度运动"
+            }
+          ]
+        },
+        {
+          "no": "29",
+          "sec": "A",
+          "yours": "I",
+          "ans": "I",
+          "ok": true,
+          "brief": "adults who participated in the survey"
+        },
+        {
+          "no": "30",
+          "sec": "A",
+          "yours": "O",
+          "ans": "O",
+          "ok": true,
+          "brief": "an upper limit to the amount of exercise＝运动量的上限"
+        },
+        {
+          "no": "31",
+          "sec": "A",
+          "yours": "?",
+          "ans": "M",
+          "ok": false,
+          "tag": "副词",
+          "line": "空格在 no limit 前，只能是副词",
+          "stem": "…the researchers found that there was <u>31</u> no limit to the longevity benefits of exercise.",
+          "quote": "…there was <em>seemingly</em> no limit to the longevity benefits of exercise.",
+          "why": "<b>M) seemingly</b>（看似），修饰整个 no limit 短语：研究数据显示\"似乎没有上限\"。",
+          "you": "这一格你先写了一个字母又划掉，最后没落定。划掉的那笔是动词/名词，放在 was 和 no 之间语法不通。",
+          "fix": "was / is 后面紧跟 no / not 时，中间那个词百分之百是副词（seemingly / apparently / practically）。",
+          "phrases": [
+            {
+              "p": "there is seemingly no limit to",
+              "z": "…似乎没有上限"
+            },
+            {
+              "p": "the longevity benefits of exercise",
+              "z": "运动对长寿的益处"
+            }
+          ]
+        },
+        {
+          "no": "32",
+          "sec": "A",
+          "yours": "L",
+          "ans": "L",
+          "ok": true,
+          "brief": "a 46% lower risk of death＝死亡风险低 46%"
+        },
+        {
+          "no": "33",
+          "sec": "A",
+          "yours": "J",
+          "ans": "J",
+          "ok": true,
+          "brief": "observational studies can only find patterns，不能证明因果"
+        },
+        {
+          "no": "34",
+          "sec": "A",
+          "yours": "M",
+          "ans": "A",
+          "ok": false,
+          "tag": "动词+介词",
+          "line": "adjust for＝对…做校正",
+          "stem": "The researchers also were not able to <u>34</u> for certain lifestyle factors that could affect lifespan.",
+          "quote": "…were not able to <em>adjust</em> for certain lifestyle factors…",
+          "why": "<b>A) adjust</b>，<i>adjust for sth</i>＝对…进行校正／排除…的干扰，统计学术语，后面那个 for 就是提示。",
+          "you": "你填 M) seemingly——这是副词，不但词性错，而且副词后面不能带 for。",
+          "fix": "看到空格后面直接跟 for / to / with，优先找动词；再看这个词组是不是固定搭配。",
+          "phrases": [
+            {
+              "p": "adjust for sth",
+              "z": "对…进行校正／排除…的影响"
+            },
+            {
+              "p": "lifestyle factors",
+              "z": "生活方式因素"
+            }
+          ]
+        },
+        {
+          "no": "35",
+          "sec": "A",
+          "yours": "G",
+          "ans": "G",
+          "ok": true,
+          "brief": "Despite these limitations＝尽管有这些局限"
+        },
+        {
+          "no": "36",
+          "sec": "B",
+          "yours": "D",
+          "ans": "D",
+          "ok": true,
+          "brief": "[D] some people may struggle to get the same access to certain foods"
+        },
+        {
+          "no": "37",
+          "sec": "B",
+          "yours": "C",
+          "ans": "I",
+          "ok": false,
+          "tag": "同义替换",
+          "line": "more similar 对应 standardisation of diets",
+          "stem": "People around the world are eating foods more similar than what they used to eat.",
+          "quote": "<b>I)</b> …the world has seen an increasing <em>standardisation</em> of diets; the foods we eat globally today are <em>36% more similar</em> than they were in 1961.",
+          "why": "题干 <i>more similar</i> 与 I 段原句几乎逐词对应，<i>standardisation</i>（标准化）就是\"越来越像\"。",
+          "you": "你选 C。C 段讲的是\"别恐慌，主要食物不会灭绝\"（good news on this front），跟\"全球饮食趋同\"完全是两件事——你被 C 段开头那句\"good news\"带偏了。",
+          "fix": "段落匹配里，题干出现数字、百分比（36%）这种硬信息，直接回原文找同一个数字，比读意思快十倍。",
+          "phrases": [
+            {
+              "p": "standardisation of diets",
+              "z": "饮食的标准化／趋同"
+            },
+            {
+              "p": "over-dependence on a handful of staples",
+              "z": "过度依赖少数几种主食"
+            }
+          ]
+        },
+        {
+          "no": "38",
+          "sec": "B",
+          "yours": "B",
+          "ans": "B",
+          "ok": true,
+          "brief": "[B] BBC Future 报道用基因工程帮作物抗旱"
+        },
+        {
+          "no": "39",
+          "sec": "B",
+          "yours": "G",
+          "ans": "G",
+          "ok": true,
+          "brief": "[G] high quality chocolate will be less available，且要付更多钱"
+        },
+        {
+          "no": "40",
+          "sec": "B",
+          "yours": "A",
+          "ans": "A",
+          "ok": true,
+          "brief": "[A] 动物灭绝与作物是否同样命运"
+        },
+        {
+          "no": "41",
+          "sec": "B",
+          "yours": "F",
+          "ans": "F",
+          "ok": true,
+          "brief": "[F] farms can move north，but eventually yields will suffer"
+        },
+        {
+          "no": "42",
+          "sec": "B",
+          "yours": "L",
+          "ans": "L",
+          "ok": true,
+          "brief": "[L] diversifying our diet away from wheat/corn/rice could also help"
+        },
+        {
+          "no": "43",
+          "sec": "B",
+          "yours": "J",
+          "ans": "J",
+          "ok": true,
+          "brief": "[J] the jury is still out，USDA 科学家更谨慎"
+        },
+        {
+          "no": "44",
+          "sec": "B",
+          "yours": "H",
+          "ans": "H",
+          "ok": true,
+          "brief": "[H] 穷人因价格被迫放弃某些食物"
+        },
+        {
+          "no": "45",
+          "sec": "B",
+          "yours": "K",
+          "ans": "K",
+          "ok": true,
+          "brief": "[K] 施肥、灌溉、机械、仓储等现有技术"
+        },
+        {
+          "no": "46",
+          "sec": "C",
+          "yours": "C",
+          "ans": "A",
+          "ok": false,
+          "tag": "态度题",
+          "line": "作者承认自己有时是真的忙，其余时候是\"装忙\"",
+          "stem": "What does the author say about his own habit of saying \"busy\"?",
+          "quote": "One of my bad habits is saying \"busy\" when people ask me how I am doing. Sometimes it is because I <em>actually am busy</em>, but other times it is because that is what I think I am supposed to say.",
+          "why": "<b>A)</b> 作者说自己嘴上挂着 busy，一半是真忙，一半是\"觉得该这么说\"——A 承认的正是\"有时候确实忙\"。",
+          "you": "你选 C\"他认为人人都该投入工作\"——这是把作者的<b>批判</b>读成了<b>主张</b>。作者整段都在说\"忙碌不等于成果\"，他恰恰反对这种文化。",
+          "fix": "问\"作者怎么看\"的题，先看他是在描述还是在批评。出现 bad habit / supposed to say 这种词，说明他在自嘲，不是在提倡。",
+          "phrases": [
+            {
+              "p": "be supposed to say",
+              "z": "觉得应该说（其实未必想说）"
+            },
+            {
+              "p": "working long hours doesn’t drive better results",
+              "z": "长时间工作并不会带来更好的结果"
+            }
+          ]
+        },
+        {
+          "no": "47",
+          "sec": "C",
+          "yours": "B",
+          "ans": "B",
+          "ok": true,
+          "brief": "hard work leads to success 的信念让人高估忙人的地位"
+        },
+        {
+          "no": "48",
+          "sec": "C",
+          "yours": "D",
+          "ans": "D",
+          "ok": true,
+          "brief": "a recent study: 1/5 的高投入员工有倦怠风险，且 busier 被视作更高地位"
+        },
+        {
+          "no": "49",
+          "sec": "C",
+          "yours": "C",
+          "ans": "C",
+          "ok": true,
+          "brief": "Out of Office Email Generator：让休假的人真正脱离工作"
+        },
+        {
+          "no": "50",
+          "sec": "C",
+          "yours": "B",
+          "ans": "B",
+          "ok": true,
+          "brief": "作者和同事做这个工具的动机"
+        },
+        {
+          "no": "51",
+          "sec": "C",
+          "yours": "A",
+          "ans": "A",
+          "ok": true,
+          "brief": "women paid $18 less per ticket，因为他们订票更早"
+        },
+        {
+          "no": "52",
+          "sec": "C",
+          "yours": "B",
+          "ans": "D",
+          "ok": false,
+          "tag": "目的题",
+          "line": "we wanted to determine what was causing these gender differences",
+          "stem": "What did the researchers want to determine by testing a variety of possible explanations?",
+          "quote": "We wanted to determine <em>what was causing these gender differences</em> in booking business trips, so we tested a variety of possible explanations.",
+          "why": "<b>D)</b> What accounted for the gender gap in airfares——account for＝解释…的原因，与 determine what was causing 完全对应。",
+          "you": "你选 B\"是什么让女性提前订票\"。原文是\"想弄清<b>票价差异</b>的成因\"，提前订票是研究后来发现的<b>原因之一</b>，不是研究目的。你把结论当成了目标。",
+          "fix": "目的题的答案动词要落在\"研究想查清什么\"上（determine / examine / find out），不要选具体某条结论。",
+          "phrases": [
+            {
+              "p": "account for sth",
+              "z": "解释…的原因；占…比例"
+            },
+            {
+              "p": "a variety of possible explanations",
+              "z": "多种可能的解释"
+            }
+          ]
+        },
+        {
+          "no": "53",
+          "sec": "C",
+          "yours": "D",
+          "ans": "C",
+          "ok": false,
+          "tag": "细节+程度",
+          "line": "disappears 是\"消失\"，不是\"缩小\"",
+          "stem": "What happened when the negative reciprocity variable was taken into account?",
+          "quote": "It only means that the gender gap <em>disappears</em> when we plug in the negative reciprocity variable.",
+          "why": "<b>C)</b> 票价上的性别差异<b>不再存在</b>——原文用的词是 disappears（消失）。",
+          "you": "你选 D\"差异显著缩小\"。narrow（缩小）和 disappear（消失）是量级差别，原文说的是加进这个变量后差异归零，不是变小。",
+          "fix": "这类题专考程度词：disappear / vanish / eliminate ≠ narrow / reduce / shrink。看到选项里换了程度，先回原文核对那个动词。",
+          "phrases": [
+            {
+              "p": "plug in a variable",
+              "z": "代入一个变量"
+            },
+            {
+              "p": "the gender gap disappears",
+              "z": "性别差异消失"
+            }
+          ]
+        },
+        {
+          "no": "54",
+          "sec": "C",
+          "yours": "D",
+          "ans": "C",
+          "ok": false,
+          "tag": "细节定位",
+          "line": "lower motivation / performance / morale＝counterproductive",
+          "stem": "What did prior research on negative reciprocity among workers find?",
+          "quote": "Prior research on negative reciprocity among workers found that it can result in lower employee motivation, business performance and workplace morale and culture.",
+          "why": "<b>C)</b> It proves to be counterproductive in a number of ways——motivation、performance、morale 三样都往下掉，就是\"在多个方面适得其反\"。",
+          "you": "你选 D\"会导致劳资冲突加剧\"。原文列举的是员工积极性、企业绩效、团队士气，全都在企业内部，没有提\"劳方 vs 资方\"的对立。",
+          "fix": "选项里出现原文没提的主体（labor-management），一律排除；这类题的错误选项常靠\"加一个新对象\"来制造似是而非。",
+          "phrases": [
+            {
+              "p": "negative reciprocity",
+              "z": "消极互惠（你对我不好我也对你不好）"
+            },
+            {
+              "p": "workplace morale",
+              "z": "团队士气"
+            }
+          ]
+        },
+        {
+          "no": "55",
+          "sec": "C",
+          "yours": "A",
+          "ans": "A",
+          "ok": true,
+          "brief": "最后一段强调这对大公司意味着每年百万美元级的节省"
+        }
+      ],
+      "summary": {
+        "verdict": "Part III 30 题对 21 错 9，正确率 70%，是目前四套里最高的一套。选词填空错 4 个（27、28、31、34），段落匹配只错 1 个，仔细阅读错 4 个（46、52、53、54）。进步是真的，但错法跟前三套一样：词性不看、程度词不辨。",
+        "roots": [
+          {
+            "t": "词性槽位不看",
+            "c": "p4",
+            "d": "27 在 somewhat 后填了动词 alter，28 在 150 minutes of 后填了 coordinates，34 在 be able to 后填了副词 seemingly。",
+            "f": "填之前先给每个空标一个目标词性，标完再翻词库。"
+          },
+          {
+            "t": "程度词不辨",
+            "c": "p2",
+            "d": "53 原文 disappears（消失），你选了 narrow（缩小）；46 把作者的批评读成提倡。",
+            "f": "看到 disappear / vanish / eliminate 这类词，先划出来，选项里换程度的一律回原文对。"
+          },
+          {
+            "t": "把结论当目的",
+            "c": "p3",
+            "d": "52 问研究目的，你选了后来发现的结论（女性提前订票）；37 被 C 段 “good news” 带走，漏了 36% 这个硬数字。",
+            "f": "目的题只挑 determine / examine / find out 那类动词所在的选项。"
+          }
+        ]
+      },
+      "diagnosis": {
+        "intro": "70% 说明基础够用了，剩下的 9 分几乎全是\"操作层\"失误，不是没读懂。这套的性价比最高——不动词汇量也能捞回 4–5 分。",
+        "steps": [
+          {
+            "tag": "P0",
+            "title": "每个空先标词性",
+            "fix": "27 · 28 · 31 · 34",
+            "d": "四个错全在词性上。做法：填之前在每个空上方写 adj./n./adv./v.，再翻词库按词性过滤。这一步只花 20 秒，这套能直接捞回 4 分。"
+          },
+          {
+            "tag": "P0",
+            "title": "对举结构记搭配",
+            "fix": "28 · 30",
+            "d": "vigorous ↔ moderate、upper limit、lower risk 这类固定说法，遇到 A or B 先想\"天生一对\"。"
+          },
+          {
+            "tag": "P1",
+            "title": "程度词清单",
+            "fix": "53 · 46",
+            "d": "把 disappear / vanish / eliminate / no longer 和 narrow / reduce / shrink 分两栏抄一遍，考前看一次。"
+          },
+          {
+            "tag": "P1",
+            "title": "目的题只认动词",
+            "fix": "52",
+            "d": "题干问 purpose / want to determine，选项里出现具体结论的先划掉，找那个\"想弄清什么\"的表述。"
+          },
+          {
+            "tag": "P2",
+            "title": "段落匹配用数字定位",
+            "fix": "37",
+            "d": "题干带 36%、80%、2050 这类硬数据，直接回原文扫同一个数字，比通读快得多，也更准。"
+          }
+        ]
+      }
     }
   ],
   "words": [
@@ -1613,6 +2065,14 @@
       "eg": "that little kid part of us that is still terrified of <em>abandonment</em>",
       "tag": "仔细阅读",
       "paper": "2024-06-1"
+    },
+    {
+      "w": "alter",
+      "pos": "v.",
+      "zh": "改变",
+      "eg": "It is also somewhat controversial…（词库原词）",
+      "tag": "选词填空",
+      "paper": "2023-12-1"
     },
     {
       "w": "amplify",
@@ -1735,6 +2195,14 @@
       "paper": "2024-06-1"
     },
     {
+      "w": "commodity crops",
+      "pos": "phr.",
+      "zh": "大宗作物",
+      "eg": "our dependence on <em>commodity crops</em>",
+      "tag": "段落匹配",
+      "paper": "2023-12-1"
+    },
+    {
       "w": "compensate for",
       "pos": "phr.",
       "zh": "补偿；弥补",
@@ -1757,6 +2225,30 @@
       "eg": "found <em>contradictory</em> results from 19 relevant studies",
       "tag": "选词填空",
       "paper": "2024-06-1"
+    },
+    {
+      "w": "controversial",
+      "pos": "adj.",
+      "zh": "有争议的",
+      "eg": "It is also somewhat <em>controversial</em>",
+      "tag": "选词填空",
+      "paper": "2023-12-1"
+    },
+    {
+      "w": "coordinates",
+      "pos": "v./n.",
+      "zh": "协调；坐标",
+      "eg": "（词库干扰项）",
+      "tag": "选词填空",
+      "paper": "2023-12-1"
+    },
+    {
+      "w": "counterproductive",
+      "pos": "adj.",
+      "zh": "适得其反的",
+      "eg": "It proves to be <em>counterproductive</em>",
+      "tag": "仔细阅读",
+      "paper": "2023-12-1"
     },
     {
       "w": "crawl to a halt",
@@ -1847,6 +2339,14 @@
       "paper": "2025-06-3"
     },
     {
+      "w": "diversify",
+      "pos": "v.",
+      "zh": "使多样化",
+      "eg": "<em>diversifying</em> our diet away from heat-sensitive crops",
+      "tag": "段落匹配",
+      "paper": "2023-12-1"
+    },
+    {
       "w": "document",
       "pos": "v.",
       "zh": "记录；记载",
@@ -1927,12 +2427,36 @@
       "tag": "段落匹配"
     },
     {
+      "w": "fertiliser",
+      "pos": "n.",
+      "zh": "肥料",
+      "eg": "applying more <em>fertiliser</em>",
+      "tag": "段落匹配",
+      "paper": "2023-12-1"
+    },
+    {
       "w": "flavorless",
       "pos": "adj.",
       "zh": "没味道的；寡淡的",
       "eg": "dismissed it as rubbery and <em>flavorless</em>",
       "tag": "仔细阅读",
       "paper": "2025-06-3"
+    },
+    {
+      "w": "gender gap",
+      "pos": "phr.",
+      "zh": "性别差距",
+      "eg": "the <em>gender gap</em> disappears",
+      "tag": "仔细阅读",
+      "paper": "2023-12-1"
+    },
+    {
+      "w": "glacial",
+      "pos": "adj.",
+      "zh": "冰川的",
+      "eg": "a legacy of <em>glacial</em> expansion",
+      "tag": "段落匹配",
+      "paper": "2023-12-1"
     },
     {
       "w": "gradual",
@@ -1975,6 +2499,14 @@
       "tag": "选词填空"
     },
     {
+      "w": "homogeneity",
+      "pos": "n.",
+      "zh": "同质性",
+      "eg": "<em>homogeneity</em> and over-dependence on a handful of staples",
+      "tag": "段落匹配",
+      "paper": "2023-12-1"
+    },
+    {
       "w": "implement",
       "pos": "v.",
       "zh": "实施；执行（计划、改变）",
@@ -2015,6 +2547,14 @@
       "paper": "2025-06-3"
     },
     {
+      "w": "irrigation",
+      "pos": "n.",
+      "zh": "灌溉",
+      "eg": "implementing better <em>irrigation</em>",
+      "tag": "段落匹配",
+      "paper": "2023-12-1"
+    },
+    {
       "w": "isolation",
       "pos": "n.",
       "zh": "孤立；隔绝",
@@ -2023,12 +2563,36 @@
       "paper": "2025-06-3"
     },
     {
+      "w": "lifespan",
+      "pos": "n.",
+      "zh": "寿命",
+      "eg": "increase your <em>lifespan</em>",
+      "tag": "选词填空",
+      "paper": "2023-12-1"
+    },
+    {
+      "w": "limitations",
+      "pos": "n.",
+      "zh": "局限；限制",
+      "eg": "Despite these <em>limitations</em>…",
+      "tag": "选词填空",
+      "paper": "2023-12-1"
+    },
+    {
       "w": "lobby",
       "pos": "v.",
       "zh": "游说（议员、政府）",
       "eg": "the Woodland Trust successfully <em>lobbied</em> for it to be prescribed",
       "paper": "2024-12-1",
       "tag": "仔细阅读"
+    },
+    {
+      "w": "longevity",
+      "pos": "n.",
+      "zh": "长寿",
+      "eg": "the <em>longevity</em> benefits of exercise",
+      "tag": "选词填空",
+      "paper": "2023-12-1"
     },
     {
       "w": "mastery",
@@ -2053,6 +2617,14 @@
       "eg": "relatively simple <em>modifications</em> to adaptive cruise control",
       "tag": "段落匹配",
       "paper": "2025-06-3"
+    },
+    {
+      "w": "negative reciprocity",
+      "pos": "phr.",
+      "zh": "消极互惠",
+      "eg": "<em>negative reciprocity</em> among workers",
+      "tag": "仔细阅读",
+      "paper": "2023-12-1"
     },
     {
       "w": "nutrient",
@@ -2087,6 +2659,22 @@
       "tag": "仔细阅读"
     },
     {
+      "w": "participated",
+      "pos": "v.",
+      "zh": "参与",
+      "eg": "adults who <em>participated</em> in the survey",
+      "tag": "选词填空",
+      "paper": "2023-12-1"
+    },
+    {
+      "w": "patterns",
+      "pos": "n.",
+      "zh": "模式；规律",
+      "eg": "they can only find <em>patterns</em>",
+      "tag": "选词填空",
+      "paper": "2023-12-1"
+    },
+    {
       "w": "people-pleasing",
       "pos": "n.",
       "zh": "讨好他人",
@@ -2101,6 +2689,14 @@
       "eg": "“<em>phantom</em>” traffic jams",
       "tag": "段落匹配",
       "paper": "2025-06-3"
+    },
+    {
+      "w": "populated",
+      "pos": "adj.",
+      "zh": "有人居住的",
+      "eg": "densely <em>populated</em> areas",
+      "tag": "选词填空",
+      "paper": "2023-12-1"
     },
     {
       "w": "portion",
@@ -2175,6 +2771,14 @@
       "tag": "段落匹配"
     },
     {
+      "w": "resurrection",
+      "pos": "n.",
+      "zh": "复活；复苏",
+      "eg": "genes from <em>resurrection</em> plants",
+      "tag": "段落匹配",
+      "paper": "2023-12-1"
+    },
+    {
       "w": "retain",
       "pos": "v.",
       "zh": "保留；保持",
@@ -2197,6 +2801,14 @@
       "eg": "dismissed it as <em>rubbery</em> and flavorless",
       "tag": "仔细阅读",
       "paper": "2025-06-3"
+    },
+    {
+      "w": "seemingly",
+      "pos": "adv.",
+      "zh": "看似；表面上",
+      "eg": "there was <em>seemingly</em> no limit",
+      "tag": "选词填空",
+      "paper": "2023-12-1"
     },
     {
       "w": "self-worth",
@@ -2253,6 +2865,22 @@
       "eg": "<em>split</em> more than 1,000 employees into two groups",
       "paper": "2024-12-1",
       "tag": "段落匹配"
+    },
+    {
+      "w": "spoilage",
+      "pos": "n.",
+      "zh": "腐败；变质",
+      "eg": "storage facilities to delay <em>spoilage</em>",
+      "tag": "段落匹配",
+      "paper": "2023-12-1"
+    },
+    {
+      "w": "staple",
+      "pos": "n.",
+      "zh": "主食；主要产品",
+      "eg": "from <em>staples</em> to life-enhancing extras",
+      "tag": "段落匹配",
+      "paper": "2023-12-1"
     },
     {
       "w": "substitute",
@@ -2319,6 +2947,14 @@
       "paper": "2024-06-1"
     },
     {
+      "w": "threshold",
+      "pos": "n.",
+      "zh": "临界点；阈值",
+      "eg": "the 30°C temperature <em>threshold</em>",
+      "tag": "段落匹配",
+      "paper": "2023-12-1"
+    },
+    {
       "w": "throughput",
       "pos": "n.",
       "zh": "吞吐量；通行量",
@@ -2341,6 +2977,14 @@
       "eg": "is <em>unproductive</em> and an exhausting way to go through life",
       "tag": "仔细阅读",
       "paper": "2024-06-1"
+    },
+    {
+      "w": "upper",
+      "pos": "adj.",
+      "zh": "上部的；上限的",
+      "eg": "an <em>upper</em> limit to the amount of exercise",
+      "tag": "选词填空",
+      "paper": "2023-12-1"
     },
     {
       "w": "utmost",
@@ -2573,6 +3217,90 @@
       ],
       "zh": "如果我们把自身价值建立在别人的看法上，就等于剥夺了自己塑造人生、不仅为他人也为自已拥抱生活的权力，因为说到底，这两者没有区别。",
       "key": "cheat sb of sth 是个低频搭配，\"骗自己\"直译会走偏；另外 not only… but also… 夹在不定式中间，容易读断。"
+    },
+    {
+      "paper": "2023-12-1",
+      "src": "选词填空 · 第 2 段",
+      "en": "<b>Still</b>, the idea <b>that</b> exercising for just 10 minutes a week may be enough to increase your lifespan is novel.",
+      "parts": [
+        {
+          "t": "主干",
+          "d": "<i>The idea … is novel</i>：主语 idea，系动词 is，表语 novel。句子真正的骨架只有五个词。"
+        },
+        {
+          "t": "同位语从句",
+          "d": "<i>that exercising for just 10 minutes a week may be enough to increase your lifespan</i> 是 idea 的同位语从句，解释\"这个想法\"具体是什么。注意从句自己有主语（exercising…）和谓语（may be）。"
+        },
+        {
+          "t": "主语被拉长",
+          "d": "主语 idea 后面挂了 25 个词，谓语 is 被推到最后。读长句先找那个孤零零的系动词/实义动词。"
+        }
+      ],
+      "zh": "不过，\"每周只运动 10 分钟也许就足以延长寿命\"这个想法，确实很新颖。",
+      "key": "The idea that… is novel：同位语从句把主语撑长，动词被推到末尾。"
+    },
+    {
+      "paper": "2023-12-1",
+      "src": "段落匹配 · [C] 段",
+      "en": "<b>Despite</b> alarmist headlines about \"foods that are going extinct,\" there is no evidence <b>that</b> major food types like beans, chocolate, wine, corn or wheat will cease to exist.",
+      "parts": [
+        {
+          "t": "主干",
+          "d": "<i>there is no evidence that…</i>：there be 句型，真正的主语是 evidence。"
+        },
+        {
+          "t": "介词短语前置",
+          "d": "<i>Despite alarmist headlines about…</i> 是让步状语，放在句首，主句的主语被推后。"
+        },
+        {
+          "t": "同位语从句",
+          "d": "<i>that major food types … will cease to exist</i> 说明 evidence 的内容；中间 like beans, chocolate… 是举例，读的时候可以先跳过。"
+        }
+      ],
+      "zh": "尽管有那些耸人听闻的标题说\"某些食物即将灭绝\"，但没有证据表明豆类、巧克力、葡萄酒、玉米或小麦这类主要食物会消失。",
+      "key": "Despite 开头的是状语，主句从 there is 才开始；that 从句里那串 like A, B, C 可以先跳过。"
+    },
+    {
+      "paper": "2023-12-1",
+      "src": "段落匹配 · [D] 段",
+      "en": "In other words, <b>even if</b> a certain food is still grown on some corner of the Earth, it doesn’t mean <b>that</b> everyone will continue to have the same degree of access as today.",
+      "parts": [
+        {
+          "t": "主干",
+          "d": "<i>it doesn’t mean that…</i>，it 指前面那件事。"
+        },
+        {
+          "t": "让步从句",
+          "d": "<i>even if a certain food is still grown…</i>＝即使…；even if 与 even though 不同，前者是\"退一步假设\"。"
+        },
+        {
+          "t": "宾语从句",
+          "d": "<i>that everyone will continue to have the same degree of access as today</i>；have access to sth＝能获得某物，这里 access 后面省略了 to it。"
+        }
+      ],
+      "zh": "换句话说，即使某种食物在地球某个角落还在种，也不意味着所有人都能像今天一样获得它。",
+      "key": "even if 是\"就算\"，不是\"虽然\"；have the same degree of access＝获得程度相同。"
+    },
+    {
+      "paper": "2023-12-1",
+      "src": "选词填空 · 第 3 段",
+      "en": "<b>Contrary to</b> some research <b>that</b> has found an upper limit to the amount of exercise that is healthy, the researchers found that there was seemingly no limit to the longevity benefits of exercise.",
+      "parts": [
+        {
+          "t": "主干",
+          "d": "<i>the researchers found that…</i>；前面的 Contrary to… 整块是状语。"
+        },
+        {
+          "t": "两个定语从句",
+          "d": "<i>that has found an upper limit…</i> 修饰 research；<i>that is healthy</i> 修饰 the amount of exercise。"
+        },
+        {
+          "t": "固定搭配",
+          "d": "<b>contrary to sth</b>＝与…相反；<b>an upper limit to sth</b>＝…的上限。"
+        }
+      ],
+      "zh": "与一些研究\"运动量有健康上限\"的结论相反，这些研究者发现，运动对长寿的益处似乎没有上限。",
+      "key": "Contrary to + 一长串名词，主句要等 the researchers found 才出现；先把状语整块括起来。"
     }
   ],
   "translations": [
@@ -3025,6 +3753,92 @@
         {
           "en": "Some folks are born with this take-in-the-world attitude, but those who are not as genetically gifted are not necessarily out of luck. While genes can encourage an interest in doing new things, a 2012 study in the journal <i>Psychology and Aging</i> found completing reasoning tasks like puzzles and number games can enhance that desire for novel experiences, which can, in turn, refresh the brain. That is why brain scientist Richard Kennedy says “It is not that old dogs cannot learn new tricks. It is that maybe old dogs do not realize why they should.”",
           "zh": "有些人天生就有这种拥抱世界的好奇态度，但基因上没那么占优势的人也未必就倒霉。基因固然能促进对新事物的兴趣，但 2012 年发表在《心理学与衰老》期刊上的一项研究发现，完成拼图、数字游戏这类推理任务，能增强人对新体验的渴望，而这份渴望又能反过来刷新大脑。这就是为什么脑科学家理查德·肯尼迪说：“不是老狗学不了新把戏，而是老狗可能没意识到自己为什么要学。”"
+        }
+      ]
+    },
+    {
+      "paper": "2023-12-1",
+      "sec": "A",
+      "title": "选词填空 · 运动与寿命",
+      "paras": [
+        {
+          "en": "Exercising for just 10 minutes a week is linked to a longer life, according to a new study published in <i>The British Journal of Sports Medicine</i>.",
+          "zh": "《英国运动医学杂志》新发表的一项研究显示，每周只运动 10 分钟，就与更长的寿命相关。"
+        },
+        {
+          "en": "Several recent studies have found that even low-intensity exercise, done for a short amount of time, can have a meaningful <b>impact</b> on health. Still, the idea that exercising for just 10 minutes a week may be enough to increase your lifespan is novel.",
+          "zh": "最近的几项研究发现，即使是低强度运动，只要时间短，也能对健康产生实实在在的<b>影响</b>。不过，\"每周只运动 10 分钟也许就足以延长寿命\"这个想法依然很新颖。"
+        },
+        {
+          "en": "It is also somewhat <b>controversial</b>, since the federal physical activity guidelines recommend getting at least 75 minutes of vigorous exercise or 150 minutes of <b>moderate</b> exercise each week.",
+          "zh": "它还有点<b>争议</b>，因为联邦体育活动指南建议每周至少进行 75 分钟剧烈运动，或 150 分钟<b>中等强度</b>运动。"
+        },
+        {
+          "en": "The study was based on data from more than 88,000 U.S. adults who <b>participated</b> in the National Health Interview Survey between 1997 and 2008.",
+          "zh": "该研究基于 1997 至 2008 年间参加全国健康访谈调查的 88,000 多名美国成年人的数据。"
+        },
+        {
+          "en": "Contrary to some research that has found an <b>upper</b> limit to the amount of exercise that is healthy, the researchers found that there was <b>seemingly</b> no limit to the longevity benefits of exercise. Even the small group of people who got 10 times the amount of exercise recommended by the federal government had a 46% lower <b>risk</b> of death than the least active group.",
+          "zh": "有些研究认为运动量存在健康<b>上限</b>，与此<b>相反</b>，这些研究者发现，运动对长寿的益处<b>似乎</b>没有上限。就连那一小群运动量达到联邦政府建议量十倍的人，死亡<b>风险</b>也比运动最少的那组低 46%。"
+        },
+        {
+          "en": "Still, observational studies like this one cannot prove cause and effect; they can only find <b>patterns</b>. The researchers also were not able to <b>adjust</b> for certain lifestyle factors that could affect lifespan, including dietary habits and changes in physical activity over time. Despite these <b>limitations</b>, the implication of the power of physical activity, even in small amounts, means the study’s results are yet another indication that some exercise is better than none.",
+          "zh": "不过，像这样的观察性研究无法证明因果，只能发现<b>规律</b>。研究者也无法对某些可能影响寿命的生活方式因素<b>做出校正</b>，比如饮食习惯和身体活动随时间的变化。尽管有这些<b>局限</b>，这项研究仍说明身体活动（哪怕量很小）确有力量，也再一次印证：动一点总比完全不动好。"
+        }
+      ]
+    },
+    {
+      "paper": "2023-12-1",
+      "sec": "B",
+      "title": "段落匹配 · 气候变化会怎样影响我们的食物",
+      "paras": [
+        {
+          "en": "[A] Earlier this year, scientists warned that one in six animal species could go extinct due to climate change. Could the same thing happen to our crops and other foodstuffs too?",
+          "zh": "[A] 今年早些时候，科学家警告说，六分之一的动物物种可能因气候变化而灭绝。同样的事会不会也发生在我们的农作物和其他食物上？"
+        },
+        {
+          "en": "[B] It’s clear that farmers in many parts of the world are going to find things harder in the coming decades. Last week, BBC Future explored one scientist’s efforts to help crops cope with the increased probability of droughts. By using the genes from resurrection plants, Jill Farrant of the University of Cape Town is exploring whether she can design crops to survive for much longer periods without water.",
+          "zh": "[B] 显然，未来几十年里，世界上许多地方的农民会过得更难。上周，BBC Future 报道了一位科学家帮助作物应对干旱概率上升的努力。开普敦大学的吉尔·法兰特正利用\"复苏植物\"的基因，探索能否设计出能在无水条件下存活更久的作物。"
+        },
+        {
+          "en": "[C] But if we can’t find ways to protect other foods, will they survive climate change? Fortunately, there is some good news on this front. Despite alarmist headlines about “foods that are going extinct,” there is no evidence that major food types like beans, chocolate, wine, corn or wheat will cease to exist.",
+          "zh": "[C] 但如果我们找不到保护其他食物的办法，它们能挺过气候变化吗？好消息是，在这个问题上情况没那么糟。尽管有那些耸人听闻的标题说\"某些食物即将灭绝\"，但没有证据表明豆类、巧克力、葡萄酒、玉米或小麦这类主要食物会消失。"
+        },
+        {
+          "en": "[D] But that doesn’t mean it’s all good news for future food. We will probably have to change where we grow certain crops, as some regions get too hot. The disadvantage, obviously, is that local farmers will suffer under this situation. And some people may struggle to get the same access to certain foods. “Even if overall food production may be unaffected, food security can still be impacted,” says Margaret Walsh, a scientist at the U.S. Department of Agriculture’s Climate Change Program Office. In other words, even if a certain food is still grown on some corner of the Earth, it doesn’t mean that everyone will continue to have the same degree of access as today.",
+          "zh": "[D] 但这不意味着未来的食物全是好消息。随着一些地区变得过热，我们可能不得不改变某些作物的种植地。明显的坏处是，当地农民会因此受损；而有些人可能更难获得某些食物。\"即使总体产量不受影响，粮食安全仍可能受到冲击，\"美国农业部气候变化项目办公室的科学家玛格丽特·沃尔什说。换句话说，即使某种食物在地球某个角落还在种，也不意味着所有人都能像今天一样获得它。"
+        },
+        {
+          "en": "[E] Overall, the yields of many foods, from staples to life-enhancing extras such as coffee and chocolate, will likely be impacted by climate change too. How those decreases will be felt will depend on the degree of warming and the crop in question, but in general, “anything over about 30°C is very bad for crops,” says Wolfram Schlenker, an associate professor of international and public affairs at Columbia University. For example, statistical studies that he and a colleague built of corn and soybean production in the U.S. show a steep decline after crossing the 30°C temperature threshold.",
+          "zh": "[E] 总体而言，许多食物的产量——从主食到咖啡、巧克力这类提升生活品质的\"额外品\"——都可能受到气候变化影响。减产的严重程度取决于升温幅度和具体作物，但总的来说，\"超过 30℃ 左右对作物非常不利，\"哥伦比亚大学国际与公共事务副教授沃尔弗拉姆·施伦克说。例如，他和同事对美国玉米与大豆产量所做的统计研究显示，一旦越过 30℃ 这个温度临界点，产量会急剧下降。"
+        },
+        {
+          "en": "[F] In the U.S.—the world’s largest producer of corn and soybeans—farms can move north to some degree, Schlenker says. But eventually, yields will likely suffer because the soil north of Iowa declines in quality—a legacy of glacial expansion. Other studies, including studies of wheat in India and corn in Africa, also found that there is a threshold above which yields sharply decline: crops can adapt and move, but only to a point. “What’s common to all studies is the finding that extreme heat is damaging to crop growth, although exact cutoffs vary by crop,” Schlenker says. “If predictions for the end of the century are true, though, I think a lot of agricultural areas in the U.S. will see significant hits.”",
+          "zh": "[F] 在美国——世界最大的玉米和大豆生产国——农场在一定程度上可以向北迁移，施伦克说。但产量最终仍会受损，因为爱荷华以北的土壤质量下降——这是冰川扩张留下的后果。其他研究，包括对印度小麦和非洲玉米的研究，也发现存在一个临界点，越过之后产量会急剧下降：作物能适应、能迁移，但只到某个限度为止。\"所有研究的共同点是：极端高温对作物生长有害，尽管具体阈值因作物而异，\"施伦克说。\"不过，如果对本世纪末的预测成真，我认为美国很多农业区会遭受重创。\""
+        },
+        {
+          "en": "[G] Under current conditions, about 4% of the world’s croplands experience drought in any given year, but by the end of the century those conditions are forecast to jump to about 18% per year. Some studies indicate that horticulture crops—generally, everything besides staples—may be impacted most severely, largely because they tend to be confined to a smaller geographic area. Researcher Andrew Jarvis and his colleagues found that 80% of coffee-growing zones in Central America and Brazil could become unsuitable by 2050, for example, while climate change will likely have “great impacts” on cocoa production in West Africa. “High quality chocolate will be less available in the future, and if you want it, you’ll have to pay a lot more for it,” Jarvis says.",
+          "zh": "[G] 在目前条件下，全球约 4% 的耕地在任何一年都会遭遇干旱；但据预测，到本世纪末这一比例将升至每年约 18%。一些研究指出，园艺作物——泛指主食以外的一切——受影响可能最严重，很大程度是因为它们往往分布在较小的地理范围内。例如，研究者安德鲁·贾维斯及其同事发现，中美洲和巴西 80% 的咖啡种植区到 2050 年可能变得不再适宜，而气候变化还可能对西非的可可生产造成\"重大影响\"。\"未来高品质巧克力会更难买到，想要就得付多得多的钱，\"贾维斯说。"
+        },
+        {
+          "en": "[H] This means that, for those who can afford it, some foods will simply cost them more in the future. But for poorer people, those same price jumps will likely cause certain foods to go extinct from their diets. “The more you reduce, the shorter the supply, and the higher the price will jump,” Schlenker says.",
+          "zh": "[H] 这意味着，对买得起的人来说，未来某些食物只是变得更贵。但对较贫困的人来说，同样的价格飙升很可能让某些食物从他们的餐桌上消失。\"你减得越多，供应越少，价格就涨得越高，\"施伦克说。"
+        },
+        {
+          "en": "[I] Another potential climate change-induced problem is our dependence on commodity crops—wheat, soybeans, corn and rice—which currently provide humanity with 75% of its calories, either directly or indirectly through the animals we raise on those crops. Jarvis and his colleagues also found that, over the past five decades, the world has seen an increasing standardisation of diets; the foods we eat globally today are 36% more similar than they were in 1961. While this can be good news for the world’s poorest people who now consume more calories, protein and fat than in the past, homogeneity and over-dependence on a handful of staples leaves us vulnerable to threats such as drought, disease and pests—all of which are predicted to worsen in many parts of the world as a result of climate change.",
+          "zh": "[I] 另一个由气候变化引发的潜在问题是：我们对小麦、大豆、玉米和水稻这类大宗作物的依赖——它们目前直接提供，或通过以它们为饲料的牲畜间接提供人类 75% 的热量。贾维斯和同事还发现，过去五十年间全球饮食日趋标准化：我们今天吃的食物，比 1961 年时相似度高出 36%。这对世界上最贫困的人群或许是好消息（他们现在摄入的热量、蛋白质和脂肪都比过去多），但同质化和对少数几种主食的过度依赖，让我们在面对干旱、病害和虫害时更加脆弱——而据预测，这些威胁在许多地区都会因气候变化而加剧。"
+        },
+        {
+          "en": "[J] There are ways we could soften the coming blow to the global food supply, however. Like Farrant’s work with resurrection crops, a number of companies, organisations and researchers are aiming to create drought- and temperature-resistant crops through genetic engineering and conventional breeding. For now, the jury is still out as to how successful those endeavours will be. “The people at Monsanto who I’ve talked to are much more optimistic that they’ll be able to engineer heat-tolerant crops,” Schlenker says. “On the other hand, scientists at the USDA who I’ve spoken with are much more cautious.”",
+          "zh": "[J] 不过，我们还是有办法缓和即将到来的全球粮食供应冲击。与法兰特研究\"复苏作物\"类似，不少公司、组织和研究者正试图通过基因工程和常规育种，培育抗旱、耐高温的作物。至于这些努力能有多成功，目前尚无定论。\"我接触过的孟山都的人要乐观得多，认为他们能造出耐热作物，\"施伦克说。\"另一方面，我跟美国农业部的科学家聊，他们谨慎得多。\""
+        },
+        {
+          "en": "[K] Until genetic engineering comes to fruition, other strategies might also help in some places, including applying more fertiliser, implementing better irrigation, using machinery that gets crops out of the field faster or installing storage facilities to delay spoilage. “Many places could benefit a great deal just by using technologies that already exist,” Walsh says. “General farm management can go a long way toward easing changes.”",
+          "zh": "[K] 在基因工程真正见效之前，一些地方还可以靠其他策略：多施肥、改善灌溉、用机械更快把作物收出田间，或建仓储设施延缓变质。\"很多地方只要能用好已有技术，就能获益良多，\"沃尔什说。\"一般的农场管理就能在很大程度上缓解这些变化。\""
+        },
+        {
+          "en": "[L] Finally, diversifying our diet away from heat-sensitive wheat, corn, rice and other crops could also help. “We’ve seen profound changes in the last decades in what we eat largely as a result of international trade, and I think that trend toward more diversification will continue,” Jarvis says. “Depending on a greater number of plant species creates a more vigorous and less risky food system—and one that provides a broader range of nutritional requirements.”",
+          "zh": "[L] 最后，让我们的饮食多样化、减少对小麦、玉米、水稻等对热敏感作物的依赖，也会有帮助。\"过去几十年，我们的饮食发生了深刻变化，很大程度上是国际贸易带来的，我认为多元化的趋势还会继续，\"贾维斯说。\"依赖更多种类的植物，会形成一个更有活力、风险更小，也能提供更全面营养需求的粮食体系。\""
         }
       ]
     }
